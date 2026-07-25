@@ -1,0 +1,19 @@
+{
+  "dataset": "contphy",
+  "video_list": "/nfs/data/workspaces/rdechare/codes/physics-eval/contphy.txt",
+  "reference_path": "/nfs/data/datasets/imagenet/imagenet1k/imagenet-val",
+  "reference_set": "imagenet1k_val",
+  "fid": 193.79031393737637,
+  "mode": "clean",
+  "model_name": "inception_v3",
+  "device": "cuda",
+  "num_workers": 8,
+  "batch_size": 32,
+  "frame_stride": 25,
+  "max_frames_per_video": 32,
+  "limit_videos": null,
+  "num_videos": 2080,
+  "num_frames": 14040,
+  "frames_dir": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/clean-fid/frames/contphy/stride-25_max-32",
+  "computed_at": "2026-07-18T18:23:45.526493+02:00"
+}

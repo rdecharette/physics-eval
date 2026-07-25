@@ -1,0 +1,19 @@
+{
+  "dataset": "physics-iq-verified",
+  "video_list": "/nfs/data/workspaces/rdechare/codes/physics-eval/physics-iq-verified.txt",
+  "reference_path": "/nfs/data/datasets/imagenet/imagenet1k/imagenet-val",
+  "reference_set": "imagenet1k_val",
+  "fid": 190.28495127567615,
+  "mode": "clean",
+  "model_name": "inception_v3",
+  "device": "cuda",
+  "num_workers": 8,
+  "batch_size": 32,
+  "frame_stride": 2,
+  "max_frames_per_video": 32,
+  "limit_videos": null,
+  "num_videos": 396,
+  "num_frames": 12672,
+  "frames_dir": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/clean-fid/frames/physics-iq-verified/stride-2_max-32",
+  "computed_at": "2026-07-18T18:54:02.502566+02:00"
+}
