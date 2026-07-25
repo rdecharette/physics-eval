@@ -63,6 +63,18 @@ echo "Node: \$(hostname)"
 echo "Start: \$(date)"
 echo "SLURM_JOB_GPUS: \${SLURM_JOB_GPUS:-unset}"
 echo "CUDA_VISIBLE_DEVICES: \${CUDA_VISIBLE_DEVICES:-unset}"
+
+# Guard against stale/out-of-range GPU ordinals (e.g. CUDA_VISIBLE_DEVICES=5 on a 5-GPU node indexed 0-4).
+if command -v nvidia-smi >/dev/null 2>&1; then
+    gpu_count=\$(nvidia-smi --query-gpu=index --format=csv,noheader 2>/dev/null | wc -l | tr -d ' ')
+    first_visible="\${CUDA_VISIBLE_DEVICES%%,*}"
+    if [[ -n "\${CUDA_VISIBLE_DEVICES:-}" && "\$first_visible" =~ ^[0-9]+$ && "\$gpu_count" =~ ^[0-9]+$ && \$gpu_count -gt 0 && \$first_visible -ge \$gpu_count ]]; then
+        echo "Warning: CUDA_VISIBLE_DEVICES=\$CUDA_VISIBLE_DEVICES is out of range for this node (gpu_count=\$gpu_count). Falling back to CUDA_VISIBLE_DEVICES=0"
+        export CUDA_VISIBLE_DEVICES=0
+    fi
+fi
+
+echo "Effective CUDA_VISIBLE_DEVICES: \${CUDA_VISIBLE_DEVICES:-unset}"
 MODE=$q_mode
 MAXFRAMES=$q_maxframes
 WINDOW_SIZE=$q_window_size
