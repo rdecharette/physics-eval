@@ -1,0 +1,132 @@
+[
+    {
+        "prompt_en": "000001_083861b17a8b3f4bef7e3aaad0b960318a5ea19ca98258fe2bfd700d11343e3d",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys2_possible/000001_083861b17a8b3f4bef7e3aaad0b960318a5ea19ca98258fe2bfd700d11343e3d.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000003_0996318787089d31d84af8327bb044e77120cd0a6c6eb7425a179f932369146b",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys2_possible/000003_0996318787089d31d84af8327bb044e77120cd0a6c6eb7425a179f932369146b.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000005_6da0a69fafee7301e2de79b798fa6c761776ab34fe3087eff30230fae7cc0196",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys2_possible/000005_6da0a69fafee7301e2de79b798fa6c761776ab34fe3087eff30230fae7cc0196.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000010_e9e46d920dde8614ef2a9ab7631f980d4b6c7969673517b136f69e921ac071a1",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys2_possible/000010_e9e46d920dde8614ef2a9ab7631f980d4b6c7969673517b136f69e921ac071a1.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000002_66a6de26327fe7661ac4fec04da96d0710d2177afad8babdc0dd27e71b19db1e",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys2_possible/000002_66a6de26327fe7661ac4fec04da96d0710d2177afad8babdc0dd27e71b19db1e.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000007_9b747136a92a1480769dc62caf994e5d6da7b8e333c9ab4a6cf0da3e1aedf8de",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys2_possible/000007_9b747136a92a1480769dc62caf994e5d6da7b8e333c9ab4a6cf0da3e1aedf8de.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000008_8b2c654f070baf7b0898e2414863533a01abae0bd9102c9912fb8fc8a56ab69e",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys2_possible/000008_8b2c654f070baf7b0898e2414863533a01abae0bd9102c9912fb8fc8a56ab69e.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000004_e02457c361240408e2d2417b5b56594052605dfc7fe433314f6768f053adbfdb",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys2_possible/000004_e02457c361240408e2d2417b5b56594052605dfc7fe433314f6768f053adbfdb.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000006_0e2b9d1ce271f9808685173712c5071f36173bac9e81f84f38ef7aa4fd931d4a",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys2_possible/000006_0e2b9d1ce271f9808685173712c5071f36173bac9e81f84f38ef7aa4fd931d4a.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000009_5c2b4ec97fdb43008e6711262fb74f9302362386e914133b8502dbd704ec7236",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys2_possible/000009_5c2b4ec97fdb43008e6711262fb74f9302362386e914133b8502dbd704ec7236.mp4"
+        ]
+    }
+]

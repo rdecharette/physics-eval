@@ -1,0 +1,132 @@
+[
+    {
+        "prompt_en": "000007__scene_25fps",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys_possible/000007__scene_25fps.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000004__scene_25fps",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys_possible/000004__scene_25fps.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000010__scene_25fps",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys_possible/000010__scene_25fps.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000006__scene_25fps",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys_possible/000006__scene_25fps.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000009__scene_25fps",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys_possible/000009__scene_25fps.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000002__scene_25fps",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys_possible/000002__scene_25fps.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000003__scene_25fps",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys_possible/000003__scene_25fps.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000001__scene_25fps",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys_possible/000001__scene_25fps.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000005__scene_25fps",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys_possible/000005__scene_25fps.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000008__scene_25fps",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/intphys_possible/000008__scene_25fps.mp4"
+        ]
+    }
+]

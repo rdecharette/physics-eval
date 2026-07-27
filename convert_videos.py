@@ -5,11 +5,12 @@ from __future__ import annotations
 
 import argparse
 import subprocess
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 
-DEFAULT_EXTENSIONS = {".mp4", ".mov", ".avi", ".mkv", ".webm", ".m4v"}
+DEFAULT_EXTENSIONS = {".mp4", ".mov", ".avi"}
 
 FFMPEG_FAILURE_PATTERNS = (
     "no frame!",
@@ -236,9 +237,10 @@ def convert_one(
     target_height: int | None,
     trim_start: int | None,
     trim_end: int | None,
-) -> tuple[int, int, Path, Path, str | None]:
+) -> tuple[int, int, Path, Path, str | None, float | None]:
     idx, total, src_path, dst_path = task
     try:
+        start_time = time.perf_counter()
         convert_video(
             src_path,
             dst_path,
@@ -250,9 +252,10 @@ def convert_one(
             trim_start=trim_start,
             trim_end=trim_end,
         )
-        return idx, total, src_path, dst_path, None
+        elapsed = time.perf_counter() - start_time
+        return idx, total, src_path, dst_path, None, elapsed
     except (subprocess.CalledProcessError, RuntimeError) as exc:
-        return idx, total, src_path, dst_path, str(exc)
+        return idx, total, src_path, dst_path, str(exc), None
 
 
 def main() -> None:
@@ -450,6 +453,9 @@ def main() -> None:
     converted = 0
     skipped = 0
     failed = 0
+    cumulative_elapsed = 0.0
+    cumulative_elapsed = 0.0
+    cumulative_elapsed = 0.0
 
     tasks: list[tuple[int, int, Path, Path]] = []
     total = len(videos)
@@ -499,10 +505,15 @@ def main() -> None:
         }
 
         for future in as_completed(future_to_task):
-            idx, total, src_path, dst_path, error = future.result()
+            idx, total, src_path, dst_path, error, elapsed = future.result()
             if error is None:
                 converted += 1
-                print(f"[{idx}/{total}] Converted: {src_path} -> {dst_path}{trim_progress_suffix}")
+                cumulative_elapsed += elapsed or 0.0
+                average_time = cumulative_elapsed / converted if converted > 0 else 0.0
+                print(
+                    f"[{idx}/{total}] Converted: {src_path} -> {dst_path}{trim_progress_suffix} "
+                    f"[elapsed {elapsed:.2f}s, avg {average_time:.2f}s/video]"
+                )
             else:
                 failed += 1
                 print(f"[{idx}/{total}] Failed: {src_path} ({error}){trim_progress_suffix}")

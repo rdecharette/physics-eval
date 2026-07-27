@@ -1,0 +1,132 @@
+[
+    {
+        "prompt_en": "000009_7i9drjmJeBhf",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/PhysBench/000009_7i9drjmJeBhf.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000006_eEgdtlIi6HMw",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/PhysBench/000006_eEgdtlIi6HMw.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000007_ZErs5Suyc1h6",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/PhysBench/000007_ZErs5Suyc1h6.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000001_9mtrobsKE0zr",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/PhysBench/000001_9mtrobsKE0zr.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000010_mtDluoK2Vt6W",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/PhysBench/000010_mtDluoK2Vt6W.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000002_Vpq8QFlf4wPI",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/PhysBench/000002_Vpq8QFlf4wPI.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000004_1XOMW4lFY9yw",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/PhysBench/000004_1XOMW4lFY9yw.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000008_vX6sf5wnK9Mc",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/PhysBench/000008_vX6sf5wnK9Mc.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000005_LuPmB21feptR",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/PhysBench/000005_LuPmB21feptR.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000003_HWPO7t3E8Cqs",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/PhysBench/000003_HWPO7t3E8Cqs.mp4"
+        ]
+    }
+]

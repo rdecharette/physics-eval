@@ -1,0 +1,132 @@
+[
+    {
+        "prompt_en": "000002_output_Full",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/contphy/000002_output_Full.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000007_output_Full",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/contphy/000007_output_Full.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000004_output_Full",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/contphy/000004_output_Full.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000001_output_Full",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/contphy/000001_output_Full.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000010_output_Full",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/contphy/000010_output_Full.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000009_output_Full",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/contphy/000009_output_Full.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000005_output_Full",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/contphy/000005_output_Full.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000003_output_Full",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/contphy/000003_output_Full.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000008_output_Full",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/contphy/000008_output_Full.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000006_output_Full",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/contphy/000006_output_Full.mp4"
+        ]
+    }
+]

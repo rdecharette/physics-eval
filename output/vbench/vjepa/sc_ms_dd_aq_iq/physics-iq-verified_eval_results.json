@@ -1,0 +1,2027 @@
+{
+    "subject_consistency": [
+        0.9626065749516048,
+        [
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000056_0170_full-videos_30FPS_perspective-center_take-1_trimmed-solid-ball-peakaboo.mp4",
+                "video_results": 0.9543863031155894
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000028_0070_full-videos_30FPS_perspective-left_take-1_trimmed-juice-in-water.mp4",
+                "video_results": 0.9939852952957153
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000023_0151_full-videos_30FPS_perspective-left_take-1_trimmed-roll-in-box.mp4",
+                "video_results": 0.9934138296538317
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000074_0128_full-videos_30FPS_perspective-center_take-1_trimmed-napkin-soak.mp4",
+                "video_results": 0.9150339085686656
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000095_0101_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-wrench.mp4",
+                "video_results": 0.9846173764272714
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000082_0001_full-videos_30FPS_perspective-left_take-1_trimmed-ball-and-block-fall.mp4",
+                "video_results": 0.9622577806646355
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000004_0025_full-videos_30FPS_perspective-left_take-1_trimmed-ball-rolls-on-glass.mp4",
+                "video_results": 0.9877948410590822
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000097_0088_full-videos_30FPS_perspective-left_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": 0.9805653782319823
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000053_0177_full-videos_30FPS_perspective-right_take-1_trimmed-teapot-rotates.mp4",
+                "video_results": 0.9647523346805174
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000096_0092_full-videos_30FPS_perspective-center_take-1_trimmed-lit-candle.mp4",
+                "video_results": 0.9989247656267557
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000094_0002_full-videos_30FPS_perspective-center_take-1_trimmed-ball-and-block-fall.mp4",
+                "video_results": 0.9623055721177217
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000002_0161_full-videos_30FPS_perspective-center_take-1_trimmed-single-cradle.mp4",
+                "video_results": 0.9918061804073126
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000020_0146_full-videos_30FPS_perspective-center_take-1_trimmed-roll-behind-box.mp4",
+                "video_results": 0.9982738016040754
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000003_0093_full-videos_30FPS_perspective-right_take-1_trimmed-lit-candle.mp4",
+                "video_results": 0.9984895052022016
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000088_0019_full-videos_30FPS_perspective-left_take-1_trimmed-ball-ramp.mp4",
+                "video_results": 0.9819772916857668
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000080_0063_full-videos_30FPS_perspective-right_take-1_trimmed-duck-static.mp4",
+                "video_results": 0.9990995769470805
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000089_0009_full-videos_30FPS_perspective-right_take-1_trimmed-ball-hits-duck.mp4",
+                "video_results": 0.9935380072025075
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000066_0073_full-videos_30FPS_perspective-left_take-1_trimmed-light-on-block.mp4",
+                "video_results": 0.9886565849372034
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000033_0195_full-videos_30FPS_perspective-right_take-1_trimmed-weight-on-pillow.mp4",
+                "video_results": 0.9284757578971495
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000040_0068_full-videos_30FPS_perspective-center_take-1_trimmed-glass-stays-same.mp4",
+                "video_results": 0.9992007722914469
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000052_0109_full-videos_30FPS_perspective-left_take-1_trimmed-match.mp4",
+                "video_results": 0.9746401513221373
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000035_0042_full-videos_30FPS_perspective-right_take-1_trimmed-cut-orange.mp4",
+                "video_results": 0.9458802413491525
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000046_0149_full-videos_30FPS_perspective-center_take-1_trimmed-roll-front-box.mp4",
+                "video_results": 0.9929186483556756
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000050_0012_full-videos_30FPS_perspective-right_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": 0.9956419755973577
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000071_0094_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-domino.mp4",
+                "video_results": 0.9860084675345959
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000057_0021_full-videos_30FPS_perspective-right_take-1_trimmed-ball-ramp.mp4",
+                "video_results": 0.9890861502501755
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000063_0119_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-ball-rotate.mp4",
+                "video_results": 0.9954513408648917
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000083_0013_full-videos_30FPS_perspective-left_take-1_trimmed-ball-in-basket.mp4",
+                "video_results": 0.9576818207317815
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000034_0007_full-videos_30FPS_perspective-left_take-1_trimmed-ball-hits-duck.mp4",
+                "video_results": 0.9953458516168794
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000043_0137_full-videos_30FPS_perspective-center_take-1_trimmed-paper-in-water.mp4",
+                "video_results": 0.9840983114980754
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000037_0121_full-videos_30FPS_perspective-left_take-1_trimmed-mirror-teapot-rotate.mp4",
+                "video_results": 0.9781464491678581
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000024_0010_full-videos_30FPS_perspective-left_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": 0.9960367536195651
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000031_0004_full-videos_30FPS_perspective-left_take-1_trimmed-ball-behind-rotating-paper.mp4",
+                "video_results": 0.8827362313679571
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000030_0066_full-videos_30FPS_perspective-right_take-1_trimmed-fill-glass-red-drink.mp4",
+                "video_results": 0.9907730391334789
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000047_0150_full-videos_30FPS_perspective-right_take-1_trimmed-roll-front-box.mp4",
+                "video_results": 0.9918930143990776
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000025_0039_full-videos_30FPS_perspective-right_take-1_trimmed-blow-balloon.mp4",
+                "video_results": 0.9833022720145381
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000092_0097_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-transparent-peakaboo.mp4",
+                "video_results": 0.9127321571236375
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000100_0089_full-videos_30FPS_perspective-center_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": 0.9817354283821633
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000099_0018_full-videos_30FPS_perspective-right_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": 0.9483255924789477
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000059_0017_full-videos_30FPS_perspective-center_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": 0.944763435853575
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000029_0144_full-videos_30FPS_perspective-right_take-1_trimmed-potato-in-water.mp4",
+                "video_results": 0.9389444025989356
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000022_0053_full-videos_30FPS_perspective-center_take-1_trimmed-double-cradle.mp4",
+                "video_results": 0.9820011371598583
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000065_0187_full-videos_30FPS_perspective-left_take-1_trimmed-weight-on-ceramic.mp4",
+                "video_results": 0.879946663414584
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000061_0108_full-videos_30FPS_perspective-right_take-1_trimmed-marble-run-y.mp4",
+                "video_results": 0.9966675746391009
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000006_0180_full-videos_30FPS_perspective-right_take-1_trimmed-two-balls-pass.mp4",
+                "video_results": 0.9870457655465753
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000013_0016_full-videos_30FPS_perspective-left_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": 0.9444730138429538
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000005_0172_full-videos_30FPS_perspective-left_take-1_trimmed-stable-blocks.mp4",
+                "video_results": 0.9539516012040142
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000012_0067_full-videos_30FPS_perspective-left_take-1_trimmed-glass-stays-same.mp4",
+                "video_results": 0.9992894128775497
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000021_0183_full-videos_30FPS_perspective-right_take-1_trimmed-unstable-block-stack.mp4",
+                "video_results": 0.942037499599377
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000062_0014_full-videos_30FPS_perspective-center_take-1_trimmed-ball-in-basket.mp4",
+                "video_results": 0.9274461856696397
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000081_0096_full-videos_30FPS_perspective-right_take-1_trimmed-magnet-domino.mp4",
+                "video_results": 0.9843986099235184
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000064_0047_full-videos_30FPS_perspective-center_take-1_trimmed-domino-in-juice.mp4",
+                "video_results": 0.9734733803002904
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000018_0103_full-videos_30FPS_perspective-left_take-1_trimmed-marble-run-x.mp4",
+                "video_results": 0.9938532393347768
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000058_0140_full-videos_30FPS_perspective-center_take-1_trimmed-paper-smoke.mp4",
+                "video_results": 0.9845415562017193
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000098_0138_full-videos_30FPS_perspective-right_take-1_trimmed-paper-in-water.mp4",
+                "video_results": 0.982012784256596
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000001_0122_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-teapot-rotate.mp4",
+                "video_results": 0.9787989298668865
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000076_0185_full-videos_30FPS_perspective-center_take-1_trimmed-water-in-juice.mp4",
+                "video_results": 0.9907901177346456
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000069_0167_full-videos_30FPS_perspective-center_take-1_trimmed-smiley-ball-rotates.mp4",
+                "video_results": 0.9799601320941079
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000085_0075_full-videos_30FPS_perspective-right_take-1_trimmed-light-on-block.mp4",
+                "video_results": 0.9868272859681102
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000044_0174_full-videos_30FPS_perspective-right_take-1_trimmed-stable-blocks.mp4",
+                "video_results": 0.9632282378035111
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000026_0160_full-videos_30FPS_perspective-left_take-1_trimmed-single-cradle.mp4",
+                "video_results": 0.9908954563499993
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000072_0157_full-videos_30FPS_perspective-left_take-1_trimmed-silk-cover.mp4",
+                "video_results": 0.7544759794383867
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000068_0147_full-videos_30FPS_perspective-right_take-1_trimmed-roll-behind-box.mp4",
+                "video_results": 0.9965496401158337
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000011_0034_full-videos_30FPS_perspective-left_take-1_trimmed-block-domino.mp4",
+                "video_results": 0.9073800707711336
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000090_0135_full-videos_30FPS_perspective-right_take-1_trimmed-paper-fall-water.mp4",
+                "video_results": 0.9707062435200025
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000075_0072_full-videos_30FPS_perspective-right_take-1_trimmed-juice-in-water.mp4",
+                "video_results": 0.988317470919637
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000087_0028_full-videos_30FPS_perspective-left_take-1_trimmed-ball-train.mp4",
+                "video_results": 0.9866926392002584
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000093_0112_full-videos_30FPS_perspective-left_take-1_trimmed-match-blows-balloon.mp4",
+                "video_results": 0.8346487997590747
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000073_0107_full-videos_30FPS_perspective-center_take-1_trimmed-marble-run-y.mp4",
+                "video_results": 0.9971404492106897
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000051_0165_full-videos_30FPS_perspective-right_take-1_trimmed-siphon.mp4",
+                "video_results": 0.9468859386743362
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000049_0077_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-mug.mp4",
+                "video_results": 0.9547757747033649
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000015_0190_full-videos_30FPS_perspective-left_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": 0.8759246744121967
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000055_0045_full-videos_30FPS_perspective-right_take-1_trimmed-cut-paper.mp4",
+                "video_results": 0.944764304734673
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000014_0074_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-block.mp4",
+                "video_results": 0.9866138417351695
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000027_0181_full-videos_30FPS_perspective-left_take-1_trimmed-unstable-block-stack.mp4",
+                "video_results": 0.9526209847448261
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000084_0064_full-videos_30FPS_perspective-left_take-1_trimmed-fill-glass-red-drink.mp4",
+                "video_results": 0.9925921034364023
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000054_0061_full-videos_30FPS_perspective-left_take-1_trimmed-duck-static.mp4",
+                "video_results": 0.9995234022579432
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000067_0050_full-videos_30FPS_perspective-center_take-1_trimmed-dominos-with-space.mp4",
+                "video_results": 0.9631140849330934
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000070_0011_full-videos_30FPS_perspective-center_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": 0.9957230508826268
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000091_0168_full-videos_30FPS_perspective-right_take-1_trimmed-smiley-ball-rotates.mp4",
+                "video_results": 0.9820530347245507
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000048_0090_full-videos_30FPS_perspective-right_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": 0.9820265318559304
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000041_0098_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-transparent-peakaboo.mp4",
+                "video_results": 0.8992731374177972
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000079_0116_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-ball-fall.mp4",
+                "video_results": 0.9247773247283871
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000010_0079_full-videos_30FPS_perspective-left_take-1_trimmed-light-on-mug-block.mp4",
+                "video_results": 0.9571680314371277
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000019_0055_full-videos_30FPS_perspective-left_take-1_trimmed-duck-and-dominos.mp4",
+                "video_results": 0.9843998338138708
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000077_0131_full-videos_30FPS_perspective-center_take-1_trimmed-paint-on-glass.mp4",
+                "video_results": 0.9125556085399005
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000009_0100_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-wrench.mp4",
+                "video_results": 0.9870480458606736
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000086_0132_full-videos_30FPS_perspective-right_take-1_trimmed-paint-on-glass.mp4",
+                "video_results": 0.920768389891381
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000060_0191_full-videos_30FPS_perspective-center_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": 0.8409942232664659
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000078_0192_full-videos_30FPS_perspective-right_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": 0.8458250207382266
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000038_0095_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-domino.mp4",
+                "video_results": 0.9838027573779038
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000032_0196_full-videos_30FPS_perspective-left_take-1_trimmed-weight-protects-duck.mp4",
+                "video_results": 0.9933392540181532
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000036_0040_full-videos_30FPS_perspective-left_take-1_trimmed-cut-orange.mp4",
+                "video_results": 0.9632831340554369
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000039_0156_full-videos_30FPS_perspective-right_take-1_trimmed-rolling-reflection.mp4",
+                "video_results": 0.9815877795718205
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000017_0083_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-statue.mp4",
+                "video_results": 0.9297229620203313
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000045_0114_full-videos_30FPS_perspective-right_take-1_trimmed-match-blows-balloon.mp4",
+                "video_results": 0.8880491654493818
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000042_0118_full-videos_30FPS_perspective-left_take-1_trimmed-mirror-ball-rotate.mp4",
+                "video_results": 0.9942587774917172
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000007_0175_full-videos_30FPS_perspective-left_take-1_trimmed-teapot-rotates.mp4",
+                "video_results": 0.9680845569117797
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000008_0044_full-videos_30FPS_perspective-center_take-1_trimmed-cut-paper.mp4",
+                "video_results": 0.9195202976839313
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000016_0029_full-videos_30FPS_perspective-center_take-1_trimmed-ball-train.mp4",
+                "video_results": 0.9883349921912827
+            }
+        ]
+    ],
+    "motion_smoothness": [
+        0.9978381112476005,
+        [
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000056_0170_full-videos_30FPS_perspective-center_take-1_trimmed-solid-ball-peakaboo.mp4",
+                "video_results": 0.9972820943688578
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000028_0070_full-videos_30FPS_perspective-left_take-1_trimmed-juice-in-water.mp4",
+                "video_results": 0.9981235754105563
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000023_0151_full-videos_30FPS_perspective-left_take-1_trimmed-roll-in-box.mp4",
+                "video_results": 0.9983000382035985
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000074_0128_full-videos_30FPS_perspective-center_take-1_trimmed-napkin-soak.mp4",
+                "video_results": 0.9978690736431742
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000095_0101_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-wrench.mp4",
+                "video_results": 0.9983980881654347
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000082_0001_full-videos_30FPS_perspective-left_take-1_trimmed-ball-and-block-fall.mp4",
+                "video_results": 0.9977938823044913
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000004_0025_full-videos_30FPS_perspective-left_take-1_trimmed-ball-rolls-on-glass.mp4",
+                "video_results": 0.9978604977073173
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000097_0088_full-videos_30FPS_perspective-left_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": 0.9974349361455108
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000053_0177_full-videos_30FPS_perspective-right_take-1_trimmed-teapot-rotates.mp4",
+                "video_results": 0.9972816448560848
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000096_0092_full-videos_30FPS_perspective-center_take-1_trimmed-lit-candle.mp4",
+                "video_results": 0.9978283520392377
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000094_0002_full-videos_30FPS_perspective-center_take-1_trimmed-ball-and-block-fall.mp4",
+                "video_results": 0.9977703349679226
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000002_0161_full-videos_30FPS_perspective-center_take-1_trimmed-single-cradle.mp4",
+                "video_results": 0.9970986033866807
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000020_0146_full-videos_30FPS_perspective-center_take-1_trimmed-roll-behind-box.mp4",
+                "video_results": 0.9982271046856135
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000003_0093_full-videos_30FPS_perspective-right_take-1_trimmed-lit-candle.mp4",
+                "video_results": 0.997957437296384
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000088_0019_full-videos_30FPS_perspective-left_take-1_trimmed-ball-ramp.mp4",
+                "video_results": 0.9982175352484259
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000080_0063_full-videos_30FPS_perspective-right_take-1_trimmed-duck-static.mp4",
+                "video_results": 0.998337746274658
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000089_0009_full-videos_30FPS_perspective-right_take-1_trimmed-ball-hits-duck.mp4",
+                "video_results": 0.9981583485217272
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000066_0073_full-videos_30FPS_perspective-left_take-1_trimmed-light-on-block.mp4",
+                "video_results": 0.998158781943505
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000033_0195_full-videos_30FPS_perspective-right_take-1_trimmed-weight-on-pillow.mp4",
+                "video_results": 0.9974640786316462
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000040_0068_full-videos_30FPS_perspective-center_take-1_trimmed-glass-stays-same.mp4",
+                "video_results": 0.9982433179159392
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000052_0109_full-videos_30FPS_perspective-left_take-1_trimmed-match.mp4",
+                "video_results": 0.9977015613015502
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000035_0042_full-videos_30FPS_perspective-right_take-1_trimmed-cut-orange.mp4",
+                "video_results": 0.9975488736596935
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000046_0149_full-videos_30FPS_perspective-center_take-1_trimmed-roll-front-box.mp4",
+                "video_results": 0.9981913073967117
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000050_0012_full-videos_30FPS_perspective-right_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": 0.9981580621772917
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000071_0094_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-domino.mp4",
+                "video_results": 0.9982903895347268
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000057_0021_full-videos_30FPS_perspective-right_take-1_trimmed-ball-ramp.mp4",
+                "video_results": 0.9982532284634055
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000063_0119_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-ball-rotate.mp4",
+                "video_results": 0.9979827086278268
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000083_0013_full-videos_30FPS_perspective-left_take-1_trimmed-ball-in-basket.mp4",
+                "video_results": 0.9975743246268666
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000034_0007_full-videos_30FPS_perspective-left_take-1_trimmed-ball-hits-duck.mp4",
+                "video_results": 0.998197466201608
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000043_0137_full-videos_30FPS_perspective-center_take-1_trimmed-paper-in-water.mp4",
+                "video_results": 0.9979116222808138
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000037_0121_full-videos_30FPS_perspective-left_take-1_trimmed-mirror-teapot-rotate.mp4",
+                "video_results": 0.9976410681930581
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000024_0010_full-videos_30FPS_perspective-left_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": 0.9982504911122301
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000031_0004_full-videos_30FPS_perspective-left_take-1_trimmed-ball-behind-rotating-paper.mp4",
+                "video_results": 0.9968226966434793
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000030_0066_full-videos_30FPS_perspective-right_take-1_trimmed-fill-glass-red-drink.mp4",
+                "video_results": 0.9977152851325859
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000047_0150_full-videos_30FPS_perspective-right_take-1_trimmed-roll-front-box.mp4",
+                "video_results": 0.9982275366018011
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000025_0039_full-videos_30FPS_perspective-right_take-1_trimmed-blow-balloon.mp4",
+                "video_results": 0.9976128329191154
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000092_0097_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-transparent-peakaboo.mp4",
+                "video_results": 0.9979024314995606
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000100_0089_full-videos_30FPS_perspective-center_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": 0.9969857337123446
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000099_0018_full-videos_30FPS_perspective-right_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": 0.9979979168766965
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000059_0017_full-videos_30FPS_perspective-center_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": 0.9981300442729336
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000029_0144_full-videos_30FPS_perspective-right_take-1_trimmed-potato-in-water.mp4",
+                "video_results": 0.9977384415803
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000022_0053_full-videos_30FPS_perspective-center_take-1_trimmed-double-cradle.mp4",
+                "video_results": 0.9968116740294545
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000065_0187_full-videos_30FPS_perspective-left_take-1_trimmed-weight-on-ceramic.mp4",
+                "video_results": 0.9978570803939696
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000061_0108_full-videos_30FPS_perspective-right_take-1_trimmed-marble-run-y.mp4",
+                "video_results": 0.997944677325372
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000006_0180_full-videos_30FPS_perspective-right_take-1_trimmed-two-balls-pass.mp4",
+                "video_results": 0.9982162889020417
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000013_0016_full-videos_30FPS_perspective-left_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": 0.9980279041871306
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000005_0172_full-videos_30FPS_perspective-left_take-1_trimmed-stable-blocks.mp4",
+                "video_results": 0.9980221549968672
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000012_0067_full-videos_30FPS_perspective-left_take-1_trimmed-glass-stays-same.mp4",
+                "video_results": 0.998307262589956
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000021_0183_full-videos_30FPS_perspective-right_take-1_trimmed-unstable-block-stack.mp4",
+                "video_results": 0.9978082242744019
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000062_0014_full-videos_30FPS_perspective-center_take-1_trimmed-ball-in-basket.mp4",
+                "video_results": 0.9976296424572582
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000081_0096_full-videos_30FPS_perspective-right_take-1_trimmed-magnet-domino.mp4",
+                "video_results": 0.9982257814600298
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000064_0047_full-videos_30FPS_perspective-center_take-1_trimmed-domino-in-juice.mp4",
+                "video_results": 0.9978289331970532
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000018_0103_full-videos_30FPS_perspective-left_take-1_trimmed-marble-run-x.mp4",
+                "video_results": 0.9979513428554686
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000058_0140_full-videos_30FPS_perspective-center_take-1_trimmed-paper-smoke.mp4",
+                "video_results": 0.9981113773069858
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000098_0138_full-videos_30FPS_perspective-right_take-1_trimmed-paper-in-water.mp4",
+                "video_results": 0.9979476551945813
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000001_0122_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-teapot-rotate.mp4",
+                "video_results": 0.9977409984488507
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000076_0185_full-videos_30FPS_perspective-center_take-1_trimmed-water-in-juice.mp4",
+                "video_results": 0.9979310940788209
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000069_0167_full-videos_30FPS_perspective-center_take-1_trimmed-smiley-ball-rotates.mp4",
+                "video_results": 0.9983335535823592
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000085_0075_full-videos_30FPS_perspective-right_take-1_trimmed-light-on-block.mp4",
+                "video_results": 0.9980511230227386
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000044_0174_full-videos_30FPS_perspective-right_take-1_trimmed-stable-blocks.mp4",
+                "video_results": 0.998042792592183
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000026_0160_full-videos_30FPS_perspective-left_take-1_trimmed-single-cradle.mp4",
+                "video_results": 0.9968542153273419
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000072_0157_full-videos_30FPS_perspective-left_take-1_trimmed-silk-cover.mp4",
+                "video_results": 0.9962082424182693
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000068_0147_full-videos_30FPS_perspective-right_take-1_trimmed-roll-behind-box.mp4",
+                "video_results": 0.9981711617529924
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000011_0034_full-videos_30FPS_perspective-left_take-1_trimmed-block-domino.mp4",
+                "video_results": 0.9977915189042809
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000090_0135_full-videos_30FPS_perspective-right_take-1_trimmed-paper-fall-water.mp4",
+                "video_results": 0.9973681048786903
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000075_0072_full-videos_30FPS_perspective-right_take-1_trimmed-juice-in-water.mp4",
+                "video_results": 0.9980852746074566
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000087_0028_full-videos_30FPS_perspective-left_take-1_trimmed-ball-train.mp4",
+                "video_results": 0.9982187704910827
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000093_0112_full-videos_30FPS_perspective-left_take-1_trimmed-match-blows-balloon.mp4",
+                "video_results": 0.9974540591170894
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000073_0107_full-videos_30FPS_perspective-center_take-1_trimmed-marble-run-y.mp4",
+                "video_results": 0.9979831169250681
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000051_0165_full-videos_30FPS_perspective-right_take-1_trimmed-siphon.mp4",
+                "video_results": 0.997302008904482
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000049_0077_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-mug.mp4",
+                "video_results": 0.997851211132888
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000015_0190_full-videos_30FPS_perspective-left_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": 0.9976600921720813
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000055_0045_full-videos_30FPS_perspective-right_take-1_trimmed-cut-paper.mp4",
+                "video_results": 0.9973886854497777
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000014_0074_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-block.mp4",
+                "video_results": 0.997918279436065
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000027_0181_full-videos_30FPS_perspective-left_take-1_trimmed-unstable-block-stack.mp4",
+                "video_results": 0.997825911571629
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000084_0064_full-videos_30FPS_perspective-left_take-1_trimmed-fill-glass-red-drink.mp4",
+                "video_results": 0.997834725673035
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000054_0061_full-videos_30FPS_perspective-left_take-1_trimmed-duck-static.mp4",
+                "video_results": 0.9983060225482306
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000067_0050_full-videos_30FPS_perspective-center_take-1_trimmed-dominos-with-space.mp4",
+                "video_results": 0.9983944345685255
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000070_0011_full-videos_30FPS_perspective-center_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": 0.9981381344677533
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000091_0168_full-videos_30FPS_perspective-right_take-1_trimmed-smiley-ball-rotates.mp4",
+                "video_results": 0.9980107909902652
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000048_0090_full-videos_30FPS_perspective-right_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": 0.9969584328453173
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000041_0098_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-transparent-peakaboo.mp4",
+                "video_results": 0.9978576182660672
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000079_0116_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-ball-fall.mp4",
+                "video_results": 0.9975843008557052
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000010_0079_full-videos_30FPS_perspective-left_take-1_trimmed-light-on-mug-block.mp4",
+                "video_results": 0.9976353191909935
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000019_0055_full-videos_30FPS_perspective-left_take-1_trimmed-duck-and-dominos.mp4",
+                "video_results": 0.9982866145496081
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000077_0131_full-videos_30FPS_perspective-center_take-1_trimmed-paint-on-glass.mp4",
+                "video_results": 0.9979301384054439
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000009_0100_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-wrench.mp4",
+                "video_results": 0.998480939758837
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000086_0132_full-videos_30FPS_perspective-right_take-1_trimmed-paint-on-glass.mp4",
+                "video_results": 0.9978559071628091
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000060_0191_full-videos_30FPS_perspective-center_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": 0.997468645557208
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000078_0192_full-videos_30FPS_perspective-right_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": 0.9976155581314697
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000038_0095_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-domino.mp4",
+                "video_results": 0.9983334719981904
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000032_0196_full-videos_30FPS_perspective-left_take-1_trimmed-weight-protects-duck.mp4",
+                "video_results": 0.9981693915553191
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000036_0040_full-videos_30FPS_perspective-left_take-1_trimmed-cut-orange.mp4",
+                "video_results": 0.9978565316063431
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000039_0156_full-videos_30FPS_perspective-right_take-1_trimmed-rolling-reflection.mp4",
+                "video_results": 0.9980151900425203
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000017_0083_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-statue.mp4",
+                "video_results": 0.9973936931368694
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000045_0114_full-videos_30FPS_perspective-right_take-1_trimmed-match-blows-balloon.mp4",
+                "video_results": 0.9974145961865568
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000042_0118_full-videos_30FPS_perspective-left_take-1_trimmed-mirror-ball-rotate.mp4",
+                "video_results": 0.9979136507813049
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000007_0175_full-videos_30FPS_perspective-left_take-1_trimmed-teapot-rotates.mp4",
+                "video_results": 0.9973626644285165
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000008_0044_full-videos_30FPS_perspective-center_take-1_trimmed-cut-paper.mp4",
+                "video_results": 0.9973945405018518
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000016_0029_full-videos_30FPS_perspective-center_take-1_trimmed-ball-train.mp4",
+                "video_results": 0.9980901030352156
+            }
+        ]
+    ],
+    "dynamic_degree": [
+        0.05,
+        [
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000056_0170_full-videos_30FPS_perspective-center_take-1_trimmed-solid-ball-peakaboo.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000028_0070_full-videos_30FPS_perspective-left_take-1_trimmed-juice-in-water.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000023_0151_full-videos_30FPS_perspective-left_take-1_trimmed-roll-in-box.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000074_0128_full-videos_30FPS_perspective-center_take-1_trimmed-napkin-soak.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000095_0101_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-wrench.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000082_0001_full-videos_30FPS_perspective-left_take-1_trimmed-ball-and-block-fall.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000004_0025_full-videos_30FPS_perspective-left_take-1_trimmed-ball-rolls-on-glass.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000097_0088_full-videos_30FPS_perspective-left_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000053_0177_full-videos_30FPS_perspective-right_take-1_trimmed-teapot-rotates.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000096_0092_full-videos_30FPS_perspective-center_take-1_trimmed-lit-candle.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000094_0002_full-videos_30FPS_perspective-center_take-1_trimmed-ball-and-block-fall.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000002_0161_full-videos_30FPS_perspective-center_take-1_trimmed-single-cradle.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000020_0146_full-videos_30FPS_perspective-center_take-1_trimmed-roll-behind-box.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000003_0093_full-videos_30FPS_perspective-right_take-1_trimmed-lit-candle.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000088_0019_full-videos_30FPS_perspective-left_take-1_trimmed-ball-ramp.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000080_0063_full-videos_30FPS_perspective-right_take-1_trimmed-duck-static.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000089_0009_full-videos_30FPS_perspective-right_take-1_trimmed-ball-hits-duck.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000066_0073_full-videos_30FPS_perspective-left_take-1_trimmed-light-on-block.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000033_0195_full-videos_30FPS_perspective-right_take-1_trimmed-weight-on-pillow.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000040_0068_full-videos_30FPS_perspective-center_take-1_trimmed-glass-stays-same.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000052_0109_full-videos_30FPS_perspective-left_take-1_trimmed-match.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000035_0042_full-videos_30FPS_perspective-right_take-1_trimmed-cut-orange.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000046_0149_full-videos_30FPS_perspective-center_take-1_trimmed-roll-front-box.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000050_0012_full-videos_30FPS_perspective-right_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000071_0094_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-domino.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000057_0021_full-videos_30FPS_perspective-right_take-1_trimmed-ball-ramp.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000063_0119_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-ball-rotate.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000083_0013_full-videos_30FPS_perspective-left_take-1_trimmed-ball-in-basket.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000034_0007_full-videos_30FPS_perspective-left_take-1_trimmed-ball-hits-duck.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000043_0137_full-videos_30FPS_perspective-center_take-1_trimmed-paper-in-water.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000037_0121_full-videos_30FPS_perspective-left_take-1_trimmed-mirror-teapot-rotate.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000024_0010_full-videos_30FPS_perspective-left_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000031_0004_full-videos_30FPS_perspective-left_take-1_trimmed-ball-behind-rotating-paper.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000030_0066_full-videos_30FPS_perspective-right_take-1_trimmed-fill-glass-red-drink.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000047_0150_full-videos_30FPS_perspective-right_take-1_trimmed-roll-front-box.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000025_0039_full-videos_30FPS_perspective-right_take-1_trimmed-blow-balloon.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000092_0097_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-transparent-peakaboo.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000100_0089_full-videos_30FPS_perspective-center_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000099_0018_full-videos_30FPS_perspective-right_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000059_0017_full-videos_30FPS_perspective-center_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000029_0144_full-videos_30FPS_perspective-right_take-1_trimmed-potato-in-water.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000022_0053_full-videos_30FPS_perspective-center_take-1_trimmed-double-cradle.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000065_0187_full-videos_30FPS_perspective-left_take-1_trimmed-weight-on-ceramic.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000061_0108_full-videos_30FPS_perspective-right_take-1_trimmed-marble-run-y.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000006_0180_full-videos_30FPS_perspective-right_take-1_trimmed-two-balls-pass.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000013_0016_full-videos_30FPS_perspective-left_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000005_0172_full-videos_30FPS_perspective-left_take-1_trimmed-stable-blocks.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000012_0067_full-videos_30FPS_perspective-left_take-1_trimmed-glass-stays-same.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000021_0183_full-videos_30FPS_perspective-right_take-1_trimmed-unstable-block-stack.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000062_0014_full-videos_30FPS_perspective-center_take-1_trimmed-ball-in-basket.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000081_0096_full-videos_30FPS_perspective-right_take-1_trimmed-magnet-domino.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000064_0047_full-videos_30FPS_perspective-center_take-1_trimmed-domino-in-juice.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000018_0103_full-videos_30FPS_perspective-left_take-1_trimmed-marble-run-x.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000058_0140_full-videos_30FPS_perspective-center_take-1_trimmed-paper-smoke.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000098_0138_full-videos_30FPS_perspective-right_take-1_trimmed-paper-in-water.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000001_0122_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-teapot-rotate.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000076_0185_full-videos_30FPS_perspective-center_take-1_trimmed-water-in-juice.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000069_0167_full-videos_30FPS_perspective-center_take-1_trimmed-smiley-ball-rotates.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000085_0075_full-videos_30FPS_perspective-right_take-1_trimmed-light-on-block.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000044_0174_full-videos_30FPS_perspective-right_take-1_trimmed-stable-blocks.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000026_0160_full-videos_30FPS_perspective-left_take-1_trimmed-single-cradle.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000072_0157_full-videos_30FPS_perspective-left_take-1_trimmed-silk-cover.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000068_0147_full-videos_30FPS_perspective-right_take-1_trimmed-roll-behind-box.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000011_0034_full-videos_30FPS_perspective-left_take-1_trimmed-block-domino.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000090_0135_full-videos_30FPS_perspective-right_take-1_trimmed-paper-fall-water.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000075_0072_full-videos_30FPS_perspective-right_take-1_trimmed-juice-in-water.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000087_0028_full-videos_30FPS_perspective-left_take-1_trimmed-ball-train.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000093_0112_full-videos_30FPS_perspective-left_take-1_trimmed-match-blows-balloon.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000073_0107_full-videos_30FPS_perspective-center_take-1_trimmed-marble-run-y.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000051_0165_full-videos_30FPS_perspective-right_take-1_trimmed-siphon.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000049_0077_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-mug.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000015_0190_full-videos_30FPS_perspective-left_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000055_0045_full-videos_30FPS_perspective-right_take-1_trimmed-cut-paper.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000014_0074_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-block.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000027_0181_full-videos_30FPS_perspective-left_take-1_trimmed-unstable-block-stack.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000084_0064_full-videos_30FPS_perspective-left_take-1_trimmed-fill-glass-red-drink.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000054_0061_full-videos_30FPS_perspective-left_take-1_trimmed-duck-static.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000067_0050_full-videos_30FPS_perspective-center_take-1_trimmed-dominos-with-space.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000070_0011_full-videos_30FPS_perspective-center_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000091_0168_full-videos_30FPS_perspective-right_take-1_trimmed-smiley-ball-rotates.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000048_0090_full-videos_30FPS_perspective-right_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000041_0098_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-transparent-peakaboo.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000079_0116_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-ball-fall.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000010_0079_full-videos_30FPS_perspective-left_take-1_trimmed-light-on-mug-block.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000019_0055_full-videos_30FPS_perspective-left_take-1_trimmed-duck-and-dominos.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000077_0131_full-videos_30FPS_perspective-center_take-1_trimmed-paint-on-glass.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000009_0100_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-wrench.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000086_0132_full-videos_30FPS_perspective-right_take-1_trimmed-paint-on-glass.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000060_0191_full-videos_30FPS_perspective-center_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000078_0192_full-videos_30FPS_perspective-right_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000038_0095_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-domino.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000032_0196_full-videos_30FPS_perspective-left_take-1_trimmed-weight-protects-duck.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000036_0040_full-videos_30FPS_perspective-left_take-1_trimmed-cut-orange.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000039_0156_full-videos_30FPS_perspective-right_take-1_trimmed-rolling-reflection.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000017_0083_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-statue.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000045_0114_full-videos_30FPS_perspective-right_take-1_trimmed-match-blows-balloon.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000042_0118_full-videos_30FPS_perspective-left_take-1_trimmed-mirror-ball-rotate.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000007_0175_full-videos_30FPS_perspective-left_take-1_trimmed-teapot-rotates.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000008_0044_full-videos_30FPS_perspective-center_take-1_trimmed-cut-paper.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000016_0029_full-videos_30FPS_perspective-center_take-1_trimmed-ball-train.mp4",
+                "video_results": false
+            }
+        ]
+    ],
+    "aesthetic_quality": [
+        0.4556113427877426,
+        [
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000056_0170_full-videos_30FPS_perspective-center_take-1_trimmed-solid-ball-peakaboo.mp4",
+                "video_results": 0.4612615704536438
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000028_0070_full-videos_30FPS_perspective-left_take-1_trimmed-juice-in-water.mp4",
+                "video_results": 0.7141165137290955
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000023_0151_full-videos_30FPS_perspective-left_take-1_trimmed-roll-in-box.mp4",
+                "video_results": 0.3641299903392792
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000074_0128_full-videos_30FPS_perspective-center_take-1_trimmed-napkin-soak.mp4",
+                "video_results": 0.3865372836589813
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000095_0101_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-wrench.mp4",
+                "video_results": 0.5167735815048218
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000082_0001_full-videos_30FPS_perspective-left_take-1_trimmed-ball-and-block-fall.mp4",
+                "video_results": 0.4045253098011017
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000004_0025_full-videos_30FPS_perspective-left_take-1_trimmed-ball-rolls-on-glass.mp4",
+                "video_results": 0.3292897641658783
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000097_0088_full-videos_30FPS_perspective-left_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": 0.5735489726066589
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000053_0177_full-videos_30FPS_perspective-right_take-1_trimmed-teapot-rotates.mp4",
+                "video_results": 0.5837380886077881
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000096_0092_full-videos_30FPS_perspective-center_take-1_trimmed-lit-candle.mp4",
+                "video_results": 0.5285211801528931
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000094_0002_full-videos_30FPS_perspective-center_take-1_trimmed-ball-and-block-fall.mp4",
+                "video_results": 0.3278796374797821
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000002_0161_full-videos_30FPS_perspective-center_take-1_trimmed-single-cradle.mp4",
+                "video_results": 0.43498557806015015
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000020_0146_full-videos_30FPS_perspective-center_take-1_trimmed-roll-behind-box.mp4",
+                "video_results": 0.40932497382164
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000003_0093_full-videos_30FPS_perspective-right_take-1_trimmed-lit-candle.mp4",
+                "video_results": 0.44570592045783997
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000088_0019_full-videos_30FPS_perspective-left_take-1_trimmed-ball-ramp.mp4",
+                "video_results": 0.3310376703739166
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000080_0063_full-videos_30FPS_perspective-right_take-1_trimmed-duck-static.mp4",
+                "video_results": 0.4290817677974701
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000089_0009_full-videos_30FPS_perspective-right_take-1_trimmed-ball-hits-duck.mp4",
+                "video_results": 0.4312930405139923
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000066_0073_full-videos_30FPS_perspective-left_take-1_trimmed-light-on-block.mp4",
+                "video_results": 0.46280208230018616
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000033_0195_full-videos_30FPS_perspective-right_take-1_trimmed-weight-on-pillow.mp4",
+                "video_results": 0.38358160853385925
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000040_0068_full-videos_30FPS_perspective-center_take-1_trimmed-glass-stays-same.mp4",
+                "video_results": 0.7154240012168884
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000052_0109_full-videos_30FPS_perspective-left_take-1_trimmed-match.mp4",
+                "video_results": 0.5043380260467529
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000035_0042_full-videos_30FPS_perspective-right_take-1_trimmed-cut-orange.mp4",
+                "video_results": 0.5124493837356567
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000046_0149_full-videos_30FPS_perspective-center_take-1_trimmed-roll-front-box.mp4",
+                "video_results": 0.2942712604999542
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000050_0012_full-videos_30FPS_perspective-right_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": 0.42338621616363525
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000071_0094_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-domino.mp4",
+                "video_results": 0.47058936953544617
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000057_0021_full-videos_30FPS_perspective-right_take-1_trimmed-ball-ramp.mp4",
+                "video_results": 0.40589866042137146
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000063_0119_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-ball-rotate.mp4",
+                "video_results": 0.3973819315433502
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000083_0013_full-videos_30FPS_perspective-left_take-1_trimmed-ball-in-basket.mp4",
+                "video_results": 0.4483778774738312
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000034_0007_full-videos_30FPS_perspective-left_take-1_trimmed-ball-hits-duck.mp4",
+                "video_results": 0.40657690167427063
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000043_0137_full-videos_30FPS_perspective-center_take-1_trimmed-paper-in-water.mp4",
+                "video_results": 0.5346289873123169
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000037_0121_full-videos_30FPS_perspective-left_take-1_trimmed-mirror-teapot-rotate.mp4",
+                "video_results": 0.47690171003341675
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000024_0010_full-videos_30FPS_perspective-left_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": 0.4136669337749481
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000031_0004_full-videos_30FPS_perspective-left_take-1_trimmed-ball-behind-rotating-paper.mp4",
+                "video_results": 0.3794498145580292
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000030_0066_full-videos_30FPS_perspective-right_take-1_trimmed-fill-glass-red-drink.mp4",
+                "video_results": 0.686644434928894
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000047_0150_full-videos_30FPS_perspective-right_take-1_trimmed-roll-front-box.mp4",
+                "video_results": 0.34559592604637146
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000025_0039_full-videos_30FPS_perspective-right_take-1_trimmed-blow-balloon.mp4",
+                "video_results": 0.4394380748271942
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000092_0097_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-transparent-peakaboo.mp4",
+                "video_results": 0.38680073618888855
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000100_0089_full-videos_30FPS_perspective-center_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": 0.5745834708213806
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000099_0018_full-videos_30FPS_perspective-right_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": 0.43308621644973755
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000059_0017_full-videos_30FPS_perspective-center_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": 0.4452066123485565
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000029_0144_full-videos_30FPS_perspective-right_take-1_trimmed-potato-in-water.mp4",
+                "video_results": 0.5413671135902405
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000022_0053_full-videos_30FPS_perspective-center_take-1_trimmed-double-cradle.mp4",
+                "video_results": 0.43832266330718994
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000065_0187_full-videos_30FPS_perspective-left_take-1_trimmed-weight-on-ceramic.mp4",
+                "video_results": 0.5326194763183594
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000061_0108_full-videos_30FPS_perspective-right_take-1_trimmed-marble-run-y.mp4",
+                "video_results": 0.37228572368621826
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000006_0180_full-videos_30FPS_perspective-right_take-1_trimmed-two-balls-pass.mp4",
+                "video_results": 0.36668530106544495
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000013_0016_full-videos_30FPS_perspective-left_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": 0.4390545189380646
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000005_0172_full-videos_30FPS_perspective-left_take-1_trimmed-stable-blocks.mp4",
+                "video_results": 0.4584241211414337
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000012_0067_full-videos_30FPS_perspective-left_take-1_trimmed-glass-stays-same.mp4",
+                "video_results": 0.7019625902175903
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000021_0183_full-videos_30FPS_perspective-right_take-1_trimmed-unstable-block-stack.mp4",
+                "video_results": 0.43939268589019775
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000062_0014_full-videos_30FPS_perspective-center_take-1_trimmed-ball-in-basket.mp4",
+                "video_results": 0.42341312766075134
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000081_0096_full-videos_30FPS_perspective-right_take-1_trimmed-magnet-domino.mp4",
+                "video_results": 0.4868040382862091
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000064_0047_full-videos_30FPS_perspective-center_take-1_trimmed-domino-in-juice.mp4",
+                "video_results": 0.4512224495410919
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000018_0103_full-videos_30FPS_perspective-left_take-1_trimmed-marble-run-x.mp4",
+                "video_results": 0.4099242687225342
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000058_0140_full-videos_30FPS_perspective-center_take-1_trimmed-paper-smoke.mp4",
+                "video_results": 0.3690587878227234
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000098_0138_full-videos_30FPS_perspective-right_take-1_trimmed-paper-in-water.mp4",
+                "video_results": 0.5278776288032532
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000001_0122_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-teapot-rotate.mp4",
+                "video_results": 0.4994460344314575
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000076_0185_full-videos_30FPS_perspective-center_take-1_trimmed-water-in-juice.mp4",
+                "video_results": 0.7004632949829102
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000069_0167_full-videos_30FPS_perspective-center_take-1_trimmed-smiley-ball-rotates.mp4",
+                "video_results": 0.4115426242351532
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000085_0075_full-videos_30FPS_perspective-right_take-1_trimmed-light-on-block.mp4",
+                "video_results": 0.46776971220970154
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000044_0174_full-videos_30FPS_perspective-right_take-1_trimmed-stable-blocks.mp4",
+                "video_results": 0.4593034088611603
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000026_0160_full-videos_30FPS_perspective-left_take-1_trimmed-single-cradle.mp4",
+                "video_results": 0.42087510228157043
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000072_0157_full-videos_30FPS_perspective-left_take-1_trimmed-silk-cover.mp4",
+                "video_results": 0.4298478662967682
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000068_0147_full-videos_30FPS_perspective-right_take-1_trimmed-roll-behind-box.mp4",
+                "video_results": 0.40748366713523865
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000011_0034_full-videos_30FPS_perspective-left_take-1_trimmed-block-domino.mp4",
+                "video_results": 0.4349294900894165
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000090_0135_full-videos_30FPS_perspective-right_take-1_trimmed-paper-fall-water.mp4",
+                "video_results": 0.4487263262271881
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000075_0072_full-videos_30FPS_perspective-right_take-1_trimmed-juice-in-water.mp4",
+                "video_results": 0.6640873551368713
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000087_0028_full-videos_30FPS_perspective-left_take-1_trimmed-ball-train.mp4",
+                "video_results": 0.45567038655281067
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000093_0112_full-videos_30FPS_perspective-left_take-1_trimmed-match-blows-balloon.mp4",
+                "video_results": 0.3931353688240051
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000073_0107_full-videos_30FPS_perspective-center_take-1_trimmed-marble-run-y.mp4",
+                "video_results": 0.3658545911312103
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000051_0165_full-videos_30FPS_perspective-right_take-1_trimmed-siphon.mp4",
+                "video_results": 0.42410898208618164
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000049_0077_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-mug.mp4",
+                "video_results": 0.45340800285339355
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000015_0190_full-videos_30FPS_perspective-left_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": 0.4639147222042084
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000055_0045_full-videos_30FPS_perspective-right_take-1_trimmed-cut-paper.mp4",
+                "video_results": 0.34010523557662964
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000014_0074_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-block.mp4",
+                "video_results": 0.43905365467071533
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000027_0181_full-videos_30FPS_perspective-left_take-1_trimmed-unstable-block-stack.mp4",
+                "video_results": 0.42946165800094604
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000084_0064_full-videos_30FPS_perspective-left_take-1_trimmed-fill-glass-red-drink.mp4",
+                "video_results": 0.7102401852607727
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000054_0061_full-videos_30FPS_perspective-left_take-1_trimmed-duck-static.mp4",
+                "video_results": 0.46268752217292786
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000067_0050_full-videos_30FPS_perspective-center_take-1_trimmed-dominos-with-space.mp4",
+                "video_results": 0.4170675277709961
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000070_0011_full-videos_30FPS_perspective-center_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": 0.35932624340057373
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000091_0168_full-videos_30FPS_perspective-right_take-1_trimmed-smiley-ball-rotates.mp4",
+                "video_results": 0.44356769323349
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000048_0090_full-videos_30FPS_perspective-right_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": 0.5512434840202332
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000041_0098_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-transparent-peakaboo.mp4",
+                "video_results": 0.4068774878978729
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000079_0116_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-ball-fall.mp4",
+                "video_results": 0.4338887631893158
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000010_0079_full-videos_30FPS_perspective-left_take-1_trimmed-light-on-mug-block.mp4",
+                "video_results": 0.46134263277053833
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000019_0055_full-videos_30FPS_perspective-left_take-1_trimmed-duck-and-dominos.mp4",
+                "video_results": 0.443529337644577
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000077_0131_full-videos_30FPS_perspective-center_take-1_trimmed-paint-on-glass.mp4",
+                "video_results": 0.34046539664268494
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000009_0100_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-wrench.mp4",
+                "video_results": 0.4913427531719208
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000086_0132_full-videos_30FPS_perspective-right_take-1_trimmed-paint-on-glass.mp4",
+                "video_results": 0.3077194392681122
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000060_0191_full-videos_30FPS_perspective-center_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": 0.45840856432914734
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000078_0192_full-videos_30FPS_perspective-right_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": 0.44917210936546326
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000038_0095_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-domino.mp4",
+                "video_results": 0.5229196548461914
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000032_0196_full-videos_30FPS_perspective-left_take-1_trimmed-weight-protects-duck.mp4",
+                "video_results": 0.43224582076072693
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000036_0040_full-videos_30FPS_perspective-left_take-1_trimmed-cut-orange.mp4",
+                "video_results": 0.5213481187820435
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000039_0156_full-videos_30FPS_perspective-right_take-1_trimmed-rolling-reflection.mp4",
+                "video_results": 0.4159315824508667
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000017_0083_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-statue.mp4",
+                "video_results": 0.5023661255836487
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000045_0114_full-videos_30FPS_perspective-right_take-1_trimmed-match-blows-balloon.mp4",
+                "video_results": 0.391803503036499
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000042_0118_full-videos_30FPS_perspective-left_take-1_trimmed-mirror-ball-rotate.mp4",
+                "video_results": 0.43209347128868103
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000007_0175_full-videos_30FPS_perspective-left_take-1_trimmed-teapot-rotates.mp4",
+                "video_results": 0.5734589695930481
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000008_0044_full-videos_30FPS_perspective-center_take-1_trimmed-cut-paper.mp4",
+                "video_results": 0.360338419675827
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000016_0029_full-videos_30FPS_perspective-center_take-1_trimmed-ball-train.mp4",
+                "video_results": 0.39131641387939453
+            }
+        ]
+    ],
+    "imaging_quality": [
+        0.6790043803819024,
+        [
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000056_0170_full-videos_30FPS_perspective-center_take-1_trimmed-solid-ball-peakaboo.mp4",
+                "video_results": 71.57470480600993
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000028_0070_full-videos_30FPS_perspective-left_take-1_trimmed-juice-in-water.mp4",
+                "video_results": 75.54782876968383
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000023_0151_full-videos_30FPS_perspective-left_take-1_trimmed-roll-in-box.mp4",
+                "video_results": 62.590263557434085
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000074_0128_full-videos_30FPS_perspective-center_take-1_trimmed-napkin-soak.mp4",
+                "video_results": 65.56664096514383
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000095_0101_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-wrench.mp4",
+                "video_results": 71.93626941045126
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000082_0001_full-videos_30FPS_perspective-left_take-1_trimmed-ball-and-block-fall.mp4",
+                "video_results": 74.29103042284648
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000004_0025_full-videos_30FPS_perspective-left_take-1_trimmed-ball-rolls-on-glass.mp4",
+                "video_results": 65.62290606498718
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000097_0088_full-videos_30FPS_perspective-left_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": 77.9220390955607
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000053_0177_full-videos_30FPS_perspective-right_take-1_trimmed-teapot-rotates.mp4",
+                "video_results": 76.05879837671915
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000096_0092_full-videos_30FPS_perspective-center_take-1_trimmed-lit-candle.mp4",
+                "video_results": 68.77276570002238
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000094_0002_full-videos_30FPS_perspective-center_take-1_trimmed-ball-and-block-fall.mp4",
+                "video_results": 73.0617533047994
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000002_0161_full-videos_30FPS_perspective-center_take-1_trimmed-single-cradle.mp4",
+                "video_results": 73.90656642913818
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000020_0146_full-videos_30FPS_perspective-center_take-1_trimmed-roll-behind-box.mp4",
+                "video_results": 65.88414514859518
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000003_0093_full-videos_30FPS_perspective-right_take-1_trimmed-lit-candle.mp4",
+                "video_results": 65.41291147867838
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000088_0019_full-videos_30FPS_perspective-left_take-1_trimmed-ball-ramp.mp4",
+                "video_results": 69.15014305114747
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000080_0063_full-videos_30FPS_perspective-right_take-1_trimmed-duck-static.mp4",
+                "video_results": 64.57483617464702
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000089_0009_full-videos_30FPS_perspective-right_take-1_trimmed-ball-hits-duck.mp4",
+                "video_results": 60.62187218666077
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000066_0073_full-videos_30FPS_perspective-left_take-1_trimmed-light-on-block.mp4",
+                "video_results": 48.24754994710286
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000033_0195_full-videos_30FPS_perspective-right_take-1_trimmed-weight-on-pillow.mp4",
+                "video_results": 73.92478434244792
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000040_0068_full-videos_30FPS_perspective-center_take-1_trimmed-glass-stays-same.mp4",
+                "video_results": 75.98122053146362
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000052_0109_full-videos_30FPS_perspective-left_take-1_trimmed-match.mp4",
+                "video_results": 67.74400466283163
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000035_0042_full-videos_30FPS_perspective-right_take-1_trimmed-cut-orange.mp4",
+                "video_results": 77.3940533320109
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000046_0149_full-videos_30FPS_perspective-center_take-1_trimmed-roll-front-box.mp4",
+                "video_results": 64.67080637613932
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000050_0012_full-videos_30FPS_perspective-right_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": 59.79657498995463
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000071_0094_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-domino.mp4",
+                "video_results": 70.06265535354615
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000057_0021_full-videos_30FPS_perspective-right_take-1_trimmed-ball-ramp.mp4",
+                "video_results": 61.707480907440186
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000063_0119_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-ball-rotate.mp4",
+                "video_results": 71.89866193135579
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000083_0013_full-videos_30FPS_perspective-left_take-1_trimmed-ball-in-basket.mp4",
+                "video_results": 75.37983554204305
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000034_0007_full-videos_30FPS_perspective-left_take-1_trimmed-ball-hits-duck.mp4",
+                "video_results": 57.74437351226807
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000043_0137_full-videos_30FPS_perspective-center_take-1_trimmed-paper-in-water.mp4",
+                "video_results": 65.01185790697734
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000037_0121_full-videos_30FPS_perspective-left_take-1_trimmed-mirror-teapot-rotate.mp4",
+                "video_results": 76.11618388493856
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000024_0010_full-videos_30FPS_perspective-left_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": 61.743720595041914
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000031_0004_full-videos_30FPS_perspective-left_take-1_trimmed-ball-behind-rotating-paper.mp4",
+                "video_results": 73.62268940607707
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000030_0066_full-videos_30FPS_perspective-right_take-1_trimmed-fill-glass-red-drink.mp4",
+                "video_results": 77.19191309611003
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000047_0150_full-videos_30FPS_perspective-right_take-1_trimmed-roll-front-box.mp4",
+                "video_results": 62.568142859141034
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000025_0039_full-videos_30FPS_perspective-right_take-1_trimmed-blow-balloon.mp4",
+                "video_results": 65.0160615126292
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000092_0097_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-transparent-peakaboo.mp4",
+                "video_results": 69.58341398239136
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000100_0089_full-videos_30FPS_perspective-center_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": 75.69442729949951
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000099_0018_full-videos_30FPS_perspective-right_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": 75.57231451670329
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000059_0017_full-videos_30FPS_perspective-center_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": 72.35381437937419
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000029_0144_full-videos_30FPS_perspective-right_take-1_trimmed-potato-in-water.mp4",
+                "video_results": 61.70432364145915
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000022_0053_full-videos_30FPS_perspective-center_take-1_trimmed-double-cradle.mp4",
+                "video_results": 70.27988160451254
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000065_0187_full-videos_30FPS_perspective-left_take-1_trimmed-weight-on-ceramic.mp4",
+                "video_results": 71.70609718958536
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000061_0108_full-videos_30FPS_perspective-right_take-1_trimmed-marble-run-y.mp4",
+                "video_results": 71.06808500289917
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000006_0180_full-videos_30FPS_perspective-right_take-1_trimmed-two-balls-pass.mp4",
+                "video_results": 58.08941211700439
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000013_0016_full-videos_30FPS_perspective-left_take-1_trimmed-ball-in-sand.mp4",
+                "video_results": 72.80636431376139
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000005_0172_full-videos_30FPS_perspective-left_take-1_trimmed-stable-blocks.mp4",
+                "video_results": 70.1183562596639
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000012_0067_full-videos_30FPS_perspective-left_take-1_trimmed-glass-stays-same.mp4",
+                "video_results": 78.23134571711222
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000021_0183_full-videos_30FPS_perspective-right_take-1_trimmed-unstable-block-stack.mp4",
+                "video_results": 66.13918798764547
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000062_0014_full-videos_30FPS_perspective-center_take-1_trimmed-ball-in-basket.mp4",
+                "video_results": 71.62390931447347
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000081_0096_full-videos_30FPS_perspective-right_take-1_trimmed-magnet-domino.mp4",
+                "video_results": 72.94091520309448
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000064_0047_full-videos_30FPS_perspective-center_take-1_trimmed-domino-in-juice.mp4",
+                "video_results": 66.55344613393147
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000018_0103_full-videos_30FPS_perspective-left_take-1_trimmed-marble-run-x.mp4",
+                "video_results": 72.28861958185831
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000058_0140_full-videos_30FPS_perspective-center_take-1_trimmed-paper-smoke.mp4",
+                "video_results": 59.27626970609029
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000098_0138_full-videos_30FPS_perspective-right_take-1_trimmed-paper-in-water.mp4",
+                "video_results": 62.19874442418416
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000001_0122_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-teapot-rotate.mp4",
+                "video_results": 77.4363271077474
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000076_0185_full-videos_30FPS_perspective-center_take-1_trimmed-water-in-juice.mp4",
+                "video_results": 73.6039490699768
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000069_0167_full-videos_30FPS_perspective-center_take-1_trimmed-smiley-ball-rotates.mp4",
+                "video_results": 70.13963610331217
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000085_0075_full-videos_30FPS_perspective-right_take-1_trimmed-light-on-block.mp4",
+                "video_results": 56.776506185531616
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000044_0174_full-videos_30FPS_perspective-right_take-1_trimmed-stable-blocks.mp4",
+                "video_results": 69.16603344281515
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000026_0160_full-videos_30FPS_perspective-left_take-1_trimmed-single-cradle.mp4",
+                "video_results": 70.42450838088989
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000072_0157_full-videos_30FPS_perspective-left_take-1_trimmed-silk-cover.mp4",
+                "video_results": 73.17204910914103
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000068_0147_full-videos_30FPS_perspective-right_take-1_trimmed-roll-behind-box.mp4",
+                "video_results": 61.438026428222656
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000011_0034_full-videos_30FPS_perspective-left_take-1_trimmed-block-domino.mp4",
+                "video_results": 67.36378960609436
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000090_0135_full-videos_30FPS_perspective-right_take-1_trimmed-paper-fall-water.mp4",
+                "video_results": 65.99103679656983
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000075_0072_full-videos_30FPS_perspective-right_take-1_trimmed-juice-in-water.mp4",
+                "video_results": 74.89287999471028
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000087_0028_full-videos_30FPS_perspective-left_take-1_trimmed-ball-train.mp4",
+                "video_results": 62.383460982640585
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000093_0112_full-videos_30FPS_perspective-left_take-1_trimmed-match-blows-balloon.mp4",
+                "video_results": 65.74137964248658
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000073_0107_full-videos_30FPS_perspective-center_take-1_trimmed-marble-run-y.mp4",
+                "video_results": 70.06802336374919
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000051_0165_full-videos_30FPS_perspective-right_take-1_trimmed-siphon.mp4",
+                "video_results": 54.69989461898804
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000049_0077_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-mug.mp4",
+                "video_results": 49.2620268980662
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000015_0190_full-videos_30FPS_perspective-left_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": 71.19116821289063
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000055_0045_full-videos_30FPS_perspective-right_take-1_trimmed-cut-paper.mp4",
+                "video_results": 76.29200808207194
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000014_0074_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-block.mp4",
+                "video_results": 56.63243746757507
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000027_0181_full-videos_30FPS_perspective-left_take-1_trimmed-unstable-block-stack.mp4",
+                "video_results": 60.94873493512471
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000084_0064_full-videos_30FPS_perspective-left_take-1_trimmed-fill-glass-red-drink.mp4",
+                "video_results": 76.54174299240113
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000054_0061_full-videos_30FPS_perspective-left_take-1_trimmed-duck-static.mp4",
+                "video_results": 68.24435520172119
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000067_0050_full-videos_30FPS_perspective-center_take-1_trimmed-dominos-with-space.mp4",
+                "video_results": 66.90804271697998
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000070_0011_full-videos_30FPS_perspective-center_take-1_trimmed-ball-hits-nothing.mp4",
+                "video_results": 63.09253905614217
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000091_0168_full-videos_30FPS_perspective-right_take-1_trimmed-smiley-ball-rotates.mp4",
+                "video_results": 72.36989336013794
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000048_0090_full-videos_30FPS_perspective-right_take-1_trimmed-liquid-overfill.mp4",
+                "video_results": 74.50578568776449
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000041_0098_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-transparent-peakaboo.mp4",
+                "video_results": 68.99696726799012
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000079_0116_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-ball-fall.mp4",
+                "video_results": 70.75829089482626
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000010_0079_full-videos_30FPS_perspective-left_take-1_trimmed-light-on-mug-block.mp4",
+                "video_results": 46.23941844304402
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000019_0055_full-videos_30FPS_perspective-left_take-1_trimmed-duck-and-dominos.mp4",
+                "video_results": 74.45965992609659
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000077_0131_full-videos_30FPS_perspective-center_take-1_trimmed-paint-on-glass.mp4",
+                "video_results": 58.34074139595032
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000009_0100_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-wrench.mp4",
+                "video_results": 67.90354029337566
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000086_0132_full-videos_30FPS_perspective-right_take-1_trimmed-paint-on-glass.mp4",
+                "video_results": 61.933950662612915
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000060_0191_full-videos_30FPS_perspective-center_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": 68.22320370674133
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000078_0192_full-videos_30FPS_perspective-right_take-1_trimmed-weight-on-paper.mp4",
+                "video_results": 68.90838295618693
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000038_0095_full-videos_30FPS_perspective-center_take-1_trimmed-magnet-domino.mp4",
+                "video_results": 73.25817282994588
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000032_0196_full-videos_30FPS_perspective-left_take-1_trimmed-weight-protects-duck.mp4",
+                "video_results": 55.01486245791117
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000036_0040_full-videos_30FPS_perspective-left_take-1_trimmed-cut-orange.mp4",
+                "video_results": 75.57794504165649
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000039_0156_full-videos_30FPS_perspective-right_take-1_trimmed-rolling-reflection.mp4",
+                "video_results": 70.02080640792846
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000017_0083_full-videos_30FPS_perspective-center_take-1_trimmed-light-on-statue.mp4",
+                "video_results": 45.4938133875529
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000045_0114_full-videos_30FPS_perspective-right_take-1_trimmed-match-blows-balloon.mp4",
+                "video_results": 64.85679170290629
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000042_0118_full-videos_30FPS_perspective-left_take-1_trimmed-mirror-ball-rotate.mp4",
+                "video_results": 72.85246982574463
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000007_0175_full-videos_30FPS_perspective-left_take-1_trimmed-teapot-rotates.mp4",
+                "video_results": 75.18287312189737
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000008_0044_full-videos_30FPS_perspective-center_take-1_trimmed-cut-paper.mp4",
+                "video_results": 72.63702414830526
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000016_0029_full-videos_30FPS_perspective-center_take-1_trimmed-ball-train.mp4",
+                "video_results": 63.55167989730835
+            }
+        ]
+    ]
+}

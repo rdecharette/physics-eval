@@ -18,7 +18,7 @@ submit_surprise_job() {
     dataset_name="$(basename "$video_list")"
     dataset_name="${dataset_name%.txt}"
 
-    local job_name="$dataset_name"
+    local job_name="s_$dataset_name"
     local slurm_log_dir="$ROOT_DIR/logs/surprise"
 
     mkdir -p "$slurm_log_dir"

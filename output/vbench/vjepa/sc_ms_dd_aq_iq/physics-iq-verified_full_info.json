@@ -1,0 +1,132 @@
+[
+    {
+        "prompt_en": "000004_0025_full-videos_30FPS_perspective-left_take-1_trimmed-ball-rolls-on-glass",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000004_0025_full-videos_30FPS_perspective-left_take-1_trimmed-ball-rolls-on-glass.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000002_0161_full-videos_30FPS_perspective-center_take-1_trimmed-single-cradle",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000002_0161_full-videos_30FPS_perspective-center_take-1_trimmed-single-cradle.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000003_0093_full-videos_30FPS_perspective-right_take-1_trimmed-lit-candle",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000003_0093_full-videos_30FPS_perspective-right_take-1_trimmed-lit-candle.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000006_0180_full-videos_30FPS_perspective-right_take-1_trimmed-two-balls-pass",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000006_0180_full-videos_30FPS_perspective-right_take-1_trimmed-two-balls-pass.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000005_0172_full-videos_30FPS_perspective-left_take-1_trimmed-stable-blocks",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000005_0172_full-videos_30FPS_perspective-left_take-1_trimmed-stable-blocks.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000001_0122_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-teapot-rotate",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000001_0122_full-videos_30FPS_perspective-center_take-1_trimmed-mirror-teapot-rotate.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000010_0079_full-videos_30FPS_perspective-left_take-1_trimmed-light-on-mug-block",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000010_0079_full-videos_30FPS_perspective-left_take-1_trimmed-light-on-mug-block.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000009_0100_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-wrench",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000009_0100_full-videos_30FPS_perspective-left_take-1_trimmed-magnet-wrench.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000007_0175_full-videos_30FPS_perspective-left_take-1_trimmed-teapot-rotates",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000007_0175_full-videos_30FPS_perspective-left_take-1_trimmed-teapot-rotates.mp4"
+        ]
+    },
+    {
+        "prompt_en": "000008_0044_full-videos_30FPS_perspective-center_take-1_trimmed-cut-paper",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physics-iq-verified/000008_0044_full-videos_30FPS_perspective-center_take-1_trimmed-cut-paper.mp4"
+        ]
+    }
+]
