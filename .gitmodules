@@ -1,0 +1,6 @@
+[submodule "third_party/WMReward"]
+	path = third_party/WMReward
+	url = https://github.com/facebookresearch/WMReward.git
+[submodule "third_party/clean-fid"]
+	path = third_party/clean-fid
+	url = https://github.com/GaParmar/clean-fid.git
