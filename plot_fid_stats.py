@@ -86,9 +86,9 @@ def main() -> None:
 
     dataset_rows: list[tuple[float, str, list[float]]] = []
 
-    print(f"Found {len(files)} FID files under: {path}")
+    print(f"\n\nFound {len(files)} FID files under: {path}")
     for file_path in files:
-        print(f"Processing {file_path}...")
+        # print(f"Processing {file_path}...")
         try:
             dataset, stats_name = extract_dataset_info(file_path)
         except ValueError:
@@ -102,7 +102,7 @@ def main() -> None:
 
         label = f"{dataset} (f={num_frames}, v={num_videos})"
         dataset_rows.append((fid, label, [fid]))
-        print(f"{label} [{stats_name}]: fid={fid:.6f}")
+        print(f"{label} [{stats_name}]: fid={fid:.4f}")
 
     if not dataset_rows:
         raise SystemExit("No valid FID datasets found after parsing.")

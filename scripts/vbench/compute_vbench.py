@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import argparse
+import importlib.resources
 import os
 import shutil
 import time
+import traceback
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -13,12 +15,9 @@ DEVICE = "cuda"
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CACHE_ROOT = (REPO_ROOT / "cache" / "vbench").resolve()
-FULL_INFO_PATH = Path(
-  "/nfs/data/workspaces/rdechare/miniconda3/envs/wmreward-score/lib/python3.10/site-packages/vbench/VBench_full_info.json"
-)
 DEFAULT_DIMENSION_LIST = [
   "subject_consistency",
-  # "background_consistency",
+  "background_consistency",
   "motion_smoothness",
   "dynamic_degree",
   "aesthetic_quality",
@@ -27,6 +26,11 @@ DEFAULT_DIMENSION_LIST = [
 
 LOCK_FILENAME = ".lock"
 LOCK_POLL_INTERVAL_SECONDS = 10
+
+FULL_INFO_PATH = importlib.resources.files("vbench").joinpath("VBench_full_info.json")
+if not FULL_INFO_PATH.is_file():
+  raise FileNotFoundError("Could not locate VBench_full_info.json in installed package 'vbench'.")
+
 
 @contextmanager
 def dataset_cache_lock(cache_dir: Path):
@@ -77,18 +81,23 @@ def build_video_cache(video_list_path: Path, dataset: str, eval_max: int | None 
   if eval_max is not None and eval_max > 0:
     video_paths = video_paths[:eval_max]
 
-  for index, video_path in enumerate(video_paths, start=1):
+  for index, video_path in enumerate(video_paths):
     source_path = Path(video_path)
     if not source_path.is_absolute():
       source_path = (REPO_ROOT / source_path).resolve()
 
     source_path = resolve_path(source_path, format=format)
     if not source_path.exists():
-      raise FileNotFoundError(f"Video not found: {source_path}")
+      print(f"Video not found: {source_path}")
+      continue
 
     link_name = f"{index:06d}_{source_path.stem}{source_path.suffix}"
     link_path = cache_dir / link_name
+
     link_path.symlink_to(source_path)
+
+  if len(video_paths) == 0:
+    raise ValueError(f"No decodable videos available for dataset {dataset}")
 
   return cache_dir
 
@@ -96,26 +105,39 @@ def build_video_cache(video_list_path: Path, dataset: str, eval_max: int | None 
 def run_vbench(dataset: str, eval_max: int | None = None, format: str | None = None) -> None:
   video_list_path = REPO_ROOT / f"{dataset}.txt"
   cache_dir = REPO_ROOT / "cache" / "vbench" / dataset
+  failed_dimensions: list[str] = []
 
-  with dataset_cache_lock(cache_dir):
-    shutil.rmtree(cache_dir)
-    cache_dir = build_video_cache(video_list_path, dataset, eval_max=eval_max, format=format)
+  try:
+    with dataset_cache_lock(cache_dir):
+      shutil.rmtree(cache_dir)
+      cache_dir = build_video_cache(video_list_path, dataset, eval_max=eval_max, format=format)
 
-  dims_str = "_".join(["".join([s[0] for s in d.split("_")]) for d in DEFAULT_DIMENSION_LIST])
+    for dimension_name in DEFAULT_DIMENSION_LIST:
+      output_dir = REPO_ROOT / "output" / "vbench" / f"{format}" / dimension_name
+      output_dir.mkdir(parents=True, exist_ok=True)
 
-  output_dir = REPO_ROOT / "output" / "vbench" / f"{format}" / dims_str
-  output_dir.mkdir(parents=True, exist_ok=True)
+      print(f"Running VBench dimension '{dimension_name}' for dataset '{dataset}'")
+      try:
+        my_vbench = VBench(DEVICE, str(FULL_INFO_PATH), str(output_dir))
+        my_vbench.output_path = str(output_dir)
+        my_vbench.evaluate(
+          videos_path=str(cache_dir),
+          mode="custom_input",
+          name=dataset,
+          dimension_list=[dimension_name],
+        )
+      except Exception as exc:
+        failed_dimensions.append(dimension_name)
+        print(f"Dimension '{dimension_name}' failed for dataset '{dataset}': {exc}")
+        traceback.print_exc()
+        continue
+  finally:
+    shutil.rmtree(cache_dir, ignore_errors=True)
 
-  my_vbench = VBench(DEVICE, str(FULL_INFO_PATH), str(output_dir))
-  my_vbench.output_path = str(output_dir)
-  my_vbench.evaluate(
-    videos_path=str(cache_dir),
-    mode="custom_input",
-    name=dataset,
-    dimension_list=DEFAULT_DIMENSION_LIST,
-  )
-
-  shutil.rmtree(cache_dir)
+  if failed_dimensions:
+    print(f"Completed with failures for dataset '{dataset}'. Failed dimensions: {failed_dimensions}")
+  else:
+    print(f"Completed all dimensions successfully for dataset '{dataset}'.")
 
 
 def parse_eval_max(value: str | None) -> int | None:

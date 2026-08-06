@@ -1,0 +1,15 @@
+[
+    {
+        "prompt_en": "000000_output_Full",
+        "dimension": [
+            "subject_consistency",
+            "motion_smoothness",
+            "dynamic_degree",
+            "aesthetic_quality",
+            "imaging_quality"
+        ],
+        "video_list": [
+            "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/contphy/000000_output_Full.mp4"
+        ]
+    }
+]

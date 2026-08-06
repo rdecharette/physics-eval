@@ -43,49 +43,74 @@ def parse_vbench_results(file_path: Path) -> dict[str, tuple[float, list[float]]
     return parsed
 
 
-def collect_metric_stats(search_root: Path) -> tuple[list[dict[str, Any]], list[str]]:
-    files = sorted(search_root.glob("*_eval_results.json"))
-    if not files:
-        raise FileNotFoundError(f"No *_eval_results.json files found under {search_root}")
+def collect_metric_stats(search_root: Path, plot_missing_dimension: bool = False) -> tuple[list[dict[str, Any]], list[str]]:
+    dim_dirs = sorted([path for path in search_root.iterdir() if path.is_dir()])
+    if not dim_dirs:
+        raise FileNotFoundError(f"No dimension subfolders found under {search_root}")
 
-    dataset_stats: list[dict[str, Any]] = []
-    metric_names: list[str] | None = None
+    dataset_stats_by_name: dict[str, dict[str, Any]] = {}
+    metric_names_seen: set[str] = set()
 
-    for file_path in files:
-        dataset = file_path.stem.replace("_eval_results", "")
-        parsed = parse_vbench_results(file_path)
-        metric_names_for_file = sorted(parsed)
-        if metric_names is None:
-            metric_names = metric_names_for_file
+    for dim_dir in dim_dirs:
+        files = sorted(dim_dir.glob("*_eval_results.json"))
+        if not files:
+            continue
+
+        for file_path in files:
+            dataset = file_path.stem.replace("_eval_results", "")
+            parsed = parse_vbench_results(file_path)
+
+            if dataset not in dataset_stats_by_name:
+                dataset_stats_by_name[dataset] = {"name": dataset, "metrics": {}}
+
+            for metric_name, (summary_value, values) in parsed.items():
+                values_array = np.array(values, dtype=float)
+                if metric_name == "imaging_quality":
+                    values_array /= 100.0
+
+                mean_value = float(values_array.mean())
+                std_value = float(values_array.std(ddof=1)) if len(values_array) > 1 else 0.0
+                result_count = int(len(values_array))
+
+                dataset_stats_by_name[dataset]["metrics"][metric_name] = {
+                    "mean": mean_value,
+                    "std": std_value,
+                    "summary": summary_value,
+                    "count": result_count,
+                }
+                metric_names_seen.add(metric_name)
+
+    if not dataset_stats_by_name:
+        raise FileNotFoundError(f"No *_eval_results.json files found under dimension folders in {search_root}")
+
+    dataset_stats = [dataset_stats_by_name[name] for name in sorted(dataset_stats_by_name)]
+
+    common_metric_names: set[str] | None = None
+    for dataset in dataset_stats:
+        dataset_metric_names = set(dataset["metrics"].keys())
+        if common_metric_names is None:
+            common_metric_names = dataset_metric_names
         else:
-            metric_names = [name for name in metric_names if name in metric_names_for_file]
+            common_metric_names &= dataset_metric_names
 
-        dataset_metrics: dict[str, dict[str, float]] = {}
-        for metric_name, (summary_value, values) in parsed.items():
-            if metric_name not in metric_names:
-                continue
-            values_array = np.array(values, dtype=float)
-            if metric_name == "imaging_quality":
-                values_array /= 100.
+    if common_metric_names is None:
+        raise ValueError(f"No dimensions found across datasets in {search_root}")
 
-            mean_value = float(values_array.mean())
-            std_value = float(values_array.std(ddof=1)) if len(values_array) > 1 else 0.0
-            dataset_metrics[metric_name] = {
-                "mean": mean_value,
-                "std": std_value,
-                "summary": summary_value,
-            }
-            print(f"{dataset}, {metric_name}: mean={mean_value:.3f}, std={std_value:.3f}")
+    dropped_metrics = sorted(metric_names_seen - common_metric_names)
+    if plot_missing_dimension:
+        metric_names = sorted(metric_names_seen)
+        if dropped_metrics:
+            print(f"Keeping dimensions with missing dataset values: {dropped_metrics}")
+    else:
+        if not common_metric_names:
+            raise ValueError(f"No common dimensions found across datasets in {search_root}")
+        if dropped_metrics:
+            print(f"Skipping dimensions missing in some datasets: {dropped_metrics}")
+        metric_names = sorted(common_metric_names)
 
-        dataset_stats.append(
-            {
-                "name": dataset,
-                "metrics": dataset_metrics,
-            }
-        )
-
-    if metric_names is None or not metric_names:
-        raise ValueError(f"No usable metrics found in {search_root}")
+    if not plot_missing_dimension:
+        for dataset in dataset_stats:
+            dataset["metrics"] = {name: dataset["metrics"][name] for name in metric_names}
 
     return dataset_stats, metric_names
 
@@ -121,8 +146,9 @@ def print_dataset_metrics(dataset_stats: list[dict[str, Any]], metric_names: lis
         for metric_name in metric_names:
             metric = dataset["metrics"].get(metric_name)
             if metric is None:
+                print(f"  {metric_name}: MISSING")
                 continue
-            print(f"  {metric_name}: {metric['mean']:.3f} ({metric['std']:.3f})")
+            print(f"  {metric_name}: {metric['mean']:.3f} ({metric['std']:.3f}) [{metric['count']}]")
         print()
 
 
@@ -148,8 +174,11 @@ def plot_radar_chart(dataset_stats: list[dict[str, Any]], metric_names: list[str
     for dataset_idx, dataset in enumerate(dataset_stats):
         values_closed = np.r_[normalized[dataset_idx], normalized[dataset_idx, 0]]
         metric_mean = float(np.mean(normalized[dataset_idx]))
+        missing_dims = sum(1 for metric_name in metric_names if metric_name not in dataset["metrics"])
         label = f"{dataset['name']} ({metric_mean:.2f})"
-        ax.plot(angles, values_closed, color=colors[dataset_idx], linewidth=2, label=label)
+        if missing_dims > 0:
+            label += f" **MISSING {missing_dims}**"
+        ax.plot(angles, values_closed, color=colors[dataset_idx], linewidth=2, label=label, marker='s')
         ax.fill(angles, values_closed, color=colors[dataset_idx], alpha=0.15)
 
     ax.set_title("VBench metric radar chart")
@@ -171,12 +200,18 @@ def main() -> None:
         default=Path("output/vbench"),
         help="Directory containing VBench *_eval_results.json files",
     )
+    parser.add_argument(
+        "--missing-dimension",
+        action="store_true",
+        help="Plot all dimensions even if some datasets are missing them",
+    )
     args = parser.parse_args()
 
     search_root = args.path.resolve()
-    dataset_stats, metric_names = collect_metric_stats(search_root)
+    dataset_stats, metric_names = collect_metric_stats(search_root, plot_missing_dimension=args.missing_dimension)
     print_dataset_metrics(dataset_stats, metric_names)
-    output_path = search_root / "star_plot.png"
+    output_name = "star_plot_missing.png" if args.missing_dimension else "star_plot.png"
+    output_path = search_root / output_name
     plot_radar_chart(dataset_stats, metric_names, output_path)
     print(f"Saved plot to: {output_path}")
 

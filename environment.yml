@@ -1,0 +1,19 @@
+name: physics-eval
+
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - datasets
+  - pillow
+  - pip:
+      - -r environment_requirements.txt

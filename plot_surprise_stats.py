@@ -17,7 +17,6 @@ import pandas as pd
 def extract_dataset_info(file_path: Path) -> tuple[str, str]:
     stem = file_path.stem
     marker = "_surprises"
-    print(stem)
     if marker not in stem:
         raise ValueError(f"File does not match expected pattern: {stem}")
 
@@ -118,11 +117,11 @@ def main() -> None:
 
     print(f"Found {len(files)} surprise files under: {path}")
     for file_path in files:
-        print(f"Processing {file_path}...")
+        # print(f"Processing {file_path}...")
         try:
             dataset, params = extract_dataset_info(file_path)
         except ValueError as e:
-            print("baddata")
+            print(f"{file_path} baddata")
             print(e)
             continue
         
@@ -163,7 +162,7 @@ def main() -> None:
         label = f"{display_dataset} ({num_entries})\n[{params}]"
 
         dataset_rows.append((mean, label, values))
-        print(f"{label}: n={len(values)} mean={mean:.6f} std={std:.6f}")
+        print(f"{label}: n={len(values)} mean={mean:.4f} std={std:.4f}")
 
     if not dataset_rows:
         raise SystemExit("No valid surprise datasets found after parsing.")

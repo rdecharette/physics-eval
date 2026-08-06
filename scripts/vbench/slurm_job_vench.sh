@@ -64,7 +64,7 @@ echo "CUDA_VISIBLE_DEVICES: \${CUDA_VISIBLE_DEVICES:-unset}"
 echo "Effective CUDA_VISIBLE_DEVICES: \${CUDA_VISIBLE_DEVICES:-unset}"
 
 cd "$ROOT_DIR"
-"$q_conda_exe" run --no-capture-output -n wmreward-score python scripts/vbench/compute_vbench.py \
+"$q_conda_exe" run --no-capture-output -n physics-eval python -u scripts/vbench/compute_vbench.py \
     "$q_dataset_name" ${extra_args[@]}
 EOF
 )

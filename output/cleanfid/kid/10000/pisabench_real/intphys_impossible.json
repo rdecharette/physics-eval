@@ -1,0 +1,22 @@
+{
+  "dataset": "intphys_impossible",
+  "video_list": "/nfs/data/workspaces/rdechare/codes/physics-eval/intphys_impossible.txt",
+  "reference_path": "/nfs/data/datasets/imagenet/imagenet1k/imagenet-val",
+  "reference_set": "pisabench_real",
+  "fid": 0.15532394540040045,
+  "mode": "clean",
+  "model_name": "inception_v3",
+  "device": "cuda",
+  "num_workers": 16,
+  "batch_size": 32,
+  "frame_stride": 2,
+  "max_frames_per_video": 50,
+  "fid_max_frames": 10000,
+  "limit_videos": null,
+  "num_videos": 180,
+  "num_frames": 9000,
+  "num_extracted_frames": 9000,
+  "frames_dir": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/clean-fid/frames/intphys_impossible/stride-2_max-50",
+  "fid_frames_dir": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/clean-fid/frames/intphys_impossible/stride-2_max-50",
+  "computed_at": "2026-07-27T18:45:34.651475+02:00"
+}

@@ -1,0 +1,1807 @@
+{
+    "background_consistency": [
+        0.9718375814619975,
+        [
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000218_0202_img.mp4",
+                "video_results": 0.9390936616677136,
+                "video_sim": 186.879638671875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000133_0066_img.mp4",
+                "video_results": 0.9798786412531407,
+                "video_sim": 194.995849609375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000235_0030_img.mp4",
+                "video_results": 0.9340771239007538,
+                "video_sim": 185.88134765625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000139_0046_img.mp4",
+                "video_results": 0.995086516567211,
+                "video_sim": 198.022216796875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000190_0037_img.mp4",
+                "video_results": 0.9563147770100503,
+                "video_sim": 190.306640625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000029_0004_img.mp4",
+                "video_results": 0.9910489949748744,
+                "video_sim": 197.21875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000228_0010_img.mp4",
+                "video_results": 0.9488372035961056,
+                "video_sim": 188.818603515625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000017_0017_img.mp4",
+                "video_results": 0.9544009108040201,
+                "video_sim": 189.92578125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000164_0283_img.mp4",
+                "video_results": 0.9402775596733668,
+                "video_sim": 187.115234375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000033_0150_img.mp4",
+                "video_results": 0.989290937107412,
+                "video_sim": 196.868896484375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000192_0023_img.mp4",
+                "video_results": 0.9721176684202262,
+                "video_sim": 193.451416015625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000074_0107_img.mp4",
+                "video_results": 0.9829997153737438,
+                "video_sim": 195.616943359375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000046_0023_img.mp4",
+                "video_results": 0.9828475875471105,
+                "video_sim": 195.586669921875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000150_0003_img.mp4",
+                "video_results": 0.9824353702104272,
+                "video_sim": 195.504638671875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000129_0011_img.mp4",
+                "video_results": 0.9892185537060302,
+                "video_sim": 196.8544921875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000090_0036_img.mp4",
+                "video_results": 0.9811803156407035,
+                "video_sim": 195.2548828125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000052_0096_img.mp4",
+                "video_results": 0.9573686302606784,
+                "video_sim": 190.516357421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000273_0049_img.mp4",
+                "video_results": 0.9337937244817839,
+                "video_sim": 185.824951171875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000020_0034_img.mp4",
+                "video_results": 0.9676728368404522,
+                "video_sim": 192.56689453125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000128_0062_img.mp4",
+                "video_results": 0.9510933574120602,
+                "video_sim": 189.267578125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000035_0041_img.mp4",
+                "video_results": 0.9877083169755025,
+                "video_sim": 196.553955078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000069_0001_img.mp4",
+                "video_results": 0.933552037531407,
+                "video_sim": 185.77685546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000009_0009_img.mp4",
+                "video_results": 0.9889486494974874,
+                "video_sim": 196.80078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000079_0089_img.mp4",
+                "video_results": 0.9855822079145728,
+                "video_sim": 196.130859375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000298_0065_img.mp4",
+                "video_results": 0.9531372683731156,
+                "video_sim": 189.67431640625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000031_0030_img.mp4",
+                "video_results": 0.9915937107412061,
+                "video_sim": 197.3271484375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000230_0045_img.mp4",
+                "video_results": 0.9638119798209799,
+                "video_sim": 191.798583984375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000163_0003_img.mp4",
+                "video_results": 0.9937750274811558,
+                "video_sim": 197.76123046875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000102_0023_img.mp4",
+                "video_results": 0.9949515644629398,
+                "video_sim": 197.995361328125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000083_0030_img.mp4",
+                "video_results": 0.9837738497173367,
+                "video_sim": 195.77099609375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000284_0020_img.mp4",
+                "video_results": 0.9748903207443468,
+                "video_sim": 194.003173828125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000140_0052_img.mp4",
+                "video_results": 0.9494874273712312,
+                "video_sim": 188.947998046875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000293_0025_img.mp4",
+                "video_results": 0.9486016508322864,
+                "video_sim": 188.771728515625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000077_0049_img.mp4",
+                "video_results": 0.9480642960898241,
+                "video_sim": 188.664794921875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000096_0012_img.mp4",
+                "video_results": 0.9932303117148241,
+                "video_sim": 197.65283203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000239_0029_img.mp4",
+                "video_results": 0.9776335289729899,
+                "video_sim": 194.549072265625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000062_0011_img.mp4",
+                "video_results": 0.979206334406407,
+                "video_sim": 194.862060546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000095_0103_img.mp4",
+                "video_results": 0.9906281897770101,
+                "video_sim": 197.135009765625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000201_0033_img.mp4",
+                "video_results": 0.9941381713253769,
+                "video_sim": 197.83349609375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000001_0001_img.mp4",
+                "video_results": 0.9931763308731156,
+                "video_sim": 197.64208984375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000209_0029_img.mp4",
+                "video_results": 0.993183691896985,
+                "video_sim": 197.6435546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000071_0082_img.mp4",
+                "video_results": 0.9454449984296482,
+                "video_sim": 188.1435546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000036_0026_img.mp4",
+                "video_results": 0.989765723146985,
+                "video_sim": 196.96337890625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000182_0020_img.mp4",
+                "video_results": 0.9547431984139447,
+                "video_sim": 189.993896484375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000243_0106_img.mp4",
+                "video_results": 0.9350291496545227,
+                "video_sim": 186.07080078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000043_0232_img.mp4",
+                "video_results": 0.9441371898555276,
+                "video_sim": 187.88330078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000152_0087_img.mp4",
+                "video_results": 0.9600688991834171,
+                "video_sim": 191.0537109375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000279_0004_img.mp4",
+                "video_results": 0.9828647632694724,
+                "video_sim": 195.590087890625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000159_0042_img.mp4",
+                "video_results": 0.9923469888505025,
+                "video_sim": 197.47705078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000138_0042_img.mp4",
+                "video_results": 0.9900503494032663,
+                "video_sim": 197.02001953125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000278_0037_img.mp4",
+                "video_results": 0.9822268078674623,
+                "video_sim": 195.463134765625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000143_0036_img.mp4",
+                "video_results": 0.9785413885835427,
+                "video_sim": 194.729736328125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000072_0073_img.mp4",
+                "video_results": 0.9458854330244975,
+                "video_sim": 188.231201171875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000251_0022_img.mp4",
+                "video_results": 0.9332710917870602,
+                "video_sim": 185.720947265625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000221_0215_img.mp4",
+                "video_results": 0.9539052685301508,
+                "video_sim": 189.8271484375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000142_0003_img.mp4",
+                "video_results": 0.9570447452104272,
+                "video_sim": 190.451904296875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000258_0021_img.mp4",
+                "video_results": 0.9470779188913316,
+                "video_sim": 188.468505859375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000196_0070_img.mp4",
+                "video_results": 0.9551014349089196,
+                "video_sim": 190.065185546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000086_0249_img.mp4",
+                "video_results": 0.948954979978015,
+                "video_sim": 188.842041015625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000048_0067_img.mp4",
+                "video_results": 0.9750044166143216,
+                "video_sim": 194.02587890625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000032_0018_img.mp4",
+                "video_results": 0.956035058103015,
+                "video_sim": 190.2509765625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000041_0158_img.mp4",
+                "video_results": 0.9375036805119347,
+                "video_sim": 186.563232421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000103_0124_img.mp4",
+                "video_results": 0.9766066661432161,
+                "video_sim": 194.3447265625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000247_0008_img.mp4",
+                "video_results": 0.9729433299309045,
+                "video_sim": 193.61572265625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000210_0025_img.mp4",
+                "video_results": 0.9941148614164573,
+                "video_sim": 197.828857421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000198_0005_img.mp4",
+                "video_results": 0.9613215000785176,
+                "video_sim": 191.302978515625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000153_0012_img.mp4",
+                "video_results": 0.9498370760050251,
+                "video_sim": 189.017578125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000208_0004_img.mp4",
+                "video_results": 0.983589824120603,
+                "video_sim": 195.734375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000027_0011_img.mp4",
+                "video_results": 0.9393476169912061,
+                "video_sim": 186.93017578125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000257_0229_img.mp4",
+                "video_results": 0.9546487319409548,
+                "video_sim": 189.97509765625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000188_0010_img.mp4",
+                "video_results": 0.9771599697707286,
+                "video_sim": 194.454833984375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000261_0124_img.mp4",
+                "video_results": 0.9697204283134422,
+                "video_sim": 192.974365234375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000066_0002_img.mp4",
+                "video_results": 0.9964973794755025,
+                "video_sim": 198.302978515625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000294_0008_img.mp4",
+                "video_results": 0.9947822609139447,
+                "video_sim": 197.961669921875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000205_0061_img.mp4",
+                "video_results": 0.9325816092179648,
+                "video_sim": 185.583740234375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000172_0034_img.mp4",
+                "video_results": 0.9735567485866834,
+                "video_sim": 193.73779296875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000204_0122_img.mp4",
+                "video_results": 0.9476385835427136,
+                "video_sim": 188.580078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000007_0121_img.mp4",
+                "video_results": 0.9625802351601759,
+                "video_sim": 191.553466796875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000232_0063_img.mp4",
+                "video_results": 0.9742032918498744,
+                "video_sim": 193.866455078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000127_0013_img.mp4",
+                "video_results": 0.9821912295854272,
+                "video_sim": 195.4560546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000252_0120_img.mp4",
+                "video_results": 0.930960957129397,
+                "video_sim": 185.26123046875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000197_0011_img.mp4",
+                "video_results": 0.9453726150282663,
+                "video_sim": 188.129150390625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000056_0075_img.mp4",
+                "video_results": 0.9923494425251256,
+                "video_sim": 197.4775390625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000097_0110_img.mp4",
+                "video_results": 0.9593843239635679,
+                "video_sim": 190.91748046875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000044_0019_img.mp4",
+                "video_results": 0.9653308044126885,
+                "video_sim": 192.100830078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000236_0007_img.mp4",
+                "video_results": 0.9827825651695979,
+                "video_sim": 195.57373046875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000085_0079_img.mp4",
+                "video_results": 0.9247372114478644,
+                "video_sim": 184.022705078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000148_0007_img.mp4",
+                "video_results": 0.9715766331658291,
+                "video_sim": 193.34375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000285_0024_img.mp4",
+                "video_results": 0.9937664396199749,
+                "video_sim": 197.759521484375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000255_0030_img.mp4",
+                "video_results": 0.9681807474874372,
+                "video_sim": 192.66796875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000122_0012_img.mp4",
+                "video_results": 0.9406002178863065,
+                "video_sim": 187.179443359375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000055_0023_img.mp4",
+                "video_results": 0.9696566327732412,
+                "video_sim": 192.961669921875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000107_0016_img.mp4",
+                "video_results": 0.9950730213567839,
+                "video_sim": 198.01953125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000118_0074_img.mp4",
+                "video_results": 0.9925849952889447,
+                "video_sim": 197.5244140625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000061_0177_img.mp4",
+                "video_results": 0.9848559202261307,
+                "video_sim": 195.986328125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000147_0033_img.mp4",
+                "video_results": 0.992664739714196,
+                "video_sim": 197.540283203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000170_0009_img.mp4",
+                "video_results": 0.9915262346890703,
+                "video_sim": 197.313720703125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000116_0010_img.mp4",
+                "video_results": 0.9644744719692211,
+                "video_sim": 191.930419921875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000149_0017_img.mp4",
+                "video_results": 0.9496518235709799,
+                "video_sim": 188.980712890625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000008_0028_img.mp4",
+                "video_results": 0.9868924701633166,
+                "video_sim": 196.3916015625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000274_0082_img.mp4",
+                "video_results": 0.9910943879554021,
+                "video_sim": 197.227783203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000114_0111_img.mp4",
+                "video_results": 0.9337765487594221,
+                "video_sim": 185.821533203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000005_0034_img.mp4",
+                "video_results": 0.9934670913159548,
+                "video_sim": 197.699951171875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000270_0136_img.mp4",
+                "video_results": 0.9889793204302764,
+                "video_sim": 196.806884765625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000286_0049_img.mp4",
+                "video_results": 0.9953012130967337,
+                "video_sim": 198.06494140625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000004_0033_img.mp4",
+                "video_results": 0.994107500392588,
+                "video_sim": 197.827392578125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000063_0051_img.mp4",
+                "video_results": 0.9436354133951005,
+                "video_sim": 187.783447265625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000014_0046_img.mp4",
+                "video_results": 0.9872359846105527,
+                "video_sim": 196.4599609375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000135_0008_img.mp4",
+                "video_results": 0.9825040730998744,
+                "video_sim": 195.518310546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000189_0324_img.mp4",
+                "video_results": 0.9224332109767588,
+                "video_sim": 183.564208984375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000176_0013_img.mp4",
+                "video_results": 0.9884787708071608,
+                "video_sim": 196.707275390625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000266_0006_img.mp4",
+                "video_results": 0.9926610592022613,
+                "video_sim": 197.53955078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000006_0124_img.mp4",
+                "video_results": 0.9509216001884422,
+                "video_sim": 189.2333984375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000203_0020_img.mp4",
+                "video_results": 0.9539285784390703,
+                "video_sim": 189.831787109375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000217_0002_img.mp4",
+                "video_results": 0.9607547012405779,
+                "video_sim": 191.190185546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000003_0007_img.mp4",
+                "video_results": 0.9972960505653267,
+                "video_sim": 198.4619140625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000253_0325_img.mp4",
+                "video_results": 0.9593548798680904,
+                "video_sim": 190.91162109375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000117_0027_img.mp4",
+                "video_results": 0.9929469122958543,
+                "video_sim": 197.596435546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000155_0008_img.mp4",
+                "video_results": 0.9896442662531407,
+                "video_sim": 196.939208984375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000111_0013_img.mp4",
+                "video_results": 0.9916121133008794,
+                "video_sim": 197.330810546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000195_0010_img.mp4",
+                "video_results": 0.9787757145100503,
+                "video_sim": 194.7763671875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000099_0050_img.mp4",
+                "video_results": 0.9884235631281407,
+                "video_sim": 196.6962890625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000038_0285_img.mp4",
+                "video_results": 0.9468472734767588,
+                "video_sim": 188.422607421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000267_0029_img.mp4",
+                "video_results": 0.9612773339353015,
+                "video_sim": 191.294189453125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000200_0045_img.mp4",
+                "video_results": 0.9889842277795227,
+                "video_sim": 196.807861328125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000047_0150_img.mp4",
+                "video_results": 0.9945319861023869,
+                "video_sim": 197.911865234375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000130_0076_img.mp4",
+                "video_results": 0.9505437342964824,
+                "video_sim": 189.158203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000121_0011_img.mp4",
+                "video_results": 0.9882579400910804,
+                "video_sim": 196.663330078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000214_0012_img.mp4",
+                "video_results": 0.9926070783605527,
+                "video_sim": 197.52880859375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000277_0005_img.mp4",
+                "video_results": 0.9816121623743719,
+                "video_sim": 195.3408203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000175_0022_img.mp4",
+                "video_results": 1.0004637445037687,
+                "video_sim": 199.09228515625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000112_0033_img.mp4",
+                "video_results": 0.9950484846105527,
+                "video_sim": 198.0146484375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000185_0006_img.mp4",
+                "video_results": 0.9539114027167085,
+                "video_sim": 189.828369140625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000049_0145_img.mp4",
+                "video_results": 0.9359566386620602,
+                "video_sim": 186.25537109375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000297_0124_img.mp4",
+                "video_results": 0.9312247271513819,
+                "video_sim": 185.313720703125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000019_0190_img.mp4",
+                "video_results": 0.9515350188442211,
+                "video_sim": 189.35546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000093_0021_img.mp4",
+                "video_results": 0.9903877296639447,
+                "video_sim": 197.087158203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000125_0028_img.mp4",
+                "video_results": 0.9740757007694724,
+                "video_sim": 193.841064453125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000167_0014_img.mp4",
+                "video_results": 0.9944289317682161,
+                "video_sim": 197.891357421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000109_0267_img.mp4",
+                "video_results": 0.9672127728486181,
+                "video_sim": 192.475341796875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000013_0093_img.mp4",
+                "video_results": 0.9634930021199749,
+                "video_sim": 191.735107421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000227_0049_img.mp4",
+                "video_results": 0.9880530582600503,
+                "video_sim": 196.62255859375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000126_0015_img.mp4",
+                "video_results": 0.9877610709798995,
+                "video_sim": 196.564453125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000110_0005_img.mp4",
+                "video_results": 0.9848865911589196,
+                "video_sim": 195.992431640625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000171_0036_img.mp4",
+                "video_results": 0.9899632439541457,
+                "video_sim": 197.002685546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000015_0030_img.mp4",
+                "video_results": 0.9750277265232412,
+                "video_sim": 194.030517578125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000160_0297_img.mp4",
+                "video_results": 0.9270448924309045,
+                "video_sim": 184.48193359375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000231_0058_img.mp4",
+                "video_results": 0.9940719221105527,
+                "video_sim": 197.8203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000216_0048_img.mp4",
+                "video_results": 0.9823654404836684,
+                "video_sim": 195.49072265625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000084_0008_img.mp4",
+                "video_results": 0.9922046757223618,
+                "video_sim": 197.44873046875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000034_0160_img.mp4",
+                "video_results": 0.9370472970320352,
+                "video_sim": 186.472412109375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000250_0015_img.mp4",
+                "video_results": 0.9781328517587939,
+                "video_sim": 194.6484375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000151_0004_img.mp4",
+                "video_results": 0.9911226052135679,
+                "video_sim": 197.2333984375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000157_0015_img.mp4",
+                "video_results": 0.9592027520414573,
+                "video_sim": 190.88134765625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000241_0003_img.mp4",
+                "video_results": 0.9942277304491206,
+                "video_sim": 197.851318359375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000256_0019_img.mp4",
+                "video_results": 0.9412860199434674,
+                "video_sim": 187.31591796875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000057_0003_img.mp4",
+                "video_results": 0.9952276028580402,
+                "video_sim": 198.05029296875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000154_0045_img.mp4",
+                "video_results": 0.9941455323492462,
+                "video_sim": 197.8349609375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000092_0000_img.mp4",
+                "video_results": 0.9665686832600503,
+                "video_sim": 192.34716796875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000223_0095_img.mp4",
+                "video_results": 0.9667343062971105,
+                "video_sim": 192.380126953125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000295_0032_img.mp4",
+                "video_results": 0.9872004063285176,
+                "video_sim": 196.452880859375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000280_0292_img.mp4",
+                "video_results": 0.9358854820979899,
+                "video_sim": 186.2412109375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000169_0002_img.mp4",
+                "video_results": 0.9494224049937185,
+                "video_sim": 188.93505859375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000023_0024_img.mp4",
+                "video_results": 0.9641542674309045,
+                "video_sim": 191.86669921875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000156_0005_img.mp4",
+                "video_results": 0.9915875765546482,
+                "video_sim": 197.325927734375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000275_0000_img.mp4",
+                "video_results": 0.9861698629868091,
+                "video_sim": 196.247802734375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000073_0019_img.mp4",
+                "video_results": 0.9946006889918342,
+                "video_sim": 197.925537109375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000100_0245_img.mp4",
+                "video_results": 0.9580973716237438,
+                "video_sim": 190.661376953125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000296_0020_img.mp4",
+                "video_results": 0.9798614655307789,
+                "video_sim": 194.992431640625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000161_0050_img.mp4",
+                "video_results": 0.990742285646985,
+                "video_sim": 197.15771484375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000249_0020_img.mp4",
+                "video_results": 0.9849712429334171,
+                "video_sim": 196.00927734375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000124_0021_img.mp4",
+                "video_results": 0.9949319350659548,
+                "video_sim": 197.991455078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000040_0026_img.mp4",
+                "video_results": 0.9847982588724874,
+                "video_sim": 195.974853515625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000282_0051_img.mp4",
+                "video_results": 0.9801289160646985,
+                "video_sim": 195.045654296875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000224_0019_img.mp4",
+                "video_results": 0.9348316288473618,
+                "video_sim": 186.031494140625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000053_0085_img.mp4",
+                "video_results": 0.957783301271985,
+                "video_sim": 190.598876953125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000226_0038_img.mp4",
+                "video_results": 0.9926168930590452,
+                "video_sim": 197.53076171875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000289_0022_img.mp4",
+                "video_results": 0.9680801468278895,
+                "video_sim": 192.64794921875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000051_0038_img.mp4",
+                "video_results": 0.9723213234139447,
+                "video_sim": 193.491943359375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000141_0041_img.mp4",
+                "video_results": 0.9929407781092965,
+                "video_sim": 197.59521484375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000244_0308_img.mp4",
+                "video_results": 0.9344930217493719,
+                "video_sim": 185.964111328125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000104_0006_img.mp4",
+                "video_results": 0.9440979310615578,
+                "video_sim": 187.87548828125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000064_0323_img.mp4",
+                "video_results": 0.9358928431218593,
+                "video_sim": 186.24267578125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000242_0011_img.mp4",
+                "video_results": 0.9956066955873115,
+                "video_sim": 198.125732421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000119_0021_img.mp4",
+                "video_results": 0.9874592690012562,
+                "video_sim": 196.50439453125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000234_0276_img.mp4",
+                "video_results": 0.9467086408605527,
+                "video_sim": 188.39501953125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000011_0023_img.mp4",
+                "video_results": 0.9916022986023869,
+                "video_sim": 197.328857421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000089_0038_img.mp4",
+                "video_results": 0.9785757400282663,
+                "video_sim": 194.736572265625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000187_0001_img.mp4",
+                "video_results": 0.9901644452732412,
+                "video_sim": 197.042724609375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000081_0005_img.mp4",
+                "video_results": 0.9920734041300251,
+                "video_sim": 197.422607421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000060_0002_img.mp4",
+                "video_results": 0.9679832266802764,
+                "video_sim": 192.628662109375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000202_0006_img.mp4",
+                "video_results": 0.9816575553548995,
+                "video_sim": 195.349853515625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000018_0080_img.mp4",
+                "video_results": 0.9963808299309045,
+                "video_sim": 198.27978515625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000193_0017_img.mp4",
+                "video_results": 0.9823409037374372,
+                "video_sim": 195.48583984375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000215_0044_img.mp4",
+                "video_results": 0.9773341806689698,
+                "video_sim": 194.489501953125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000024_0020_img.mp4",
+                "video_results": 0.9588396081972361,
+                "video_sim": 190.80908203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000254_0004_img.mp4",
+                "video_results": 0.9932757046953518,
+                "video_sim": 197.661865234375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000211_0128_img.mp4",
+                "video_results": 0.9302113595320352,
+                "video_sim": 185.112060546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000180_0015_img.mp4",
+                "video_results": 0.9962323826162061,
+                "video_sim": 198.250244140625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000012_0054_img.mp4",
+                "video_results": 0.9860263230213567,
+                "video_sim": 196.21923828125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000179_0034_img.mp4",
+                "video_results": 0.9864569429177136,
+                "video_sim": 196.304931640625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000075_0036_img.mp4",
+                "video_results": 0.9958410215138191,
+                "video_sim": 198.17236328125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000042_0008_img.mp4",
+                "video_results": 0.9863072687657035,
+                "video_sim": 196.275146484375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000113_0024_img.mp4",
+                "video_results": 0.9644609767587939,
+                "video_sim": 191.927734375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000194_0000_img.mp4",
+                "video_results": 0.9904576593907035,
+                "video_sim": 197.10107421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000213_0019_img.mp4",
+                "video_results": 0.9937848421796482,
+                "video_sim": 197.76318359375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000058_0085_img.mp4",
+                "video_results": 0.9941479860238693,
+                "video_sim": 197.83544921875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000283_0027_img.mp4",
+                "video_results": 0.9918243561557789,
+                "video_sim": 197.373046875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000299_0083_img.mp4",
+                "video_results": 0.965789641567211,
+                "video_sim": 192.192138671875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000263_0132_img.mp4",
+                "video_results": 0.9957416476915829,
+                "video_sim": 198.152587890625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000245_0054_img.mp4",
+                "video_results": 0.9546045657977387,
+                "video_sim": 189.96630859375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000132_0054_img.mp4",
+                "video_results": 0.9980910411432161,
+                "video_sim": 198.6201171875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000131_0031_img.mp4",
+                "video_results": 0.9431140075376885,
+                "video_sim": 187.6796875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000059_0069_img.mp4",
+                "video_results": 0.9444831579773869,
+                "video_sim": 187.9521484375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000173_0004_img.mp4",
+                "video_results": 0.971360709798995,
+                "video_sim": 193.30078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000136_0212_img.mp4",
+                "video_results": 0.9166535804020101,
+                "video_sim": 182.4140625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000181_0084_img.mp4",
+                "video_results": 0.9186950376884422,
+                "video_sim": 182.8203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000262_0036_img.mp4",
+                "video_results": 0.9461209857883166,
+                "video_sim": 188.278076171875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000165_0020_img.mp4",
+                "video_results": 0.9940449316896985,
+                "video_sim": 197.81494140625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000000_0184_img.mp4",
+                "video_results": 0.9352180826005025,
+                "video_sim": 186.1083984375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000123_0001_img.mp4",
+                "video_results": 0.9925567780307789,
+                "video_sim": 197.518798828125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000088_0045_img.mp4",
+                "video_results": 0.9919409057003769,
+                "video_sim": 197.396240234375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000026_0015_img.mp4",
+                "video_results": 0.9630084013819096,
+                "video_sim": 191.638671875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000271_0004_img.mp4",
+                "video_results": 0.9830990891959799,
+                "video_sim": 195.63671875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000174_0015_img.mp4",
+                "video_results": 0.9749025891174623,
+                "video_sim": 194.005615234375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000260_0007_img.mp4",
+                "video_results": 0.9878813010364321,
+                "video_sim": 196.58837890625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000207_0216_img.mp4",
+                "video_results": 0.9624097047738693,
+                "video_sim": 191.51953125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000070_0001_img.mp4",
+                "video_results": 0.9820918557631909,
+                "video_sim": 195.436279296875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000206_0008_img.mp4",
+                "video_results": 0.9907091610395728,
+                "video_sim": 197.151123046875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000237_0109_img.mp4",
+                "video_results": 0.9464362829773869,
+                "video_sim": 188.3408203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000022_0045_img.mp4",
+                "video_results": 0.9580544323178392,
+                "video_sim": 190.65283203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000220_0025_img.mp4",
+                "video_results": 0.9944448806532663,
+                "video_sim": 197.89453125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000183_0000_img.mp4",
+                "video_results": 0.9947221458856784,
+                "video_sim": 197.94970703125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000082_0021_img.mp4",
+                "video_results": 0.9911152441896985,
+                "video_sim": 197.23193359375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000098_0008_img.mp4",
+                "video_results": 0.9825261561714824,
+                "video_sim": 195.522705078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000292_0011_img.mp4",
+                "video_results": 0.9907668223932161,
+                "video_sim": 197.16259765625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000002_0170_img.mp4",
+                "video_results": 0.9631212704145728,
+                "video_sim": 191.6611328125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000094_0025_img.mp4",
+                "video_results": 0.9846571725816583,
+                "video_sim": 195.94677734375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000288_0026_img.mp4",
+                "video_results": 0.9754313559987438,
+                "video_sim": 194.11083984375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000080_0050_img.mp4",
+                "video_results": 0.992398516017588,
+                "video_sim": 197.4873046875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000238_0005_img.mp4",
+                "video_results": 0.9544487574591709,
+                "video_sim": 189.935302734375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000068_0108_img.mp4",
+                "video_results": 0.9802160215138191,
+                "video_sim": 195.06298828125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000106_0186_img.mp4",
+                "video_results": 0.9466644747173367,
+                "video_sim": 188.38623046875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000076_0038_img.mp4",
+                "video_results": 0.9411265310929648,
+                "video_sim": 187.2841796875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000010_0048_img.mp4",
+                "video_results": 0.9893571863222361,
+                "video_sim": 196.882080078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000087_0012_img.mp4",
+                "video_results": 0.9472864812342965,
+                "video_sim": 188.510009765625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000158_0033_img.mp4",
+                "video_results": 0.9629666889133166,
+                "video_sim": 191.63037109375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000054_0007_img.mp4",
+                "video_results": 0.9835579263505025,
+                "video_sim": 195.72802734375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000065_0014_img.mp4",
+                "video_results": 0.9846019649026382,
+                "video_sim": 195.935791015625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000067_0045_img.mp4",
+                "video_results": 0.9507093573335427,
+                "video_sim": 189.191162109375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000137_0052_img.mp4",
+                "video_results": 0.9904625667399497,
+                "video_sim": 197.10205078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000028_0160_img.mp4",
+                "video_results": 0.9203561754082915,
+                "video_sim": 183.15087890625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000191_0137_img.mp4",
+                "video_results": 0.9922782859610553,
+                "video_sim": 197.46337890625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000290_0048_img.mp4",
+                "video_results": 0.9494052292713567,
+                "video_sim": 188.931640625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000115_0231_img.mp4",
+                "video_results": 0.9462767941268844,
+                "video_sim": 188.30908203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000225_0035_img.mp4",
+                "video_results": 0.9919580814227387,
+                "video_sim": 197.399658203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000162_0018_img.mp4",
+                "video_results": 0.9889327006124372,
+                "video_sim": 196.797607421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000272_0002_img.mp4",
+                "video_results": 0.9796688520728644,
+                "video_sim": 194.9541015625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000120_0005_img.mp4",
+                "video_results": 0.951213587468593,
+                "video_sim": 189.29150390625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000212_0037_img.mp4",
+                "video_results": 0.9911005221419598,
+                "video_sim": 197.22900390625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000184_0022_img.mp4",
+                "video_results": 0.9526489871231156,
+                "video_sim": 189.5771484375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000291_0012_img.mp4",
+                "video_results": 0.9564583169755025,
+                "video_sim": 190.335205078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000219_0033_img.mp4",
+                "video_results": 0.9724206972361809,
+                "video_sim": 193.51171875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000105_0006_img.mp4",
+                "video_results": 0.9791695292870602,
+                "video_sim": 194.854736328125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000050_0016_img.mp4",
+                "video_results": 0.9821703733511307,
+                "video_sim": 195.451904296875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000144_0060_img.mp4",
+                "video_results": 0.9927297620917085,
+                "video_sim": 197.55322265625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000246_0016_img.mp4",
+                "video_results": 0.9644732451319096,
+                "video_sim": 191.93017578125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000268_0014_img.mp4",
+                "video_results": 0.9438991834170855,
+                "video_sim": 187.8359375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000259_0047_img.mp4",
+                "video_results": 0.9821654660018844,
+                "video_sim": 195.450927734375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000178_0048_img.mp4",
+                "video_results": 0.9932744778580402,
+                "video_sim": 197.66162109375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000186_0052_img.mp4",
+                "video_results": 0.9531802076790201,
+                "video_sim": 189.682861328125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000269_0013_img.mp4",
+                "video_results": 0.9692677253454773,
+                "video_sim": 192.88427734375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000134_0042_img.mp4",
+                "video_results": 0.9846240479742462,
+                "video_sim": 195.940185546875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000222_0040_img.mp4",
+                "video_results": 0.9855895689384422,
+                "video_sim": 196.13232421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000281_0006_img.mp4",
+                "video_results": 0.9768152284861809,
+                "video_sim": 194.38623046875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000199_0014_img.mp4",
+                "video_results": 0.9875439207757538,
+                "video_sim": 196.521240234375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000021_0027_img.mp4",
+                "video_results": 0.9660570921011307,
+                "video_sim": 192.245361328125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000045_0008_img.mp4",
+                "video_results": 0.9919838450062815,
+                "video_sim": 197.40478515625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000101_0015_img.mp4",
+                "video_results": 0.9573232372801508,
+                "video_sim": 190.50732421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000037_0074_img.mp4",
+                "video_results": 0.9354254181061558,
+                "video_sim": 186.149658203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000287_0034_img.mp4",
+                "video_results": 0.9941982863536433,
+                "video_sim": 197.845458984375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000229_0051_img.mp4",
+                "video_results": 0.9856349619189698,
+                "video_sim": 196.141357421875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000091_0292_img.mp4",
+                "video_results": 0.9568987515703518,
+                "video_sim": 190.4228515625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000168_0057_img.mp4",
+                "video_results": 0.9668066896984925,
+                "video_sim": 192.39453125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000016_0112_img.mp4",
+                "video_results": 0.9603105861337939,
+                "video_sim": 191.101806640625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000264_0007_img.mp4",
+                "video_results": 0.9731825632066583,
+                "video_sim": 193.663330078125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000177_0023_img.mp4",
+                "video_results": 0.9679316995131909,
+                "video_sim": 192.618408203125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000039_0022_img.mp4",
+                "video_results": 1.0,
+                "video_sim": 199.0,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000276_0013_img.mp4",
+                "video_results": 0.9882186812971105,
+                "video_sim": 196.655517578125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000240_0022_img.mp4",
+                "video_results": 0.9497008970634422,
+                "video_sim": 188.990478515625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000233_0033_img.mp4",
+                "video_results": 0.9637126059987438,
+                "video_sim": 191.77880859375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000030_0240_img.mp4",
+                "video_results": 0.9303364969378141,
+                "video_sim": 185.136962890625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000025_0038_img.mp4",
+                "video_results": 0.9729555983040201,
+                "video_sim": 193.6181640625,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000166_0020_img.mp4",
+                "video_results": 0.990509186557789,
+                "video_sim": 197.111328125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000248_0038_img.mp4",
+                "video_results": 0.9771501550722361,
+                "video_sim": 194.452880859375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000265_0009_img.mp4",
+                "video_results": 0.9656056159704773,
+                "video_sim": 192.155517578125,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000078_0022_img.mp4",
+                "video_results": 0.9955085486023869,
+                "video_sim": 198.106201171875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000108_0007_img.mp4",
+                "video_results": 0.9908661962154522,
+                "video_sim": 197.182373046875,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000146_0000_img.mp4",
+                "video_results": 0.9867293008008794,
+                "video_sim": 196.359130859375,
+                "cnt_per_video": 199
+            },
+            {
+                "video_path": "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/vbench/physionpp/000145_0048_img.mp4",
+                "video_results": 0.9639910980684674,
+                "video_sim": 191.834228515625,
+                "cnt_per_video": 199
+            }
+        ]
+    ]
+}

@@ -2,7 +2,7 @@
 # find ${PWD}/datasets/ContPhy/ -type f -name "output_Full.mp4" > contphy.txt
 
 # # PhysicsIQ-verified
-find ${PWD}/datasets/physics-iq-verified_1024x576/full-videos/ -type f -name "*.mp4" > physics-iq-verified.txt
+find ${PWD}/datasets/physics-iq-verified/full-videos/ -type f -name "*.mp4" > physics-iq-verified.txt
 
 # PhysBench
 # find ${PWD}/datasets/PhysBench/ -type f -name "*.mp4" > PhysBench.txt
@@ -53,9 +53,9 @@ find ${PWD}/datasets/physics-iq-verified_1024x576/full-videos/ -type f -name "*.
 # awk -v root="$INTPHYS_ROOT" 'NF { print root "/" $0 }' "$INTPHYS_ROOT/impossible.txt" > intphys_impossible.txt
 
 # Physion++ videos
-find ${PWD}/datasets/physionpp_trim-e200/data_v1/ -type f -name "*_img.mp4" > physionpp.txt
+# find ${PWD}/datasets/physionpp_trim-e200/data_v1/ -type f -name "*_img.mp4" > physionpp.txt
 
-SEED="42"
-awk -v seed="$SEED" 'BEGIN{srand(seed)} {print rand() "\t" $0}' physionpp.txt \
-  | sort -k1,1n \
-  | cut -f2- > physionpp.txt.tmp && mv physionpp.txt.tmp physionpp.txt
+# SEED="42"
+# awk -v seed="$SEED" 'BEGIN{srand(seed)} {print rand() "\t" $0}' physionpp.txt \
+#   | sort -k1,1n \
+#   | cut -f2- > physionpp.txt.tmp && mv physionpp.txt.tmp physionpp.txt
