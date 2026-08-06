@@ -29,7 +29,7 @@ submit_surprise_job() {
     printf -v q_window_size '%q' "$WINDOW_SIZE"
     printf -v q_context_frames '%q' "$CONTEXT_FRAMES"
     printf -v q_stride '%q' "$STRIDE"
-    printf -v q_video '%q' "../$video_list"
+    printf -v q_video '%q' "$video_list"
 
     local -a sbatch_args=(
         --parsable
@@ -38,7 +38,7 @@ submit_surprise_job() {
         --cpus-per-task "$SLURM_CPUS_PER_TASK"
         --gres "gpu:${SLURM_GPUS_PER_TASK}"
         --mem "$SLURM_MEM"
-        --chdir "$ROOT_DIR/WMReward"
+        --chdir "$ROOT_DIR/third_party/WMReward"
         --output "$slurm_log_dir/%j_%x.log"
         --error "$slurm_log_dir/%j_%x.log"
     )

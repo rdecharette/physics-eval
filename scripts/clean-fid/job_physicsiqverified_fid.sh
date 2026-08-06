@@ -6,4 +6,4 @@ source "$SCRIPT_DIR/slurm_job_clean_fid.sh"
 
 FID_FRAME_STRIDE=2
 
-submit_fid_job "physics-iq-verified.txt"
+submit_fid_job "$ROOT_DIR/physics-iq-verified.txt"

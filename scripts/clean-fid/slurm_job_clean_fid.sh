@@ -1,11 +1,21 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REFERENCE_PATH="${REFERENCE_PATH:-/nfs/data/datasets/imagenet/imagenet1k/imagenet-val}"
-REFERENCE_SET="${REFERENCE_SET:-imagenet1k_val}"
+REFERENCE_PATH="${REFERENCE_PATH-}"
+REFERENCE_SET="${REFERENCE_SET-}"
+
+if [[ -n "$REFERENCE_PATH" && -z "$REFERENCE_SET" ]] || [[ -z "$REFERENCE_PATH" && -n "$REFERENCE_SET" ]]; then
+    echo "REFERENCE_PATH and REFERENCE_SET must be provided together, or both omitted." >&2
+    exit 1
+fi
+
+if [[ -z "$REFERENCE_PATH" && -z "$REFERENCE_SET" ]]; then
+    REFERENCE_PATH="/nfs/data/datasets/imagenet/imagenet1k/imagenet-val"
+    REFERENCE_SET="imagenet1k_val"
+fi
 
 ROOT_DIR="${ROOT_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)}"
-CLEAN_FID_ROOT="${CLEAN_FID_ROOT:-$ROOT_DIR/clean-fid}"
+CLEAN_FID_ROOT="${CLEAN_FID_ROOT:-$ROOT_DIR/third_party/clean-fid}"
 # REFERENCE_SET="${REFERENCE_SET:-imagenet_custom}"
 FID_MODE="${FID_MODE:-clean}"
 FID_MODEL="${FID_MODEL:-inception_v3}"
@@ -92,7 +102,7 @@ echo "CUDA_VISIBLE_DEVICES: \${CUDA_VISIBLE_DEVICES:-unset}"
 cmd=(
   python "$ROOT_DIR/scripts/clean-fid/compute_id_from_videos.py"
   --type "$TYPE"
-  --video-list "$ROOT_DIR/$video_list"
+  --video-list "$video_list"
   --clean-fid-root "$CLEAN_FID_ROOT"
   --reference-path "$REFERENCE_PATH"
   --reference-set "$REFERENCE_SET"

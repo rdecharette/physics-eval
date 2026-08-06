@@ -7,5 +7,5 @@ source "$SCRIPT_DIR/slurm_job_clean_fid.sh"
 FID_FRAME_STRIDE=2
 FID_MAX_FRAMES_PER_VIDEO=50
 
-submit_fid_job "intphys_impossible.txt"
-submit_fid_job "intphys_possible.txt"
+submit_fid_job "$ROOT_DIR/intphys_impossible.txt"
+submit_fid_job "$ROOT_DIR/intphys_possible.txt"
