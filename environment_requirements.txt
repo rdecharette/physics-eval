@@ -15,3 +15,5 @@ tqdm
 transformers==4.33.*
 tokenizers==0.13.*
 vbench==0.1.5
+
+setuptools<81

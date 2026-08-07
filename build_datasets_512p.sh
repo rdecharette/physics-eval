@@ -14,7 +14,7 @@ python convert_videos.py --dataset datasets/intphys2/ --height "$HEIGHT" --worke
 
 python convert_videos.py --dataset datasets/PhysBench/ --height "$HEIGHT" --workers "$WORKERS" --dst "$OUTDIR/PhysBench/"
 
-python convert_videos.py --dataset "/nfs/data/workspaces/rdechare/codes/physics-eval/../physics-sim/output/sims/v4_bis/dl3dv/random/" --filter "**/_fps-25_render.mp4" --ext ".mp4" --height "$HEIGHT" --workers "$WORKERS" --dst "$OUTDIR/newtphys/dl3dv/random/"
+python convert_videos.py --dataset "./datasets/NewtPhys/dl3dv/random/" --filter "**/_fps-25_render.mp4" --ext ".mp4" --height "$HEIGHT" --workers "$WORKERS" --dst "$OUTDIR/newtphys/dl3dv/random/"
 
 python convert_videos.py --dataset datasets/physics-iq-verified/ --filter "**/full-videos/**/*.mp4" --ext ".mp4" --height "$HEIGHT" --workers "$WORKERS" --dst "$OUTDIR/physics-iq-verified/"
 

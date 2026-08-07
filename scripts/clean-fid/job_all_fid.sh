@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-export REFERENCE_PATH="/nfs/data/workspaces/rdechare/codes/physics-eval/datasets/pisabench/real"
+export REFERENCE_PATH="./datasets/pisabench/real"
 export REFERENCE_SET="${REFERENCE_SET:-pisabench_real}"
 export FID_MAX_FRAMES=10000
 # export TYPE="fid"

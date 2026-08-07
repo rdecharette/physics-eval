@@ -4,4 +4,4 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 source "$ROOT_DIR/scripts/surprise/slurm_job_surprise.sh"
 
-submit_surprise_job "physics-iq-verified.txt"
+submit_surprise_job "$ROOT_DIR/physics-iq-verified.txt"

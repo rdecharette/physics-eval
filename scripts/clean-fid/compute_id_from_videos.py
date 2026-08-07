@@ -62,7 +62,15 @@ def list_images(folder: Path) -> list[Path]:
 
 def read_video_paths(video_list: Path, limit_videos: int | None) -> list[Path]:
     with video_list.open("r", encoding="utf-8") as f:
-        paths = [Path(line.strip()) for line in f if line.strip()]
+        paths = []
+        for line in f:
+            entry = line.strip()
+            if not entry:
+                continue
+            entry_path = Path(entry).expanduser()
+            if not entry_path.is_absolute():
+                entry_path = (video_list.parent / entry_path).resolve()
+            paths.append(entry_path)
     if limit_videos is not None:
         paths = paths[:limit_videos]
     return paths

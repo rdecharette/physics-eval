@@ -24,6 +24,16 @@ DEFAULT_DIMENSION_LIST = [
   "imaging_quality",
 ]
 
+
+def parse_dimension_list(value: str | None) -> list[str]:
+  if value is None:
+    return list(DEFAULT_DIMENSION_LIST)
+
+  # Accept comma-separated and/or newline-separated values.
+  separators_normalized = value.replace("\n", ",")
+  parsed = [item.strip() for item in separators_normalized.split(",") if item.strip()]
+  return parsed if parsed else list(DEFAULT_DIMENSION_LIST)
+
 LOCK_FILENAME = ".lock"
 LOCK_POLL_INTERVAL_SECONDS = 10
 
@@ -53,18 +63,20 @@ def dataset_cache_lock(cache_dir: Path):
 def resolve_path(path: Path, format: str | None = None) -> Path:
   if format == "vjepa":
     if not str(path).startswith("/cache/"):
-      path = Path(str(path).replace("/nfs/data/workspaces/rdechare/codes/physics-eval/../physics-sim/output/sims/v4_bis/", "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/datasets_vjepa-ready/newtphys/"))
-      path = Path(str(path).replace("/nfs/data/workspaces/rdechare/codes/physics-eval/datasets/", "/nfs/data/workspaces/rdechare/codes/physics-eval/cache/datasets_vjepa-ready/"))
+      path = Path(str(path).replace("./../physics-sim/output/sims/v4_bis/", "./cache/datasets_vjepa-ready/newtphys/"))
+      path = Path(str(path).replace("./datasets/", "./cache/datasets_vjepa-ready/"))
     else:
       raise ValueError(f"Video path {path} does not contain '/datasets/' and cannot be cached. Need to implement the 256x256 conversion")
   elif format == "original":
     pass
+  else:
+    raise ValueError(f"Unknown format: {format}")
 
   return path
 
 
-def build_video_cache(video_list_path: Path, dataset: str, eval_max: int | None = None, format: str | None = None) -> Path:
-  cache_dir = CACHE_ROOT / dataset
+def build_video_cache(video_list_path: Path, dataset: str, eval_max: int | None = None, format: str = "original") -> Path:
+  cache_dir = CACHE_ROOT / f"{dataset}_{format}"
   try:
     cache_dir.resolve().relative_to(CACHE_ROOT)
   except ValueError as exc:
@@ -73,7 +85,16 @@ def build_video_cache(video_list_path: Path, dataset: str, eval_max: int | None 
   cache_dir.mkdir(parents=True, exist_ok=False)
 
   with video_list_path.open("r", encoding="utf-8") as handle:
-    video_paths = [line.strip() for line in handle if line.strip() and not line.lstrip().startswith("#")]
+    video_paths = []
+    for line in handle:
+      entry = line.strip()
+      if not entry or entry.lstrip().startswith("#"):
+        continue
+
+      entry_path = Path(entry).expanduser()
+      if not entry_path.is_absolute():
+        entry_path = (video_list_path.parent / entry_path).resolve()
+      video_paths.append(str(entry_path))
 
   if not video_paths:
     raise ValueError(f"No video paths found in {video_list_path}")
@@ -83,8 +104,6 @@ def build_video_cache(video_list_path: Path, dataset: str, eval_max: int | None 
 
   for index, video_path in enumerate(video_paths):
     source_path = Path(video_path)
-    if not source_path.is_absolute():
-      source_path = (REPO_ROOT / source_path).resolve()
 
     source_path = resolve_path(source_path, format=format)
     if not source_path.exists():
@@ -102,9 +121,11 @@ def build_video_cache(video_list_path: Path, dataset: str, eval_max: int | None 
   return cache_dir
 
 
-def run_vbench(dataset: str, eval_max: int | None = None, format: str | None = None) -> None:
+def run_vbench(dataset: str, eval_max: int | None = None, format: str = "original", skip_existing: bool = True) -> None:
   video_list_path = REPO_ROOT / f"{dataset}.txt"
-  cache_dir = REPO_ROOT / "cache" / "vbench" / dataset
+  cache_dir = REPO_ROOT / "cache" / "vbench" / f"{dataset}_{format}"
+  dimension_list = parse_dimension_list(os.environ.get("DIMENSION_LIST"))
+  print("Dimensions to run:", dimension_list)
   failed_dimensions: list[str] = []
 
   try:
@@ -112,11 +133,18 @@ def run_vbench(dataset: str, eval_max: int | None = None, format: str | None = N
       shutil.rmtree(cache_dir)
       cache_dir = build_video_cache(video_list_path, dataset, eval_max=eval_max, format=format)
 
-    for dimension_name in DEFAULT_DIMENSION_LIST:
+    for i, dimension_name in enumerate(dimension_list):
       output_dir = REPO_ROOT / "output" / "vbench" / f"{format}" / dimension_name
       output_dir.mkdir(parents=True, exist_ok=True)
 
-      print(f"Running VBench dimension '{dimension_name}' for dataset '{dataset}'")
+      print(f"\n\nVBench dimension {i+1}/{len(dimension_list)}: running {dataset} => {dimension_name}")
+      results_json = output_dir / f"{dataset}_eval_results.json"
+      print(f"  Looking for existing results: {results_json}")
+      if skip_existing and results_json.exists():
+        print(f"  Skipping since results already exist")
+        continue
+
+      print(f"  Running evaluation and saving results to: {results_json}")
       try:
         my_vbench = VBench(DEVICE, str(FULL_INFO_PATH), str(output_dir))
         my_vbench.output_path = str(output_dir)

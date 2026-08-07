@@ -15,5 +15,6 @@ dependencies:
   - matplotlib
   - datasets
   - pillow
+  - "setuptools<81"
   - pip:
       - -r environment_requirements.txt
