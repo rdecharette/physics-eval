@@ -3,10 +3,12 @@ from __future__ import annotations
 import argparse
 import importlib.resources
 import os
+import random
 import shutil
 import time
 import traceback
 from contextlib import contextmanager
+from datetime import datetime
 from pathlib import Path
 
 from vbench import VBench
@@ -23,6 +25,7 @@ DEFAULT_DIMENSION_LIST = [
   "aesthetic_quality",
   "imaging_quality",
 ]
+VIDEO_PATHS_SHUFFLE_SEED = 42
 
 
 def parse_dimension_list(value: str | None) -> list[str]:
@@ -61,29 +64,18 @@ def dataset_cache_lock(cache_dir: Path):
     lock_path.unlink(missing_ok=True)
 
 def resolve_path(path: Path, format: str | None = None) -> Path:
-  if format == "vjepa":
-    if not str(path).startswith("/cache/"):
-      path = Path(str(path).replace("./../physics-sim/output/sims/v4_bis/", "./cache/datasets_vjepa-ready/newtphys/"))
-      path = Path(str(path).replace("./datasets/", "./cache/datasets_vjepa-ready/"))
-    else:
-      raise ValueError(f"Video path {path} does not contain '/datasets/' and cannot be cached. Need to implement the 256x256 conversion")
-  elif format == "original":
+  if format == "original":
     pass
   else:
-    raise ValueError(f"Unknown format: {format}")
+    if str(path).startswith("datasets/"):
+      path = Path(str(path).replace("datasets/", f"cache/datasets_{format}/"))
+    else:
+      raise ValueError(f"Impossible to convert path {path} to format")
 
   return path
 
 
-def build_video_cache(video_list_path: Path, dataset: str, eval_max: int | None = None, format: str = "original") -> Path:
-  cache_dir = CACHE_ROOT / f"{dataset}_{format}"
-  try:
-    cache_dir.resolve().relative_to(CACHE_ROOT)
-  except ValueError as exc:
-    raise ValueError(f"Cache directory must stay under {CACHE_ROOT}: {cache_dir}") from exc
-
-  cache_dir.mkdir(parents=True, exist_ok=False)
-
+def build_video_cache(cache_dir:Path, video_list_path: Path, dataset: str, eval_max: int | None = None, format: str = "original", shuffle: bool = True) -> Path:
   with video_list_path.open("r", encoding="utf-8") as handle:
     video_paths = []
     for line in handle:
@@ -91,29 +83,32 @@ def build_video_cache(video_list_path: Path, dataset: str, eval_max: int | None 
       if not entry or entry.lstrip().startswith("#"):
         continue
 
-      entry_path = Path(entry).expanduser()
-      if not entry_path.is_absolute():
-        entry_path = (video_list_path.parent / entry_path).resolve()
-      video_paths.append(str(entry_path))
-
+      entry = resolve_path(Path(entry), format=format)
+      video_paths.append(str(entry))
+  
   if not video_paths:
     raise ValueError(f"No video paths found in {video_list_path}")
 
-  if eval_max is not None and eval_max > 0:
+  # Some datasets are ordered and might have various quality in folders. Shuffle deterministically for reproducibility.
+  if shuffle:
+    random.Random(VIDEO_PATHS_SHUFFLE_SEED).shuffle(video_paths)
+
+  if eval_max is not None:
     video_paths = video_paths[:eval_max]
 
   for index, video_path in enumerate(video_paths):
-    source_path = Path(video_path)
+    video_full_path = Path(video_path).expanduser()
+    if not video_full_path.is_absolute():
+      video_full_path = (video_list_path.parent / video_full_path).resolve()
 
-    source_path = resolve_path(source_path, format=format)
-    if not source_path.exists():
-      print(f"Video not found: {source_path}")
+    if not video_full_path.exists():
+      print(f"Video not found: {video_full_path}")
       continue
 
-    link_name = f"{index:06d}_{source_path.stem}{source_path.suffix}"
+    link_name = f"{index:06d}_{video_full_path.stem}{video_full_path.suffix}"
     link_path = cache_dir / link_name
 
-    link_path.symlink_to(source_path)
+    link_path.symlink_to(video_full_path)
 
   if len(video_paths) == 0:
     raise ValueError(f"No decodable videos available for dataset {dataset}")
@@ -123,25 +118,32 @@ def build_video_cache(video_list_path: Path, dataset: str, eval_max: int | None 
 
 def run_vbench(dataset: str, eval_max: int | None = None, format: str = "original", skip_existing: bool = True) -> None:
   video_list_path = REPO_ROOT / f"{dataset}.txt"
-  cache_dir = REPO_ROOT / "cache" / "vbench" / f"{dataset}_{format}"
+
+  timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+  random_suffix = f"{random.SystemRandom().randint(0, 999999):06d}"
+  cache_dir = CACHE_ROOT / f"{dataset}_{format}_{timestamp}_{random_suffix}"
+  cache_dir.resolve().relative_to(CACHE_ROOT)
+  cache_dir.mkdir(parents=True, exist_ok=False)
+
+  run_name = f"{format}"
+  run_name += f"_n{eval_max if eval_max is not None else 'All'}"
+
   dimension_list = parse_dimension_list(os.environ.get("DIMENSION_LIST"))
   print("Dimensions to run:", dimension_list)
   failed_dimensions: list[str] = []
 
   try:
     with dataset_cache_lock(cache_dir):
-      shutil.rmtree(cache_dir)
-      cache_dir = build_video_cache(video_list_path, dataset, eval_max=eval_max, format=format)
+      cache_dir = build_video_cache(cache_dir, video_list_path, dataset, eval_max=eval_max, format=format, shuffle=True)
 
     for i, dimension_name in enumerate(dimension_list):
-      output_dir = REPO_ROOT / "output" / "vbench" / f"{format}" / dimension_name
+      output_dir = REPO_ROOT / "output" / "vbench" / run_name / dimension_name
       output_dir.mkdir(parents=True, exist_ok=True)
 
       print(f"\n\nVBench dimension {i+1}/{len(dimension_list)}: running {dataset} => {dimension_name}")
       results_json = output_dir / f"{dataset}_eval_results.json"
-      print(f"  Looking for existing results: {results_json}")
       if skip_existing and results_json.exists():
-        print(f"  Skipping since results already exist")
+        print(f"  Skipping. Results already exist: {results_json}")
         continue
 
       print(f"  Running evaluation and saving results to: {results_json}")
@@ -168,25 +170,14 @@ def run_vbench(dataset: str, eval_max: int | None = None, format: str = "origina
     print(f"Completed all dimensions successfully for dataset '{dataset}'.")
 
 
-def parse_eval_max(value: str | None) -> int | None:
-  if value is None:
-    return None
-
-  parsed = int(value)
-  return None if parsed == 0 else parsed
-
-
 def main() -> None:
   parser = argparse.ArgumentParser(description="Stage VBench inputs and run evaluation.")
   parser.add_argument("dataset", type=str, help="Dataset name; the input list is read from <dataset>.txt", nargs="?", default="intphys2_possible")
-  parser.add_argument("--eval-max", type=str, default=None, help="Maximum number of videos to evaluate; use 0 for all videos")
+  parser.add_argument("--eval-max", type=int, default=None, help="Maximum number of videos to evaluate; use 0 for all videos")
   parser.add_argument("--format", type=str, default=None, help="Video format; e.g., vjepa (ie, 256 pixels) or original")
   args = parser.parse_args()
 
-  env_eval_max = os.environ.get("EVAL_MAX")
-  eval_max = parse_eval_max(args.eval_max if args.eval_max is not None else env_eval_max)
-
-  run_vbench(args.dataset, eval_max=eval_max, format=args.format)
+  run_vbench(args.dataset, eval_max=args.eval_max, format=args.format)
 
 
 if __name__ == "__main__":

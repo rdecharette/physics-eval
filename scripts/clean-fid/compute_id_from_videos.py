@@ -168,8 +168,6 @@ def ensure_custom_stats(fid_module, args: argparse.Namespace) -> None:
 
 def build_fid_subset_dir(frames_dir: Path, fid_max_frames: int | None) -> tuple[Path, int, tempfile.TemporaryDirectory[str] | None]:
     image_paths = list_images(frames_dir)
-    if fid_max_frames is None or len(image_paths) <= fid_max_frames:
-        return frames_dir, len(image_paths), None
 
     rng = random.Random(FID_SHUFFLE_SEED)
     selected_paths = list(image_paths)
@@ -183,7 +181,7 @@ def build_fid_subset_dir(frames_dir: Path, fid_max_frames: int | None) -> tuple[
         target_path.symlink_to(image_path.resolve())
 
     print(
-        f"Using {len(selected_paths)} shuffled frames out of {len(image_paths)} for FID "
+        f"Using {len(selected_paths)} shuffled frames out of {len(image_paths)}"
         f"(seed={FID_SHUFFLE_SEED})"
     )
     return subset_dir, len(selected_paths), temp_dir
@@ -253,8 +251,7 @@ def main() -> None:
                 verbose=True,
             )
     finally:
-        if fid_temp_dir is not None:
-            fid_temp_dir.cleanup()
+        fid_temp_dir.cleanup()
 
     result = {
         "dataset": dataset_name,

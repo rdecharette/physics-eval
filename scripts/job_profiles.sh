@@ -18,7 +18,7 @@ job_profile_set_jeanzay_common() {
         --hint=nomultithread
     )
     JOB_HEADER=(
-        # Set all caches
+        # Set all caches (probably not needed since we have done the proper symlink)
         "export TORCH_HOME=\$SCRATCH/.cache/torch"
         "mkdir -p \$TORCH_HOME"
 
@@ -51,7 +51,16 @@ job_profile_config() {
             job_profile_set_jeanzay_common
             JOB_PROFILE_ARGS+=(
                 --qos=qos_gpu_a100-t3
-                --time=05:00:00
+                --time=10:00:00
+            )
+            ;;
+
+        # JEANZAY cluster A100 t3 partition
+        jeanzay-a100-t3)
+            job_profile_set_jeanzay_common
+            JOB_PROFILE_ARGS+=(
+                --qos=qos_gpu_a100-t3
+                --time=10:00:00
             )
             ;;
 

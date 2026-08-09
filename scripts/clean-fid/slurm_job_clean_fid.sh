@@ -37,7 +37,7 @@ submit_fid_job() {
     local video_list="$1"
 
     if [[ -z "${REFERENCE_PATH:-}" ]]; then
-        echo "REFERENCE_PATH must be set to an ImageNet image folder before submitting FID jobs." >&2
+        echo "REFERENCE_PATH must be set to an ImageNet image folder before submitting FID/KID jobs." >&2
         return 1
     fi
 
@@ -45,7 +45,7 @@ submit_fid_job() {
     dataset_name="$(basename "$video_list")"
     dataset_name="${dataset_name%.txt}"
 
-    local job_name="fid_${dataset_name}"
+    local job_name="${TYPE}_${dataset_name}"
     local slurm_log_dir="$ROOT_DIR/logs/clean-fid/slurm"
     local result_dir
     if [[ -n "$FID_MAX_FRAMES" ]]; then

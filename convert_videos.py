@@ -9,6 +9,8 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
+from tqdm import tqdm
+
 
 DEFAULT_EXTENSIONS = {".mp4", ".mov", ".avi"}
 
@@ -156,10 +158,18 @@ def format_trim_suffix(trim_start: int | None, trim_end: int | None) -> str:
     return ""
 
 
+def shorten_path(path: Path, max_parts: int = 4) -> str:
+    parts = path.as_posix().split("/")
+    if len(parts) <= max_parts:
+        return path.as_posix()
+    return f".../{'/'.join(parts[-max_parts:])}"
+
+
 def convert_video(
     src_path: Path,
     dst_path: Path,
     ffmpeg_bin: str,
+    ffmpeg_threads: int | None,
     overwrite: bool,
     target_fps: int | None,
     target_width: int | None,
@@ -207,6 +217,9 @@ def convert_video(
     if filters:
         cmd.extend(["-vf", ",".join(filters)])
 
+    if ffmpeg_threads is not None:
+        cmd.extend(["-threads", str(ffmpeg_threads)])
+
     cmd.extend([
         "-c:v",
         "libx264",
@@ -224,13 +237,24 @@ def convert_video(
     stderr = (result.stderr or "").strip()
     stdout = (result.stdout or "").strip()
     if result.returncode != 0 or looks_like_ffmpeg_failure(stderr, result.returncode):
+        cleanup_detail = ""
+        if dst_path.exists():
+            try:
+                dst_path.unlink()
+                cleanup_detail = f" Removed incomplete output: {dst_path}"
+            except OSError as exc:
+                cleanup_detail = f" Could not remove incomplete output {dst_path}: {exc}"
         detail = stderr or stdout or f"ffmpeg exited with code {result.returncode}"
-        raise RuntimeError(f"ffmpeg conversion failed ({result.returncode}): {detail}") from None
+        print(f"FAILED running: {' '.join(cmd)}")
+        raise RuntimeError(
+            f"ffmpeg conversion failed ({result.returncode}): {detail}{cleanup_detail}"
+        ) from None
 
 
 def convert_one(
     task: tuple[int, int, Path, Path],
     ffmpeg_bin: str,
+    ffmpeg_threads: int | None,
     overwrite: bool,
     target_fps: int | None,
     target_width: int | None,
@@ -245,6 +269,7 @@ def convert_one(
             src_path,
             dst_path,
             ffmpeg_bin=ffmpeg_bin,
+            ffmpeg_threads=ffmpeg_threads,
             overwrite=overwrite,
             target_fps=target_fps,
             target_width=target_width,
@@ -329,6 +354,16 @@ def main() -> None:
         help="ffmpeg binary/command name (default: ffmpeg)",
     )
     parser.add_argument(
+        "--ffmpeg-threads",
+        type=int,
+        default=None,
+        help=(
+            "Per-ffmpeg thread limit passed via -threads. "
+            "Use a low value (for example 1 or 2) when running many workers. "
+            "Default: ffmpeg automatic threading."
+        ),
+    )
+    parser.add_argument(
         "--overwrite",
         action="store_true",
         help="Overwrite output files if they already exist.",
@@ -357,6 +392,8 @@ def main() -> None:
         raise SystemExit("--width must be >= 1")
     if args.height is not None and args.height < 1:
         raise SystemExit("--height must be >= 1")
+    if args.ffmpeg_threads is not None and args.ffmpeg_threads < 1:
+        raise SystemExit("--ffmpeg-threads must be >= 1")
 
     trim_start: int | None = None
     trim_end: int | None = None
@@ -400,6 +437,7 @@ def main() -> None:
                 f"Failed to infer concrete target WxH for naming from {videos[0]}: {exc}"
             ) from exc
 
+        assert resolved_size is not None
         print(f"Resolved target size for naming: {resolved_size[0]}x{resolved_size[1]}")
 
     if args.dst is not None:
@@ -474,6 +512,9 @@ def main() -> None:
         # if idx % (len(videos)//10) == 0 or idx == total:
         #     subprocess.run(["bash", "video_stats.sh", str(src_path)], check=True)
 
+    if skipped > 0:
+        print(f"Skipped {skipped} existing files (use --overwrite to replace)")
+    
     if args.dry_run:
         for idx, total, src_path, dst_path in tasks:
             print(f"[{idx}/{total}] Converting: {src_path} -> {dst_path}{trim_progress_suffix}")
@@ -494,6 +535,7 @@ def main() -> None:
                 convert_one,
                 task,
                 args.ffmpeg_bin,
+                args.ffmpeg_threads,
                 args.overwrite,
                 args.fps,
                 args.width,
@@ -504,19 +546,25 @@ def main() -> None:
             for task in tasks
         }
 
+        progress = tqdm(total=len(future_to_task), dynamic_ncols=True, leave=True)
         for future in as_completed(future_to_task):
             idx, total, src_path, dst_path, error, elapsed = future.result()
+            rel_src = src_path.relative_to(src_root)
+            short_src = shorten_path(rel_src, max_parts=4)
+
+            progress.set_description_str(f"done {short_src}")
             if error is None:
                 converted += 1
-                cumulative_elapsed += elapsed or 0.0
-                average_time = cumulative_elapsed / converted if converted > 0 else 0.0
-                print(
-                    f"[{idx}/{total}] Converted: {src_path} -> {dst_path}{trim_progress_suffix} "
-                    f"[elapsed {elapsed:.2f}s, avg {average_time:.2f}s/video]"
-                )
             else:
                 failed += 1
-                print(f"[{idx}/{total}] Failed: {src_path} ({error}){trim_progress_suffix}")
+
+            postfix_parts: list[str] = []
+            if failed > 0:
+                postfix_parts.append(f"{failed} failed")
+            if postfix_parts:
+                progress.set_postfix_str(", ".join(postfix_parts))
+            progress.update(1)
+        progress.close()
 
     print(f"Done. Converted={converted}, Failed={failed}, Skipped={skipped}, Total={total}")
 

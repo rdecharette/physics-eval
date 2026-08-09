@@ -16,5 +16,6 @@ dependencies:
   - datasets
   - pillow
   - "setuptools<81"
+  - tqdm
   - pip:
       - -r environment_requirements.txt

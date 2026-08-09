@@ -1,0 +1,727 @@
+{
+    "subject_consistency": [
+        0.9007839840896402,
+        [
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000121__scene_25fps.mp4",
+                "video_results": 0.9508618628135835
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000053__scene_25fps.mp4",
+                "video_results": 0.975049204898603
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000030__scene_25fps.mp4",
+                "video_results": 0.8579751451810201
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000010__scene_25fps.mp4",
+                "video_results": 0.796133628999344
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000029__scene_25fps.mp4",
+                "video_results": 0.7731872288265613
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000105__scene_25fps.mp4",
+                "video_results": 0.9997883556467114
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000132__scene_25fps.mp4",
+                "video_results": 0.9998698487426295
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000119__scene_25fps.mp4",
+                "video_results": 0.9196770317626722
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000144__scene_25fps.mp4",
+                "video_results": 0.8690090474456248
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000128__scene_25fps.mp4",
+                "video_results": 0.7918295029437903
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000058__scene_25fps.mp4",
+                "video_results": 0.9702530313621868
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000001__scene_25fps.mp4",
+                "video_results": 0.7918096831952682
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000007__scene_25fps.mp4",
+                "video_results": 0.9214168612403099
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000092__scene_25fps.mp4",
+                "video_results": 0.9565254212027848
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000173__scene_25fps.mp4",
+                "video_results": 0.8857394131747159
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000027__scene_25fps.mp4",
+                "video_results": 0.9998816025979591
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000147__scene_25fps.mp4",
+                "video_results": 0.9368300618547382
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000035__scene_25fps.mp4",
+                "video_results": 0.9534916989128999
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000037__scene_25fps.mp4",
+                "video_results": 0.7615973853101634
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000036__scene_25fps.mp4",
+                "video_results": 0.9232841263515781
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000118__scene_25fps.mp4",
+                "video_results": 0.9997477016665719
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000076__scene_25fps.mp4",
+                "video_results": 0.9836413496070437
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000009__scene_25fps.mp4",
+                "video_results": 0.9997827470904649
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000177__scene_25fps.mp4",
+                "video_results": 0.772321909214511
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000034__scene_25fps.mp4",
+                "video_results": 0.8118764890564812
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000067__scene_25fps.mp4",
+                "video_results": 0.7666886763440238
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000125__scene_25fps.mp4",
+                "video_results": 0.9678026088560471
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000095__scene_25fps.mp4",
+                "video_results": 0.9372375478046109
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000098__scene_25fps.mp4",
+                "video_results": 0.933125749079868
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000077__scene_25fps.mp4",
+                "video_results": 0.937563477441518
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000045__scene_25fps.mp4",
+                "video_results": 0.7963559603450274
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000025__scene_25fps.mp4",
+                "video_results": 0.959397471011287
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000026__scene_25fps.mp4",
+                "video_results": 0.9821366839336626
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000174__scene_25fps.mp4",
+                "video_results": 0.7757819316001854
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000165__scene_25fps.mp4",
+                "video_results": 0.9737760204859455
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000096__scene_25fps.mp4",
+                "video_results": 0.8890128129660481
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000107__scene_25fps.mp4",
+                "video_results": 0.8882908029387696
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000024__scene_25fps.mp4",
+                "video_results": 0.8848723766177592
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000074__scene_25fps.mp4",
+                "video_results": 0.9998285376062297
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000106__scene_25fps.mp4",
+                "video_results": 0.8629473023342363
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000159__scene_25fps.mp4",
+                "video_results": 0.9998332752723886
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000013__scene_25fps.mp4",
+                "video_results": 0.9508869286739465
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000097__scene_25fps.mp4",
+                "video_results": 0.7799237820536199
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000083__scene_25fps.mp4",
+                "video_results": 0.8210125375877727
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000102__scene_25fps.mp4",
+                "video_results": 0.7875866483558308
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000161__scene_25fps.mp4",
+                "video_results": 0.7891553512426338
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000178__scene_25fps.mp4",
+                "video_results": 0.9422970311810271
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000124__scene_25fps.mp4",
+                "video_results": 0.9485156006283231
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000042__scene_25fps.mp4",
+                "video_results": 0.768622245150383
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000060__scene_25fps.mp4",
+                "video_results": 0.9840058765628121
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000093__scene_25fps.mp4",
+                "video_results": 0.8886926688931205
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000006__scene_25fps.mp4",
+                "video_results": 0.8348022563890978
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000155__scene_25fps.mp4",
+                "video_results": 0.7704138093524509
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000090__scene_25fps.mp4",
+                "video_results": 0.8495882776650515
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000020__scene_25fps.mp4",
+                "video_results": 0.9798126488622992
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000072__scene_25fps.mp4",
+                "video_results": 0.7980100380049812
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000162__scene_25fps.mp4",
+                "video_results": 0.968079765336682
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000089__scene_25fps.mp4",
+                "video_results": 0.7706793805565497
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000143__scene_25fps.mp4",
+                "video_results": 0.9998620829798959
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000073__scene_25fps.mp4",
+                "video_results": 0.7798006146243124
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000055__scene_25fps.mp4",
+                "video_results": 0.859866741028699
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000091__scene_25fps.mp4",
+                "video_results": 0.8015538586510552
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000179__scene_25fps.mp4",
+                "video_results": 0.7598999226936186
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000104__scene_25fps.mp4",
+                "video_results": 0.9716703726185693
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000071__scene_25fps.mp4",
+                "video_results": 0.9694938987794549
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000051__scene_25fps.mp4",
+                "video_results": 0.9457823730478383
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000014__scene_25fps.mp4",
+                "video_results": 0.7621271328793632
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000022__scene_25fps.mp4",
+                "video_results": 0.9998821694441516
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000145__scene_25fps.mp4",
+                "video_results": 0.790337768317473
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000003__scene_25fps.mp4",
+                "video_results": 0.9056431452433268
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000023__scene_25fps.mp4",
+                "video_results": 0.9881344967418246
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000172__scene_25fps.mp4",
+                "video_results": 0.9477982909390421
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000101__scene_25fps.mp4",
+                "video_results": 0.972477277420988
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000046__scene_25fps.mp4",
+                "video_results": 0.974368251333333
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000110__scene_25fps.mp4",
+                "video_results": 0.8209744908592918
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000047__scene_25fps.mp4",
+                "video_results": 0.9640100300312042
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000070__scene_25fps.mp4",
+                "video_results": 0.9306996937351998
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000136__scene_25fps.mp4",
+                "video_results": 0.7904561730948362
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000021__scene_25fps.mp4",
+                "video_results": 0.9815477623481943
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000113__scene_25fps.mp4",
+                "video_results": 0.9998877536166798
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000052__scene_25fps.mp4",
+                "video_results": 0.9231208773574444
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000087__scene_25fps.mp4",
+                "video_results": 0.9559628972501466
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000166__scene_25fps.mp4",
+                "video_results": 0.7718099304521927
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000069__scene_25fps.mp4",
+                "video_results": 0.9675579378099153
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000115__scene_25fps.mp4",
+                "video_results": 0.9810731727065463
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000084__scene_25fps.mp4",
+                "video_results": 0.8869607189689019
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000088__scene_25fps.mp4",
+                "video_results": 0.8285058646491079
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000049__scene_25fps.mp4",
+                "video_results": 0.9550478891892866
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000011__scene_25fps.mp4",
+                "video_results": 0.9992381885196223
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000153__scene_25fps.mp4",
+                "video_results": 0.9997861653265326
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000157__scene_25fps.mp4",
+                "video_results": 0.999916842188498
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000164__scene_25fps.mp4",
+                "video_results": 0.9750908300130054
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000112__scene_25fps.mp4",
+                "video_results": 0.8279691455942212
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000078__scene_25fps.mp4",
+                "video_results": 0.9234069941019771
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000031__scene_25fps.mp4",
+                "video_results": 0.7912734819181038
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000004__scene_25fps.mp4",
+                "video_results": 0.9856965677304701
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000130__scene_25fps.mp4",
+                "video_results": 0.7869986723167728
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000171__scene_25fps.mp4",
+                "video_results": 0.8517550115633492
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000061__scene_25fps.mp4",
+                "video_results": 0.951903562955182
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000156__scene_25fps.mp4",
+                "video_results": 0.9998354454233189
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000002__scene_25fps.mp4",
+                "video_results": 0.825374925377393
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000114__scene_25fps.mp4",
+                "video_results": 0.765607988744071
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000066__scene_25fps.mp4",
+                "video_results": 0.9600581987337633
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000122__scene_25fps.mp4",
+                "video_results": 0.7959875157385161
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000039__scene_25fps.mp4",
+                "video_results": 0.8316718481405817
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000016__scene_25fps.mp4",
+                "video_results": 0.762664107511742
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000151__scene_25fps.mp4",
+                "video_results": 0.8307873269524237
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000135__scene_25fps.mp4",
+                "video_results": 0.9736100098099372
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000082__scene_25fps.mp4",
+                "video_results": 0.9287349747286903
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000117__scene_25fps.mp4",
+                "video_results": 0.9998925153655235
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000017__scene_25fps.mp4",
+                "video_results": 0.9907626317004965
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000116__scene_25fps.mp4",
+                "video_results": 0.9999082819982008
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000103__scene_25fps.mp4",
+                "video_results": 0.9620668710482241
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000138__scene_25fps.mp4",
+                "video_results": 0.9997376357064103
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000018__scene_25fps.mp4",
+                "video_results": 0.9999391186718989
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000068__scene_25fps.mp4",
+                "video_results": 0.999925100442135
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000140__scene_25fps.mp4",
+                "video_results": 0.9998782755750598
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000043__scene_25fps.mp4",
+                "video_results": 0.7815140594135631
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000062__scene_25fps.mp4",
+                "video_results": 0.817206578724312
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000032__scene_25fps.mp4",
+                "video_results": 0.7558833888985894
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000005__scene_25fps.mp4",
+                "video_results": 0.9827112314676998
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000057__scene_25fps.mp4",
+                "video_results": 0.9686464619154882
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000015__scene_25fps.mp4",
+                "video_results": 0.7762994414026086
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000075__scene_25fps.mp4",
+                "video_results": 0.81967867956017
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000123__scene_25fps.mp4",
+                "video_results": 0.9998309220930542
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000154__scene_25fps.mp4",
+                "video_results": 0.799533587513548
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000142__scene_25fps.mp4",
+                "video_results": 0.7885455070721983
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000148__scene_25fps.mp4",
+                "video_results": 0.8234634158587215
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000109__scene_25fps.mp4",
+                "video_results": 0.804943526031995
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000150__scene_25fps.mp4",
+                "video_results": 0.9997557621411602
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000176__scene_25fps.mp4",
+                "video_results": 0.9999128679434458
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000160__scene_25fps.mp4",
+                "video_results": 0.763237113452921
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000126__scene_25fps.mp4",
+                "video_results": 0.8987653911715806
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000064__scene_25fps.mp4",
+                "video_results": 0.9593094758915178
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000033__scene_25fps.mp4",
+                "video_results": 0.9538200341089808
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000038__scene_25fps.mp4",
+                "video_results": 0.7864925921565354
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000129__scene_25fps.mp4",
+                "video_results": 0.999765464452782
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000056__scene_25fps.mp4",
+                "video_results": 0.9596613696729294
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000000__scene_25fps.mp4",
+                "video_results": 0.9644109131109835
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000085__scene_25fps.mp4",
+                "video_results": 0.8199875752131144
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000050__scene_25fps.mp4",
+                "video_results": 0.9113682132176678
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000149__scene_25fps.mp4",
+                "video_results": 0.9629253808296088
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000163__scene_25fps.mp4",
+                "video_results": 0.9702642165651225
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000040__scene_25fps.mp4",
+                "video_results": 0.9516433140244147
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000137__scene_25fps.mp4",
+                "video_results": 0.7837815028850479
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000012__scene_25fps.mp4",
+                "video_results": 0.9684859399843697
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000080__scene_25fps.mp4",
+                "video_results": 0.9544775841212032
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000111__scene_25fps.mp4",
+                "video_results": 0.9999392131964365
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000048__scene_25fps.mp4",
+                "video_results": 0.9281504370949485
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000079__scene_25fps.mp4",
+                "video_results": 0.8223868003397277
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000041__scene_25fps.mp4",
+                "video_results": 0.789645401516346
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000152__scene_25fps.mp4",
+                "video_results": 0.9998873839474688
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000044__scene_25fps.mp4",
+                "video_results": 0.7957552710566858
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000127__scene_25fps.mp4",
+                "video_results": 0.7683811452653673
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000086__scene_25fps.mp4",
+                "video_results": 0.9997892105820203
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000063__scene_25fps.mp4",
+                "video_results": 0.9503732775196885
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000158__scene_25fps.mp4",
+                "video_results": 0.7928688267264703
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000141__scene_25fps.mp4",
+                "video_results": 0.830912737232266
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000131__scene_25fps.mp4",
+                "video_results": 0.9998702024570619
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000169__scene_25fps.mp4",
+                "video_results": 0.9997553021618815
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000146__scene_25fps.mp4",
+                "video_results": 0.9247013622462147
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000019__scene_25fps.mp4",
+                "video_results": 0.7808416636303218
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000134__scene_25fps.mp4",
+                "video_results": 0.9997629595525337
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000170__scene_25fps.mp4",
+                "video_results": 0.9597692516717043
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000175__scene_25fps.mp4",
+                "video_results": 0.9998447765605618
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000100__scene_25fps.mp4",
+                "video_results": 0.9933822459042675
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000094__scene_25fps.mp4",
+                "video_results": 0.8281308081414964
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000059__scene_25fps.mp4",
+                "video_results": 0.821579898246611
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000139__scene_25fps.mp4",
+                "video_results": 0.9490108348504461
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000028__scene_25fps.mp4",
+                "video_results": 0.9998045822586676
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000065__scene_25fps.mp4",
+                "video_results": 0.8618542708531775
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000108__scene_25fps.mp4",
+                "video_results": 0.7780654130861012
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000168__scene_25fps.mp4",
+                "video_results": 0.9342914181526261
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000081__scene_25fps.mp4",
+                "video_results": 0.7950132588545481
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000054__scene_25fps.mp4",
+                "video_results": 0.9804327283242736
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000099__scene_25fps.mp4",
+                "video_results": 0.9998000706687118
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000133__scene_25fps.mp4",
+                "video_results": 0.8277316800873689
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000167__scene_25fps.mp4",
+                "video_results": 0.7926976966737497
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000008__scene_25fps.mp4",
+                "video_results": 0.8319704963101281
+            },
+            {
+                "video_path": "/lustre/fsn1/projects/rech/pab/ual15br/.cache/physics-eval/vbench/intphys_possible_512p/000120__scene_25fps.mp4",
+                "video_results": 0.9842867571296114
+            }
+        ]
+    ]
+}

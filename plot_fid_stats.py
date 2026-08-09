@@ -113,7 +113,7 @@ def main() -> None:
     dataset_labels = [row[1] for row in dataset_rows]
     values_by_dataset = [row[2] for row in dataset_rows]
 
-    output_name = "fid_plot_sorted.png" if args.sorted else "fid_plot.png"
+    output_name = "plot_sorted.png" if args.sorted else "plot.png"
     output_path = path / output_name
     plot_stats(dataset_labels, values_by_dataset, output_path)
     print(f"Saved plot to: {output_path}")
