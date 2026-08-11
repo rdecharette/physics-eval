@@ -80,3 +80,7 @@ rm -R "$TMPDIR"
 echo "========================================================"
 echo "[+] Pipeline complete. Target folder: $TARGET_DIR_ABS"
 echo "========================================================"
+
+
+echo "Need to cleanup for corrupted files:"
+bash cleanup_physics-iq.sh

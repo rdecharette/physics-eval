@@ -63,19 +63,16 @@ def dataset_cache_lock(cache_dir: Path):
   finally:
     lock_path.unlink(missing_ok=True)
 
-def resolve_path(path: Path, format: str | None = None) -> Path:
-  if format == "original":
+def resolve_path(path: Path, variant: str | None = None) -> Path:
+  if variant == "original":
     pass
   else:
-    if str(path).startswith("datasets/"):
-      path = Path(str(path).replace("datasets/", f"cache/datasets_{format}/"))
-    else:
-      raise ValueError(f"Impossible to convert path {path} to format")
+    path = Path(f"cache/datasets_variants/{variant}/" + str(path))
 
   return path
 
 
-def build_video_cache(cache_dir:Path, video_list_path: Path, dataset: str, eval_max: int | None = None, format: str = "original", shuffle: bool = True) -> Path:
+def build_video_cache(cache_dir:Path, video_list_path: Path, dataset: str, eval_max: int | None = None, variant: str = "512p_30fps", shuffle: bool = True) -> Path:
   with video_list_path.open("r", encoding="utf-8") as handle:
     video_paths = []
     for line in handle:
@@ -83,7 +80,7 @@ def build_video_cache(cache_dir:Path, video_list_path: Path, dataset: str, eval_
       if not entry or entry.lstrip().startswith("#"):
         continue
 
-      entry = resolve_path(Path(entry), format=format)
+      entry = resolve_path(Path(entry), variant=variant)
       video_paths.append(str(entry))
   
   if not video_paths:
@@ -116,16 +113,16 @@ def build_video_cache(cache_dir:Path, video_list_path: Path, dataset: str, eval_
   return cache_dir
 
 
-def run_vbench(dataset: str, eval_max: int | None = None, format: str = "original", skip_existing: bool = True) -> None:
+def run_vbench(dataset: str, eval_max: int | None = None, variant: str = "512p_30fps", skip_existing: bool = True) -> None:
   video_list_path = REPO_ROOT / f"{dataset}.txt"
 
   timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
   random_suffix = f"{random.SystemRandom().randint(0, 999999):06d}"
-  cache_dir = CACHE_ROOT / f"{dataset}_{format}_{timestamp}_{random_suffix}"
+  cache_dir = CACHE_ROOT / f"{dataset}_{variant}_{timestamp}_{random_suffix}"
   cache_dir.resolve().relative_to(CACHE_ROOT)
   cache_dir.mkdir(parents=True, exist_ok=False)
 
-  run_name = f"{format}"
+  run_name = f"{variant}"
   run_name += f"_n{eval_max if eval_max is not None else 'All'}"
 
   dimension_list = parse_dimension_list(os.environ.get("DIMENSION_LIST"))
@@ -134,7 +131,7 @@ def run_vbench(dataset: str, eval_max: int | None = None, format: str = "origina
 
   try:
     with dataset_cache_lock(cache_dir):
-      cache_dir = build_video_cache(cache_dir, video_list_path, dataset, eval_max=eval_max, format=format, shuffle=True)
+      cache_dir = build_video_cache(cache_dir, video_list_path, dataset, eval_max=eval_max, variant=variant, shuffle=True)
 
     for i, dimension_name in enumerate(dimension_list):
       output_dir = REPO_ROOT / "output" / "vbench" / run_name / dimension_name
@@ -174,10 +171,10 @@ def main() -> None:
   parser = argparse.ArgumentParser(description="Stage VBench inputs and run evaluation.")
   parser.add_argument("dataset", type=str, help="Dataset name; the input list is read from <dataset>.txt", nargs="?", default="intphys2_possible")
   parser.add_argument("--eval-max", type=int, default=None, help="Maximum number of videos to evaluate; use 0 for all videos")
-  parser.add_argument("--format", type=str, default=None, help="Video format; e.g., vjepa (ie, 256 pixels) or original")
+  parser.add_argument("--variant", type=str, default="512p_30fps", help="Video variant; e.g., original or 512p_30fps. If variant is not 'original' the script will look for videos in cache/datasets_variants/<variant>/")
   args = parser.parse_args()
-
-  run_vbench(args.dataset, eval_max=args.eval_max, format=args.format)
+  
+  run_vbench(args.dataset, eval_max=args.eval_max, variant=args.variant)
 
 
 if __name__ == "__main__":

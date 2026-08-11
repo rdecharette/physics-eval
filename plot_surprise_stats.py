@@ -109,7 +109,12 @@ def main() -> None:
 
     path = args.path
     files = find_files(path)
-    files = [f for f in files if not re.match(r"^newtphys_random_[0-9]+(?:_.*)?$", f.stem)]
+
+    # Order datasets by a predefined order, with unknown datasets at the end.
+    order = ["contphy", "intphys", "intphys2", "PhysBench", "physionpp", "newtphys", "physics-iq-verified", "pisabench"]
+    order_index = {x: i for i, x in enumerate(order)}
+    files = sorted(files, key=lambda x: order_index.get(Path(x).stem.split("_")[0], len(order)))
+
     if not files:
         raise SystemExit(f"No matching files found under: {path}")
 
@@ -126,24 +131,6 @@ def main() -> None:
             continue
         
         mask = None
-        # if dataset.lower().startswith("physics-iq-verified"):
-        #     dataset = f"{dataset} (Solid Mechanics)"
-
-        #     # Filter categories
-        #     physiq_dat = pd.read_csv("datasets/physics-iq-verified/descriptions_base.csv", sep=",", header=0)
-
-        #     mask: list[bool] = []
-        #     with file_path.open("r", encoding="utf-8", newline="") as f:
-        #         reader = csv.reader(f)
-        #         for i, row in enumerate(reader):
-        #             if i == 0:
-        #                 continue  # Skip header
-                    
-        #             fname = Path(row[0]).name
-        #             fname = re.sub(r"_[0-9]+FPS_", "_", fname)
-        #             fname = fname.replace("_full-videos_", "_")
-        #             mask.append(physiq_dat.loc[physiq_dat["scenario"] == fname, "category"].eq("Solid Mechanics").all())
-
         values = read_surprises(file_path, mask=mask)
 
         
@@ -162,7 +149,9 @@ def main() -> None:
         label = f"{display_dataset} ({num_entries})\n[{params}]"
 
         dataset_rows.append((mean, label, values))
-        print(f"{label}: n={len(values)} mean={mean:.4f} std={std:.4f}")
+        header = f"{display_dataset} ({num_entries}) [{params}] "
+        header += "." * (40-len(header))
+        print(f"{header}\t{mean:.4f} (std={std:.4f})")
 
     if not dataset_rows:
         raise SystemExit("No valid surprise datasets found after parsing.")

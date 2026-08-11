@@ -32,9 +32,9 @@ rsync -avP \
 echo "Transfer datasets tars.."
 rsync -avP \
   -e "ssh -p 2222" \
+  --include='pisabench.tar' \
   --exclude='*/' \
   --exclude='*' \
-  --include='NewtPhys.tar' \
   "$SRC_DIR/datasets/" "$DST_DIR/datasets/"
 
 for transfer in "${CACHE_TRANSFERS[@]}"; do

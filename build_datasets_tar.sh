@@ -2,6 +2,42 @@
 set -euo pipefail
 # set -x
 
+
+
+
+
+DATASETS_DIR="./datasets"
+LIST_FILE="./pisabench.txt"
+OUTPUT_TAR="${1:-./datasets/pisabench.tar}"
+
+DATASETS_DIR_ABS="$(realpath -m "$DATASETS_DIR")"
+OUTPUT_TAR_ABS="$(realpath -m "$OUTPUT_TAR")"
+
+mkdir -p "$(dirname "$OUTPUT_TAR_ABS")"
+
+tmp_list="$(mktemp)"
+while IFS= read -r entry; do
+  [ -n "$entry" ] || continue
+  case "$entry" in
+    \#*) continue ;;
+  esac
+
+  if [[ "$entry" == /* ]]; then
+    rel_path="${entry#"$DATASETS_DIR_ABS/"}"
+  else
+    rel_path="$entry"
+    rel_path="${rel_path#./}"
+    rel_path="${rel_path#datasets/}"
+  fi
+
+  echo "$rel_path" >> "$tmp_list"
+done < "$LIST_FILE"
+
+tar -C "$DATASETS_DIR_ABS" -cvf "$OUTPUT_TAR_ABS" -T "$tmp_list"
+rm -f "$tmp_list"
+
+echo "Created tar from $LIST_FILE at: $OUTPUT_TAR_ABS"
+
 echo "Currently only doing NewtPhys dataset. YOU NEED TO REWRITE THE SCRIPT."
 exit 0
 

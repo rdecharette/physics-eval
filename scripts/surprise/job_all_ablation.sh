@@ -1,6 +1,5 @@
 configs=(
-    "48 24 8 topp50 mean max"
-    "48 24 8 topp50 mean max"
+    "48 24 8 topk3 mean max"
     # "16 8 8 topp50 mean"
     # "16 8 4 topp50 mean"
 

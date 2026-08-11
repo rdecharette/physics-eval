@@ -5,6 +5,7 @@ set -euo pipefail
 #   JOB_PROFILE=<name> bash scripts/surprise/job_all.sh
 #
 # Profiles set JOB_LAUNCHER, JOB_PROFILE_ARGS, and optional JOB_HEADER commands.
+JOB_TIME=${JOB_TIME:-}
 
 job_profile_set_jeanzay_common() {
     JOB_LAUNCHER="sbatch"
@@ -40,27 +41,24 @@ job_profile_config() {
         # JEANZAY cluster A100 dev partition
         jeanzay-a100-dev)
             job_profile_set_jeanzay_common
+            if [[ -z "$JOB_TIME" ]]; then
+                JOB_TIME="02:00:00"
+            fi
             JOB_PROFILE_ARGS+=(
                 --qos=qos_gpu_a100-dev
-                --time=02:00:00
+                --time="$JOB_TIME"
             )
             ;;
 
         # JEANZAY cluster A100 t3 partition
         jeanzay-a100-t3)
             job_profile_set_jeanzay_common
+            if [[ -z "$JOB_TIME" ]]; then
+                JOB_TIME="10:00:00"
+            fi
             JOB_PROFILE_ARGS+=(
                 --qos=qos_gpu_a100-t3
-                --time=10:00:00
-            )
-            ;;
-
-        # JEANZAY cluster A100 t3 partition
-        jeanzay-a100-t3)
-            job_profile_set_jeanzay_common
-            JOB_PROFILE_ARGS+=(
-                --qos=qos_gpu_a100-t3
-                --time=10:00:00
+                --time="$JOB_TIME"
             )
             ;;
 

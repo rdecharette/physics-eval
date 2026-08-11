@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -33,13 +34,8 @@ def looks_like_ffmpeg_failure(stderr: str, returncode: int) -> bool:
     return any(pattern.lower() in lowered_stderr for pattern in FFMPEG_FAILURE_PATTERNS)
 
 
-def find_videos(src_root: Path, extensions: set[str]) -> list[Path]:
-    normalized_extensions = {
-        ext.lower() if ext.startswith(".") else f".{ext.lower()}"
-        for ext in extensions
-    }
-    if not normalized_extensions:
-        return []
+def find_videos(src_root: Path) -> list[Path]:
+    normalized_extensions = sorted(DEFAULT_EXTENSIONS)
 
     videos: list[Path] = []
     seen: set[Path] = set()
@@ -286,16 +282,16 @@ def convert_one(
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
-            "Convert all videos in a dataset folder to a target FPS and optional "
+            "Convert videos from an input folder or text file list to a target FPS and optional "
             "spatial bounds, and write them to a mirrored output folder with the same "
             "directory structure."
         )
     )
     parser.add_argument(
-        "--dataset",
+        "--input",
         type=Path,
         default=Path("datasets/intphys2"),
-        help="Dataset root directory to scan (default: datasets/intphys2)",
+        help="Input folder to scan or .txt file listing videos (default: datasets/intphys2)",
     )
     parser.add_argument(
         "--filter",
@@ -336,17 +332,10 @@ def main() -> None:
     parser.add_argument(
         "--dst",
         type=Path,
-        default=None,
+        required=True,
         help=(
-            "Destination root directory. If omitted, defaults to: "
-            "<dataset>_<FPS>fps, <dataset>_<W>x<H>, or <dataset>_<W>x<H>_<FPS>fps."
+            "Destination root directory."
         ),
-    )
-    parser.add_argument(
-        "--ext",
-        nargs="*",
-        default=sorted(DEFAULT_EXTENSIONS),
-        help="Video file extensions to include (default: common video extensions)",
     )
     parser.add_argument(
         "--ffmpeg-bin",
@@ -381,8 +370,12 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    src_root = args.dataset.resolve()
-    extensions = {ext if ext.startswith(".") else f".{ext}" for ext in args.ext}
+    input_path = args.input.resolve()
+    input_is_txt = input_path.is_file() and input_path.suffix.lower() == ".txt"
+
+    if input_is_txt:
+        if args.filter is not None:
+            raise SystemExit("--filter is not allowed when --input is a .txt file")
 
     if args.workers < 1:
         raise SystemExit("--workers must be >= 1")
@@ -403,12 +396,42 @@ def main() -> None:
         except ValueError as exc:
             raise SystemExit(str(exc)) from exc
 
-    if not src_root.exists() or not src_root.is_dir():
-        raise SystemExit(f"Dataset directory does not exist: {src_root}")
+    if input_is_txt:
+        print(f"Reading video list from {input_path}")
+        videos = []
+        output_rel_paths: list[Path] = []
+        video_list_dir = input_path.parent
+        with input_path.open("r", encoding="utf-8") as handle:
+            for line in handle:
+                entry = line.strip()
+                if not entry or entry.lstrip().startswith("#"):
+                    continue
 
-    print(f"Scanning for videos under {src_root} with extensions: {sorted(extensions)}")
-    videos = find_videos(src_root, {e.lower() for e in extensions})
-    print(f"Found {len(videos)} videos")
+                output_rel_entry = Path(entry)
+                if output_rel_entry.is_absolute():
+                    output_rel_entry = Path(output_rel_entry.as_posix().lstrip("/"))
+                output_rel_paths.append(output_rel_entry)
+
+                entry_path = Path(entry).expanduser()
+                if not entry_path.is_absolute():
+                    entry_path = (video_list_dir / entry_path).resolve()
+                videos.append(entry_path)
+
+        if not videos:
+            raise SystemExit(f"No matching videos found in list: {input_path}")
+
+        src_root = Path(os.path.commonpath([str(v.parent) for v in videos]))
+        print(f"Found {len(videos)} videos from list")
+    else:
+        output_rel_paths = []
+        if not input_path.exists() or not input_path.is_dir():
+            raise SystemExit(f"Input directory does not exist: {input_path}")
+
+        src_root = input_path
+        print(f"Scanning for videos under {src_root} with extensions: {sorted(DEFAULT_EXTENSIONS)}")
+        videos = find_videos(src_root)
+        print(f"Found {len(videos)} videos")
+
     if args.filter is not None:
         print(f"Filtering videos using pattern: {args.filter}")
         filter_pattern = args.filter.strip()
@@ -425,7 +448,7 @@ def main() -> None:
         print(f"After filtering, {len(videos)} videos remain")
 
     if not videos:
-        raise SystemExit(f"No matching videos found under: {src_root}")
+        raise SystemExit(f"No matching videos found for input: {input_path}")
 
     resolved_size: tuple[int, int] | None = None
     if args.width is not None or args.height is not None:
@@ -440,28 +463,7 @@ def main() -> None:
         assert resolved_size is not None
         print(f"Resolved target size for naming: {resolved_size[0]}x{resolved_size[1]}")
 
-    if args.dst is not None:
-        dst_root = args.dst.resolve()
-    else:
-        trim_suffix = ""
-        if trim_start is not None and trim_end is not None:
-            trim_suffix = f"trim-s{trim_start}-e{trim_end}"
-        elif trim_start is not None:
-            trim_suffix = f"trim-s{trim_start}"
-        elif trim_end is not None:
-            trim_suffix = f"trim-e{trim_end}"
-
-        if resolved_size is not None:
-            size_suffix = f"{resolved_size[0]}x{resolved_size[1]}"
-            if args.fps is not None:
-                suffix = f"{size_suffix}_{args.fps}fps{trim_suffix}"
-            else:
-                suffix = f"{size_suffix}_{trim_suffix}"
-        elif args.fps is not None:
-            suffix = f"{args.fps}fps_{trim_suffix}"
-        else:
-            suffix = f"{trim_suffix}"
-        dst_root = Path(f"{src_root}_{suffix}")
+    dst_root = args.dst.resolve()
 
     print(f"Found {len(videos)} videos under {src_root}")
     if args.filter is not None:
@@ -499,7 +501,13 @@ def main() -> None:
     total = len(videos)
 
     for idx, src_path in enumerate(videos, start=1):
-        rel_path = src_path.relative_to(src_root)
+        if input_is_txt:
+            rel_path = output_rel_paths[idx - 1]
+        else:
+            try:
+                rel_path = src_path.relative_to(src_root)
+            except ValueError:
+                rel_path = Path(src_path.name)
         dst_path = dst_root / rel_path
 
         if dst_path.exists() and not args.overwrite:
