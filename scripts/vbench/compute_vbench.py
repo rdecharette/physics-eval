@@ -25,7 +25,7 @@ DEFAULT_DIMENSION_LIST = [
   "aesthetic_quality",
   "imaging_quality",
 ]
-VIDEO_PATHS_SHUFFLE_SEED = 42
+VIDEO_PATHS_SHUFFLE_SEED = 42  # Important to remain the same as the path shuffling for surprises and other per-video metrics. 42 is the answer to life. Hence to the metrics.
 
 
 def parse_dimension_list(value: str | None) -> list[str]:
