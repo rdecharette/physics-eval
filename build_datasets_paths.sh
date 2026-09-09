@@ -2,7 +2,7 @@
 # find datasets/ContPhy/ -type f -name "output_Full.mp4" > contphy.txt
 
 # PisaBench videos (you need to have created the videos first using the download_pisabench.sh script)
-find datasets/pisabench/real_sync/ -type f -name "*.mp4" > pisabench.txt
+# find datasets/pisabench/real_sync/ -type f -name "*.mp4" > pisabench.txt
 
 # # PhysicsIQ-verified
 # find datasets/physics-iq-verified/full-videos/ -type f -name "*.mp4" > physics-iq-verified.txt
@@ -11,34 +11,20 @@ find datasets/pisabench/real_sync/ -type f -name "*.mp4" > pisabench.txt
 # find datasets/PhysBench/ -type f -name "*.mp4" > PhysBench.txt
 
 
-# # Newtphys random videos
-# find "datasets/NewtPhys/dl3dv/random/1/" \
-#   -type d -name '_invalid' -prune -o \
-#   -type f -name '_fps-25_render.mp4' -print > newtphys_random_1.txt
-# find "datasets/NewtPhys/dl3dv/random/2/" \
-#   -type d -name '_invalid' -prune -o \
-#   -type f -name '_fps-25_render.mp4' -print > newtphys_random_2.txt
-# find "datasets/NewtPhys/dl3dv/random/3/" \
-#   -type d -name '_invalid' -prune -o \
-#   -type f -name '_fps-25_render.mp4' -print > newtphys_random_3.txt
-# find "datasets/NewtPhys/dl3dv/random/4/" \
-#   -type d -name '_invalid' -prune -o \
-#   -type f -name '_fps-25_render.mp4' -print > newtphys_random_4.txt
-# find "datasets/NewtPhys/dl3dv/random/5/" \
-#   -type d -name '_invalid' -prune -o \
-#   -type f -name '_fps-25_render.mp4' -print > newtphys_random_5.txt
-# find "datasets/NewtPhys/dl3dv/random/6/" \
-#   -type d -name '_invalid' -prune -o \
-#   -type f -name '_fps-25_render.mp4' -print > newtphys_random_6.txt
-# find "datasets/NewtPhys/dl3dv/random/7/" \
-#   -type d -name '_invalid' -prune -o \
-#   -type f -name '_fps-25_render.mp4' -print > newtphys_random_7.txt
-# find "datasets/NewtPhys/dl3dv/random/8/" \
-#   -type d -name '_invalid' -prune -o \
-#   -type f -name '_fps-25_render.mp4' -print > newtphys_random_8.txt
-# find "datasets/NewtPhys/dl3dv/random/9/" \
-#   -type d -name '_invalid' -prune -o \
-#   -type f -name '_fps-25_render.mp4' -print > newtphys_random_9.txt
+# Newtphys random videos
+NEWTPHYS_PATH="/nfs/data/workspaces/rdechare/codes/physics-sim/output/sims/v6/dl3dv/random/"
+NEWTPHYS_LOCAL="datasets/NewtPhys/dl3dv/random/"
+
+: > NewtPhys.txt
+find "$NEWTPHYS_PATH" \
+  -type d -name '_invalid' -prune -o \
+  -type f -name '_fps-25_render.mp4' -print | while IFS= read -r src; do
+    rel="${src#"$NEWTPHYS_PATH"/}"
+    destdir="$NEWTPHYS_LOCAL/$(dirname "$rel")"
+    mkdir -p "$destdir"
+    ln -sf "$src" "$destdir/_fps-25_render.mp4"
+    echo "$destdir/_fps-25_render.mp4" >> NewtPhys.txt
+  done
 
 # IntPhys2 videos
 # python intphys2_split.py

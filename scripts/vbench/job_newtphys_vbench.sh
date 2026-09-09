@@ -6,4 +6,4 @@ source "$ROOT_DIR/scripts/vbench/slurm_job_vench.sh"
 
 export REQUIRED_DATASET="NewtPhys"
 
-submit_vbench_job "newtphys_random_all"
+submit_vbench_job "NewtPhys"
