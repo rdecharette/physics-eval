@@ -62,6 +62,20 @@ job_profile_config() {
             )
             ;;
 
+        # JEANZAY cluster H100 t3 partition
+        jeanzay-h100-t3)
+            job_profile_set_jeanzay_common
+            if [[ -z "$JOB_TIME" ]]; then
+                JOB_TIME="10:00:00"
+            fi
+            JOB_PROFILE_ARGS+=(
+                --qos=qos_gpu_h100-t3
+                --time="$JOB_TIME"
+                --account=pab@h100
+                --constraint=h100
+            )
+            ;;
+
         # SALSA cluster
         salsa)
             JOB_LAUNCHER="sbatch"

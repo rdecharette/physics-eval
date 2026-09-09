@@ -12,8 +12,8 @@
 
 
 # Newtphys random videos
-NEWTPHYS_PATH="/nfs/data/workspaces/rdechare/codes/physics-sim/output/sims/v6/dl3dv/random/"
-NEWTPHYS_LOCAL="datasets/NewtPhys/dl3dv/random/"
+NEWTPHYS_PATH="/nfs/data/workspaces/rdechare/codes/physics-sim/output/sims/v6/dl3dv/random"
+NEWTPHYS_LOCAL="datasets/NewtPhys/dl3dv/random"
 
 : > NewtPhys.txt
 find "$NEWTPHYS_PATH" \
