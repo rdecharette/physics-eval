@@ -21,7 +21,7 @@ For example, `0.125_0.250.png` starts at pixel `(32,64)` in a 256×256 image.
 exact normalized coordinates. Coordinates use at least three decimal places;
 scale 4 uses three (e.g. `0.000_0.125.png`), while scale 8 needs four to
 represent `0.0625` exactly. The manifest records `coordinate_decimals`.
-Step 2 uses the same fixed-width stems for variant folders; configuration
+Step 2 uses the same fixed-width coordinates in `masked_<y>_<x>.mp4`; configuration
 tags such as `s4-v0.5` remain unchanged. `preview/contact_sheet.png` shows all masks with
 pixel-coordinate labels. Only masks are root-level PNG files.
 
@@ -52,24 +52,24 @@ converted to RGB, and resized with Pillow bilinear interpolation before masking.
 For this example the resize is 288×288 to 256×256. Pixels outside the retained
 rectangle become constant RGB `(128,128,128)`; there is no preserved border.
 
-Each mask yields:
+Each mask yields one video directly in the source-video output directory:
 
 ```text
-cache/datasets_variants/masked/s4-v0.5/datasets/intphys/dev/O1/02/1/<y_x>/scene/<original-name>.png
-cache/datasets_variants/masked/s4-v0.5/datasets/intphys/dev/O1/02/1/<y_x>/video.mp4
+cache/datasets_variants/masked/s4-v0.5/datasets/intphys/dev/O1/02/1/masked_0.000_0.000.mp4
 ```
 
-PNGs preserve the original frame count and names, at the original **25 FPS** timing.
+Masked RGB frames are piped directly to ffmpeg at the original **25 FPS** timing.
+No intermediate PNGs, per-mask subdirectories, or cached contact sheets are written.
 MP4s use standard H.264 High profile (`libx264`, CRF 12, `yuv420p`), with explicit
 BT.709 color conversion and limited-range metadata for browser playback.
-PNGs remain pixel-exact; MP4s introduce small conversion/compression differences
+MP4s introduce small conversion/compression differences
 and chroma subsampling. RGB H.264 previously decoded correctly in decord but
 displayed distorted colors in the browser player. The FPS filter converts
 25 FPS to **30 FPS** by duplicating frames. A 100-frame, four-second input therefore
 produces 120 encoded frames and remains four seconds long. Override `--source-fps`
 if the source sequence has a different acquisition rate; `--target-fps` defaults
 to 30 for the evaluator. Fractional rates are accepted. General durations are
-preserved to target-frame precision. The PNGs provide an easy way to inspect the exact masked pixels.
+preserved to target-frame precision. The original source PNGs and step-1 mask PNGs remain untouched.
 
 The per-source-video `manifest.json` records source filenames, counts, dimensions,
 rates, mask metadata, fill and encoding parameters, and all output paths. The
@@ -78,10 +78,6 @@ evaluation. It is written only after the full generation succeeds. The script
 validates input masks and source frames before generating outputs and refuses
 a nonempty mask-set destination. After an interrupted run, use a fresh output
 root (for example `--output-root /tmp/masked-review`) to avoid mixing artifacts.
-
-Each source video's `preview/contact_sheet.png` shows the middle source frame
-under all masks, labeled with normalized top-left coordinates. The manifest
-records which frame is shown.
 
 Run the small end-to-end tests (requires the environment's NumPy and decord,
 plus ffmpeg):
@@ -92,7 +88,7 @@ conda run -n physics-eval python -m unittest discover -s tests -p test_spatial_m
 
 ## Manual checkpoint
 
-Review the scale-4 masks and masked frames/videos before step 3. No Slurm jobs
+Review the scale-4 masks and masked videos before step 3. No Slurm jobs
 are submitted by these scripts. Later stages retain unchanged temporal-surprise
 scoring, use a heatmap normalized by the sum of covering masks, and use the
 `s4-v0.5` directory tag.

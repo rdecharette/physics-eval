@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
-"""Generate gray-masked IntPhys frames and browser-compatible, duration-preserving MP4s."""
+"""Generate gray-masked IntPhys videos without storing intermediate frames."""
 
 import argparse
 from fractions import Fraction
 import json
-from math import ceil, isqrt
 from pathlib import Path
 import re
 import shutil
 import subprocess
 
-from PIL import Image, ImageChops, ImageDraw
+from PIL import Image, ImageChops
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -88,22 +87,6 @@ def input_videos(source_root, video_list):
     return videos
 
 
-def create_contact_sheet(video_dir, variants, frame_name):
-    """Preview the same middle source frame under every mask."""
-    columns = isqrt(len(variants) - 1) + 1
-    sheet = Image.new("RGB", (columns * 160, ceil(len(variants) / columns) * 152), "white")
-    draw = ImageDraw.Draw(sheet)
-    for i, variant in enumerate(variants):
-        left, top = (i % columns) * 160, (i // columns) * 152
-        with Image.open(Path(variant["frames"]) / frame_name) as image:
-            image.thumbnail((128, 128), Image.Resampling.NEAREST)
-            sheet.paste(image, (left + 16, top))
-        draw.text((left + 4, top + 132), Path(variant["mask"]).stem, fill="black")
-    preview = video_dir / "preview"
-    preview.mkdir(exist_ok=True)
-    sheet.save(preview / "contact_sheet.png")
-
-
 def generate(args):
     source_fps, target_fps = Fraction(args.source_fps), Fraction(args.target_fps)
     if source_fps <= 0 or target_fps <= 0:
@@ -133,12 +116,10 @@ def generate(args):
             with Image.open(frame) as image:
                 resized.append(image.convert("RGB").resize((width, height), Image.Resampling.BILINEAR))
         video_dir = output / relative
+        video_dir.mkdir(parents=True)
         variants = []
         for record, mask in masks:
-            variant_dir = video_dir / Path(record["filename"]).stem
-            scene_dir = variant_dir / "scene"
-            scene_dir.mkdir(parents=True)
-            encoded = variant_dir / "video.mp4"
+            encoded = video_dir / f"masked_{Path(record['filename']).stem}.mp4"
             command = [ffmpeg, "-hide_banner", "-loglevel", "error", "-nostdin", "-n",
                        "-f", "rawvideo", "-pixel_format", "rgb24", "-video_size", f"{width}x{height}",
                        "-framerate", str(source_fps), "-i", "pipe:0", "-an",
@@ -150,9 +131,8 @@ def generate(args):
                        "-movflags", "+faststart", str(encoded)]
             with subprocess.Popen(command, stdin=subprocess.PIPE) as process:
                 try:
-                    for source, image in zip(frames, resized):
+                    for image in resized:
                         masked = Image.composite(image, background, mask)
-                        masked.save(scene_dir / source.name)
                         process.stdin.write(masked.tobytes())
                 except BaseException:
                     process.kill()
@@ -163,12 +143,10 @@ def generate(args):
                     raise RuntimeError(f"ffmpeg failed for {encoded}")
             all_paths.append(str(encoded))
             variants.append({"mask": record["filename"], "bounds_pixels": record["bounds_pixels"],
-                             "frames": str(scene_dir), "video": str(encoded)})
+                             "video": str(encoded)})
             print(f"Generated {encoded}", flush=True)
-        preview_frame = frames[len(frames) // 2].name
-        create_contact_sheet(video_dir, variants, preview_frame)
         manifest = {
-            "schema_version": 1, "dataset_path": relative.as_posix(),
+            "schema_version": 2, "dataset_path": relative.as_posix(),
             "source_directory": str((args.source_root / relative).resolve()),
             "source_frame_names": [frame.name for frame in frames], "source_frame_count": len(frames),
             "source_size": {"width": original_size[0], "height": original_size[1]},
@@ -176,17 +154,15 @@ def generate(args):
             "resize": "Pillow RGB conversion then bilinear resize before masking",
             "source_fps": str(source_fps), "target_fps": str(target_fps),
             "source_duration_seconds": float(Fraction(len(frames), 1) / source_fps),
-            "png_timing": "One PNG per source frame; use source_fps for playback",
             "frame_mapping_policy": "ffmpeg fps filter, round=near; duplicate/drop frames to preserve duration to target-frame precision",
             "fill_rgb": [128, 128, 128], "mask_manifest": str(mask_dir / "manifest.json"),
             "scale": mask_manifest["scale"], "overlap": mask_manifest["overlap"],
             "coordinate_decimals": mask_manifest.get("coordinate_decimals"),
-            "contact_sheet": "preview/contact_sheet.png", "preview_source_frame": preview_frame,
             "encoding": {"codec": "libx264", "crf": 12, "preset": "fast", "threads": 1,
                          "input_pixel_format": "rgb24", "requested_output_pixel_format": "yuv420p",
                          "profile": "high", "color_space": "bt709", "color_range": "limited",
                          "color_primaries": "bt709", "color_transfer": "bt709",
-                         "pixel_preservation": "PNGs exact; MP4 uses chroma subsampling and lossy compression",
+                         "pixel_preservation": "MP4 uses chroma subsampling and lossy compression; intermediate RGB frames are not stored",
                          "fps_filter": f"fps=fps={target_fps}:round=near"},
             "variants": variants,
         }

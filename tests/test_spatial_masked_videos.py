@@ -54,22 +54,20 @@ class MaskedVideosTest(unittest.TestCase):
             "--mask-dir", str(self.mask_dir), "--output-root", str(self.output),
         ], capture_output=True, text=True)
 
-    def test_png_pixels_video_colors_timing_order_and_no_overwrite(self):
+    def test_flat_videos_colors_timing_order_and_no_overwrite(self):
         result = self.run_generator()
         self.assertEqual(result.returncode, 0, result.stderr)
         manifest = json.loads((self.mask_dir / "manifest.json").read_text())
         files = []
         for record in manifest["masks"]:
             mask = np.array(Image.open(self.mask_dir / record["filename"])) != 0
-            variant = self.output / "s2-v0" / self.relative / Path(record["filename"]).stem
-            self.assertEqual(len(list((variant / "scene").glob("*.png"))), 5)
+            video_dir = self.output / "s2-v0" / self.relative
             expected = []
-            for name, frame in zip(self.names, self.expected):
+            for frame in self.expected:
                 a = np.full_like(frame, 128)
                 a[mask] = frame[mask]
                 expected.append(a)
-                self.assertTrue(np.array_equal(np.array(Image.open(variant / "scene" / name)), a))
-            video = variant / "video.mp4"
+            video = video_dir / f"masked_{Path(record['filename']).stem}.mp4"
             metadata = json.loads(subprocess.check_output([
                 "ffprobe", "-v", "error", "-select_streams", "v:0",
                 "-show_entries", "stream=pix_fmt,profile,color_space,color_range,color_transfer,color_primaries",
@@ -91,6 +89,13 @@ class MaskedVideosTest(unittest.TestCase):
                 self.assertLess(error.mean(), 3, f"Frame {j}: color conversion error")
                 self.assertLess(error[mask].mean(), 6, f"Frame {j}: retained colors")
             files.append(video)
+        self.assertEqual(list(self.output.rglob("*.png")), [])
+        self.assertFalse(any(p.is_dir() for p in video_dir.iterdir()))
+        output_manifest = json.loads((video_dir / "manifest.json").read_text())
+        self.assertEqual(output_manifest["schema_version"], 2)
+        self.assertEqual([r["video"] for r in output_manifest["variants"]], list(map(str, files)))
+        self.assertTrue(all("frames" not in r for r in output_manifest["variants"]))
+        self.assertEqual((self.output / "s2-v0/videos.txt").read_text().splitlines(), list(map(str, files)))
         before = [hashlib.sha256(p.read_bytes()).hexdigest() for p in files]
         result = self.run_generator()
         self.assertNotEqual(result.returncode, 0)
