@@ -1,7 +1,7 @@
 # Spatial surprise — masks and masked videos
 
 Run from the repository root with the existing `physics-eval` environment
-(Python with Pillow) and `ffmpeg` providing the `libx264rgb` encoder.
+(Python with Pillow) and `ffmpeg` providing the `libx264` encoder.
 
 ## Step 1: masks
 
@@ -15,10 +15,14 @@ pass `--scale 4` explicitly. Output paths default to this repository regardless
 of the working directory. `--output-root` selects a different parent directory.
 
 Each PNG is an 8-bit grayscale image with 255 meaning valid and 0 meaning masked.
-Names encode the exact normalized top-left coordinates, `y/height_x/width.png`.
-For example, `0.125_0.25.png` starts at pixel `(32,64)` in a 256×256 image.
+Names encode the exact normalized top-left coordinates, `y/height_x/width.png`, with the same fixed decimal width throughout each mask set.
+For example, `0.125_0.250.png` starts at pixel `(32,64)` in a 256×256 image.
 `data/mask/s4-v0.5/manifest.json` records each mask's half-open pixel bounds and
-exact normalized coordinates. `preview/contact_sheet.png` shows all masks with
+exact normalized coordinates. Coordinates use at least three decimal places;
+scale 4 uses three (e.g. `0.000_0.125.png`), while scale 8 needs four to
+represent `0.0625` exactly. The manifest records `coordinate_decimals`.
+Step 2 uses the same fixed-width stems for variant folders; configuration
+tags such as `s4-v0.5` remain unchanged. `preview/contact_sheet.png` shows all masks with
 pixel-coordinate labels. Only masks are root-level PNG files.
 
 Parameters must give integer window sizes, positive integer strides, and exact
@@ -56,13 +60,16 @@ cache/datasets_variants/masked/s4-v0.5/datasets/intphys/dev/O1/02/1/<y_x>/video.
 ```
 
 PNGs preserve the original frame count and names, at the original **25 FPS** timing.
-MP4s use lossless RGB H.264 (`libx264rgb`, CRF 0), with ffmpeg's FPS filter converting
+MP4s use standard H.264 High profile (`libx264`, CRF 12, `yuv420p`), with explicit
+BT.709 color conversion and limited-range metadata for browser playback.
+PNGs remain pixel-exact; MP4s introduce small conversion/compression differences
+and chroma subsampling. RGB H.264 previously decoded correctly in decord but
+displayed distorted colors in the browser player. The FPS filter converts
 25 FPS to **30 FPS** by duplicating frames. A 100-frame, four-second input therefore
 produces 120 encoded frames and remains four seconds long. Override `--source-fps`
 if the source sequence has a different acquisition rate; `--target-fps` defaults
 to 30 for the evaluator. Fractional rates are accepted. General durations are
-preserved to target-frame precision. RGB H.264 support is required for playback;
-the PNGs also provide an easy way to inspect the exact masked pixels.
+preserved to target-frame precision. The PNGs provide an easy way to inspect the exact masked pixels.
 
 The per-source-video `manifest.json` records source filenames, counts, dimensions,
 rates, mask metadata, fill and encoding parameters, and all output paths. The

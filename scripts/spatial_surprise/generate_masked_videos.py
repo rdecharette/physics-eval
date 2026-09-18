@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate gray-masked IntPhys frames and lossless, duration-preserving MP4s."""
+"""Generate gray-masked IntPhys frames and browser-compatible, duration-preserving MP4s."""
 
 import argparse
 from fractions import Fraction
@@ -113,12 +113,14 @@ def generate(args):
         raise ValueError("ffmpeg is required on PATH")
     encoders = subprocess.run([ffmpeg, "-hide_banner", "-encoders"],
                               capture_output=True, text=True, check=True)
-    if "libx264rgb" not in encoders.stdout:
-        raise ValueError("ffmpeg must provide the libx264rgb encoder")
+    if "libx264 " not in encoders.stdout:
+        raise ValueError("ffmpeg must provide the libx264 encoder")
     mask_dir = args.mask_dir.resolve()
     mask_manifest, masks = load_masks(mask_dir)
     videos = input_videos(args.source_root.resolve(), args.video_list)
     width, height = mask_manifest["width"], mask_manifest["height"]
+    if width % 2 or height % 2:
+        raise ValueError("YUV420 video output requires even mask dimensions")
     output = args.output_root.resolve() / mask_dir.name
     if output.exists() and (not output.is_dir() or any(output.iterdir())):
         raise ValueError(f"Output already exists and is not empty: {output}")
@@ -140,8 +142,11 @@ def generate(args):
             command = [ffmpeg, "-hide_banner", "-loglevel", "error", "-nostdin", "-n",
                        "-f", "rawvideo", "-pixel_format", "rgb24", "-video_size", f"{width}x{height}",
                        "-framerate", str(source_fps), "-i", "pipe:0", "-an",
-                       "-vf", f"fps=fps={target_fps}:round=near", "-c:v", "libx264rgb",
-                       "-crf", "0", "-preset", "fast", "-threads", "1", "-pix_fmt", "rgb24",
+                       "-vf", f"fps=fps={target_fps}:round=near,scale=in_range=full:out_range=limited:out_color_matrix=bt709,format=yuv420p",
+                       "-c:v", "libx264", "-profile:v", "high",
+                       "-crf", "12", "-preset", "fast", "-threads", "1", "-pix_fmt", "yuv420p",
+                       "-color_range", "tv", "-colorspace", "bt709",
+                       "-color_primaries", "bt709", "-color_trc", "bt709",
                        "-movflags", "+faststart", str(encoded)]
             with subprocess.Popen(command, stdin=subprocess.PIPE) as process:
                 try:
@@ -175,9 +180,13 @@ def generate(args):
             "frame_mapping_policy": "ffmpeg fps filter, round=near; duplicate/drop frames to preserve duration to target-frame precision",
             "fill_rgb": [128, 128, 128], "mask_manifest": str(mask_dir / "manifest.json"),
             "scale": mask_manifest["scale"], "overlap": mask_manifest["overlap"],
+            "coordinate_decimals": mask_manifest.get("coordinate_decimals"),
             "contact_sheet": "preview/contact_sheet.png", "preview_source_frame": preview_frame,
-            "encoding": {"codec": "libx264rgb", "crf": 0, "preset": "fast", "threads": 1,
-                         "input_pixel_format": "rgb24", "requested_output_pixel_format": "rgb24",
+            "encoding": {"codec": "libx264", "crf": 12, "preset": "fast", "threads": 1,
+                         "input_pixel_format": "rgb24", "requested_output_pixel_format": "yuv420p",
+                         "profile": "high", "color_space": "bt709", "color_range": "limited",
+                         "color_primaries": "bt709", "color_transfer": "bt709",
+                         "pixel_preservation": "PNGs exact; MP4 uses chroma subsampling and lossy compression",
                          "fps_filter": f"fps=fps={target_fps}:round=near"},
             "variants": variants,
         }

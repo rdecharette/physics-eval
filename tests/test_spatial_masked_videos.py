@@ -54,7 +54,7 @@ class MaskedVideosTest(unittest.TestCase):
             "--mask-dir", str(self.mask_dir), "--output-root", str(self.output),
         ], capture_output=True, text=True)
 
-    def test_rgb_pixels_timing_order_and_no_overwrite(self):
+    def test_png_pixels_video_colors_timing_order_and_no_overwrite(self):
         result = self.run_generator()
         self.assertEqual(result.returncode, 0, result.stderr)
         manifest = json.loads((self.mask_dir / "manifest.json").read_text())
@@ -70,12 +70,26 @@ class MaskedVideosTest(unittest.TestCase):
                 expected.append(a)
                 self.assertTrue(np.array_equal(np.array(Image.open(variant / "scene" / name)), a))
             video = variant / "video.mp4"
+            metadata = json.loads(subprocess.check_output([
+                "ffprobe", "-v", "error", "-select_streams", "v:0",
+                "-show_entries", "stream=pix_fmt,profile,color_space,color_range,color_transfer,color_primaries",
+                "-of", "json", str(video),
+            ], text=True))["streams"][0]
+            self.assertEqual(metadata["pix_fmt"], "yuv420p")
+            self.assertEqual(metadata["profile"], "High")
+            self.assertEqual(metadata["color_space"], "bt709")
+            self.assertEqual(metadata["color_range"], "tv")
+            self.assertEqual(metadata["color_transfer"], "bt709")
+            self.assertEqual(metadata["color_primaries"], "bt709")
             vr = VideoReader(str(video), num_threads=1)
             self.assertEqual(len(vr), 6)
             self.assertAlmostEqual(vr.get_avg_fps(), 30)
             for j in range(6):
                 source_index = ((2 * j + 1) * 25) // 60
-                self.assertTrue(np.array_equal(vr[j].asnumpy(), expected[source_index]), f"Frame {j}")
+                decoded = vr[j].asnumpy()
+                error = np.abs(decoded.astype(float) - expected[source_index])
+                self.assertLess(error.mean(), 3, f"Frame {j}: color conversion error")
+                self.assertLess(error[mask].mean(), 6, f"Frame {j}: retained colors")
             files.append(video)
         before = [hashlib.sha256(p.read_bytes()).hexdigest() for p in files]
         result = self.run_generator()

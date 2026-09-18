@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def decimal_string(value: Fraction) -> str:
+def decimal_string(value: Fraction, places: int | None = None) -> str:
     """Render an exact terminating decimal, without rounded coordinate aliases."""
     denominator = value.denominator
     twos = fives = 0
@@ -25,12 +25,16 @@ def decimal_string(value: Fraction) -> str:
         fives += 1
     if denominator != 1:
         raise ValueError("Normalized coordinates must have exact terminating decimals")
-    places = max(twos, fives)
+    required_places = max(twos, fives)
+    if places is None:
+        places = required_places
+    elif places < required_places:
+        raise ValueError("Decimal precision must represent coordinates exactly")
     scaled = value.numerator * (10**places // value.denominator)
     if not places:
         return str(scaled)
     digits = str(scaled).zfill(places + 1)
-    return (digits[:-places] + "." + digits[-places:]).rstrip("0").rstrip(".")
+    return digits[:-places] + "." + digits[-places:]
 
 
 def mask_layout(height: int, width: int, scale: int, overlap: Fraction):
@@ -47,10 +51,17 @@ def mask_layout(height: int, width: int, scale: int, overlap: Fraction):
     stride_y, stride_x = map(int, steps)
     if (height - window_h) % stride_y or (width - window_w) % stride_x:
         raise ValueError("Stride must land exactly on the last window for complete edge coverage")
+    ys = range(0, height - window_h + 1, stride_y)
+    xs = range(0, width - window_w + 1, stride_x)
+    coordinates = [Fraction(y, height) for y in ys] + [Fraction(x, width) for x in xs]
+    # Use one common precision for both axes. Never round coordinates merely to
+    # meet the three-decimal minimum (e.g. scale 8 requires 0.0625 exactly).
+    coordinate_decimals = max(3, *(len(decimal_string(v).partition(".")[2]) for v in coordinates))
     records = []
-    for y in range(0, height - window_h + 1, stride_y):
-        for x in range(0, width - window_w + 1, stride_x):
-            ny, nx = decimal_string(Fraction(y, height)), decimal_string(Fraction(x, width))
+    for y in ys:
+        for x in xs:
+            ny = decimal_string(Fraction(y, height), coordinate_decimals)
+            nx = decimal_string(Fraction(x, width), coordinate_decimals)
             records.append({
                 "filename": f"{ny}_{nx}.png",
                 "top_left_normalized": {"y": ny, "x": nx},
@@ -92,7 +103,8 @@ def generate(height, width, scale, overlap, output_root):
         "stride_pixels": {"y": stride[0], "x": stride[1]},
         "mask_count": len(records), "valid_value": 255, "masked_value": 0,
         "bounds_convention": "half-open: [y0, y1), [x0, x1)",
-        "coordinate_convention": "top-left y/height and x/width; exact decimal strings",
+        "coordinate_convention": "top-left y/height and x/width; exact fixed-width decimal strings",
+        "coordinate_decimals": len(records[0]["top_left_normalized"]["y"].partition(".")[2]),
         "contact_sheet": "preview/contact_sheet.png",
         "contact_sheet_labels": "top-left y,x in pixels; row-major order",
         "masks": records,
