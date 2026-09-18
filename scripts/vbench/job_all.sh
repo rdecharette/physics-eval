@@ -3,8 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export EVAL_MAX="${EVAL_MAX:-500}"
-export VARIANT="${VARIANT:-original}"
-
+export VARIANT="${VARIANT:-512p_30fps}"
 # export DIMENSION_LIST="background_consistency"
 
 # bash "$SCRIPT_DIR/job_physionpp_vbench.sh"

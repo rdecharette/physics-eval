@@ -6,7 +6,9 @@ export PYTHONUNBUFFERED=1
 WORKERS=${WORKERS:-32}
 
 TARGET_FPS=${TARGET_FPS:-30}
-TARGET_HEIGHT=${TARGET_HEIGHT:-256}
+# Preserve an explicitly empty value so TARGET_HEIGHT= means "keep original size".
+# An unset value retains the usual 256px default.
+TARGET_HEIGHT=${TARGET_HEIGHT-256}
 DATASET_LIST=${DATASET_LIST:-}
 
 IFS=',' read -r -a DATASET_LIST_FILES <<< "$DATASET_LIST"
@@ -33,12 +35,19 @@ for list_file in "${DATASET_LIST_FILES[@]}"; do
 
 	echo -e "\nConverting: $list_file with TARGET_HEIGHT=${TARGET_HEIGHT} and TARGET_FPS=${TARGET_FPS}"
 	log_file=$(mktemp)
+	conversion_args=(
+		--input "$list_file"
+		--workers "$WORKERS"
+		--dst "$CACHE_DIR"
+	)
+	if [ -n "$TARGET_HEIGHT" ]; then
+		conversion_args+=(--height "$TARGET_HEIGHT")
+	fi
+	if [ -n "$TARGET_FPS" ]; then
+		conversion_args+=(--fps "$TARGET_FPS")
+	fi
 	python convert_videos.py \
-		--input "$list_file" \
-		--height "$TARGET_HEIGHT" \
-		--workers "$WORKERS" \
-		--fps "$TARGET_FPS" \
-		--dst "$CACHE_DIR" | tee "$log_file"
+		"${conversion_args[@]}" | tee "$log_file"
 
 	summary_line=$(grep -E '^Done\. Converted=' "$log_file" | tail -n 1 || true)
 	if [[ "$summary_line" =~ Converted=([0-9]+),\ Failed=([0-9]+),\ Skipped=([0-9]+),\ Total=([0-9]+) ]]; then

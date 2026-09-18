@@ -3,8 +3,8 @@ export FORMAT="${FORMAT:-*}"
 # args_missing=" --missing-dimension"
 args_missing=""
 
-# RESULTS_DIR=output/vbench
-RESULTS_DIR=~/mnt/jz/physics-eval/output/vbench
+RESULTS_DIR=output/vbench
+# RESULTS_DIR=~/mnt/jz/physics-eval/output/vbench
 echo "##################################"
 echo "# Processing results in $RESULTS_DIR/$FORMAT/"
 echo "##################################"

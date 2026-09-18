@@ -19,8 +19,8 @@ submit_vbench_job() {
     if [[ -n "${EVAL_MAX:-}" ]]; then
         extra_args+=(--eval-max "$EVAL_MAX")
     fi
-    if [[ -n "${FORMAT:-}" ]]; then
-        extra_args+=(--format "$FORMAT")
+    if [[ -n "${VARIANT:-}" ]]; then
+        extra_args+=(--variant "$VARIANT")
     fi
     
     vbench_runner_body() {

@@ -3,8 +3,8 @@ export METRIC="${METRIC:-*}"
 export SETNUM="${SETNUM:-*}"
 export REFERENCE="${REFERENCE:-*}"
 
-# RESULTS_DIR=output/surprise
-RESULTS_DIR=~/mnt/jz/physics-eval/output/surprise
+RESULTS_DIR=output/cleanfid
+# RESULTS_DIR=~/mnt/jz/physics-eval/output/cleanfid
 echo "##################################"
 echo "# Processing results in $RESULTS_DIR/$METRIC/$SETNUM/$REFERENCE/"
 echo "##################################"
