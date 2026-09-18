@@ -88,7 +88,57 @@ conda run -n physics-eval python -m unittest discover -s tests -p test_spatial_m
 
 ## Manual checkpoint
 
-Review the scale-4 masks and masked videos before step 3. No Slurm jobs
-are submitted by these scripts. Later stages retain unchanged temporal-surprise
+The generation scripts stop for review before step 3 and never submit jobs.
+Use the separate step-3 launcher below after approval. Later stages retain unchanged temporal-surprise
 scoring, use a heatmap normalized by the sum of covering masks, and use the
 `s4-v0.5` directory tag.
+
+## Step 3: Slurm scoring
+
+Prepare the V-JEPA source dependency locally (the inherited `.gitmodules` entry
+is not a tracked gitlink in the source repository):
+
+```bash
+git clone --no-hardlinks /nfs/data/workspaces/rdechare/codes/physics-eval/third_party/WMReward/vjepa2 cache/vjepa2
+```
+
+The current dependency revision is `c2963a47433ecca0ad4f06ec28bcfa8cb5b5cefb`.
+The launcher exports this source as both `VJEPA_HUB_DIR` and `PYTHONPATH`, avoiding
+network code lookup; TorchHub still uses its cached `checkpoints/vith.pt` weights.
+The existing `physics-eval` conda environment and Salsa resource profile are reused.
+On Salsa, its `bin` directory is used directly to avoid stalled Conda plugin
+discovery during batch startup; `PYTHON_ENV` can override the environment path.
+
+```bash
+bash scripts/spatial_surprise/evaluate.sh --dry-run
+bash scripts/spatial_surprise/evaluate.sh
+```
+
+One GPU job runs `third_party/WMReward/test_vith.sh` against all 49 paths, loading
+the model once. Defaults match that script: ViT-H, max frames 150, temporal
+window 16, context 8, temporal stride 8, mean reduction, seed 42. Each current
+video has 120 frames, so the frame cap does not truncate it. Spatial overlap
+and temporal stride are separate parameters. Environment variables `TAG`,
+`JOB_PROFILE`, `VIDEO`, `MAXFRAMES`, `WINDOW_SIZE`, `CONTEXT_FRAMES`, `STRIDE`,
+`MODE`, `VJEPA_HUB_DIR`, and `OUTPUT_PATH` can override defaults.
+
+Scores are CSV rows `video,surprise` using the actual masked-video paths:
+
+```text
+output/spatial-surprise/s4-v0.5/scores/vith/mean/mf-150_w-16_c-8_s-8/surprises.csv
+```
+
+Logs and generated job scripts are under `logs/spatial-surprise/s4-v0.5/`.
+The direct-path evaluator option bypasses the legacy original-video cache rewrite.
+Finite completed scores can be resumed; a file lock prevents concurrent writers.
+The job fails if any requested score is missing or nonfinite. A final independent
+check requires exactly one finite row per input video and writes
+`surprises.summary.json`. It can also be run manually:
+
+```bash
+python scripts/spatial_surprise/verify_scores.py \
+  --video-list cache/datasets_variants/masked/s4-v0.5/videos.txt \
+  --scores output/spatial-surprise/s4-v0.5/scores/vith/mean/mf-150_w-16_c-8_s-8/surprises.csv
+```
+
+Stop after score review; heatmaps and overlay videos require the next approvals.

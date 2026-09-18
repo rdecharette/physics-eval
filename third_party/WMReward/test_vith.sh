@@ -14,6 +14,13 @@ STRIDE="${STRIDE:-8}"
 CONTEXT_FRAMES="${CONTEXT_FRAMES:-8}"
 MODE="${MODE:-mean}"
 EVAL_MAX="${EVAL_MAX:--1}"
+EXTRA_ARGS=()
+if [[ "${DIRECT_PATHS:-0}" == "1" ]]; then
+  EXTRA_ARGS+=(--direct_paths)
+fi
+if [[ -n "${OUTPUT_PATH:-}" ]]; then
+  EXTRA_ARGS+=(--output_path "$OUTPUT_PATH")
+fi
 
 command -v python >/dev/null 2>&1 || {
   echo "Error: python was not found in PATH. Activate the target environment before running." >&2
@@ -38,4 +45,5 @@ PYTHONUNBUFFERED=1 python -u compute_wmreward.py \
   --max_frames "$MAXFRAMES" \
   --eval_max "$EVAL_MAX" \
   --stride "$STRIDE" \
-  --mode "$MODE"
+  --mode "$MODE" \
+  "${EXTRA_ARGS[@]}"
