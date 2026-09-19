@@ -1,11 +1,11 @@
 {
-  "video_count": 49,
+  "video_count": 98,
   "minimum": 0.3607993721961975,
   "maximum": 0.4082198441028595,
-  "mean": 0.38662031171273215,
+  "mean": 0.38590438663959503,
   "video_list": "/nfs/data/workspaces/rdechare/codes/test/vjepa-surprise/cache/datasets_variants/masked/s4-v0.5/videos.txt",
   "scores": "/nfs/data/workspaces/rdechare/codes/test/vjepa-surprise/output/spatial-surprise/s4-v0.5/scores/vith/mean/mf-150_w-16_c-8_s-8/surprises.csv",
-  "job_id": "7804",
+  "job_id": "7807",
   "configuration": {
     "MAXFRAMES": "150",
     "WINDOW_SIZE": "16",
@@ -16,6 +16,6 @@
   },
   "model": "vith",
   "seed": 42,
-  "input_list_sha256": "7a9634b951dccf908a861dc427725c7f97a3a5f0c78b23656d8c6a06075d60ae",
+  "input_list_sha256": "7d2ef6f586858a8049475babe5d3d1cd369e9e10bd3cd3dc8acde2aa58271507",
   "model_source_revision": "c2963a47433ecca0ad4f06ec28bcfa8cb5b5cefb"
 }

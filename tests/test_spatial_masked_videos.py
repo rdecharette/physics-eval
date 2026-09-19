@@ -114,6 +114,23 @@ class MaskedVideosTest(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertEqual(list(self.output.rglob("*.mp4")), [])
 
+    def test_default_list_generates_both_source_videos(self):
+        second = Path("datasets/intphys/dev/O1/02/2")
+        shutil.copytree(self.scene, self.base / second / "scene")
+        result = subprocess.run([
+            sys.executable, str(ROOT / "scripts/spatial_surprise/generate_masked_videos.py"),
+            "--source-root", str(self.base), "--mask-dir", str(self.mask_dir),
+            "--output-root", str(self.output),
+        ], capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        entries = (self.output / "s2-v0/videos.txt").read_text().splitlines()
+        self.assertEqual(len(entries), 8)
+        self.assertEqual(len(set(entries)), 8)
+        for relative in (self.relative, second):
+            directory = self.output / "s2-v0" / relative
+            self.assertEqual(len(list(directory.glob("masked_*.mp4"))), 4)
+            self.assertTrue((directory / "manifest.json").is_file())
+
 
 if __name__ == "__main__":
     unittest.main()

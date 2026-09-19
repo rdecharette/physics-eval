@@ -13,7 +13,7 @@ from PIL import Image, ImageChops
 
 
 ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_VIDEO = "datasets/intphys/dev/O1/02/1"
+DEFAULT_VIDEO_LIST = ROOT / "scripts/spatial_surprise/videos.txt"
 
 
 def natural_key(path):
@@ -58,9 +58,9 @@ def load_masks(directory):
 
 
 def input_videos(source_root, video_list):
-    entries = ([line.strip() for line in video_list.read_text().splitlines()
-                if line.strip() and not line.lstrip().startswith("#")]
-               if video_list else [DEFAULT_VIDEO])
+    video_list = video_list if video_list is not None else DEFAULT_VIDEO_LIST
+    entries = [line.strip() for line in video_list.read_text().splitlines()
+               if line.strip() and not line.lstrip().startswith("#")]
     if not entries:
         raise ValueError("Video list is empty")
     videos = []
@@ -105,8 +105,9 @@ def generate(args):
     if width % 2 or height % 2:
         raise ValueError("YUV420 video output requires even mask dimensions")
     output = args.output_root.resolve() / mask_dir.name
-    if output.exists() and (not output.is_dir() or any(output.iterdir())):
-        raise ValueError(f"Output already exists and is not empty: {output}")
+    for relative, _, _ in videos:
+        if (output / relative).exists():
+            raise ValueError(f"Video output already exists: {output / relative}")
     output.mkdir(parents=True, exist_ok=True)
     background = Image.new("RGB", (width, height), (128, 128, 128))
     all_paths = []
@@ -174,7 +175,8 @@ def generate(args):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--video-list", type=Path, help="Text file of repository-relative datasets/... directories")
+    parser.add_argument("--video-list", type=Path, default=DEFAULT_VIDEO_LIST,
+                        help="Text file of repository-relative datasets/... directories (default: scripts/spatial_surprise/videos.txt)")
     parser.add_argument("--source-root", type=Path, default=ROOT)
     parser.add_argument("--mask-dir", type=Path, default=ROOT / "data/mask/s4-v0.5")
     parser.add_argument("--output-root", type=Path, default=ROOT / "cache/datasets_variants/masked")

@@ -1,4 +1,4 @@
-# Spatial surprise — masks and masked videos
+# Spatial surprise — masks, masked videos, scores, and heatmaps
 
 Run from the repository root with the existing `physics-eval` environment
 (Python with Pillow) and `ffmpeg` providing the `libx264` encoder.
@@ -41,8 +41,10 @@ With the masks already generated:
 conda run -n physics-eval python scripts/spatial_surprise/generate_masked_videos.py
 ```
 
-The default video is `datasets/intphys/dev/O1/02/1`; the default mask directory is
-`data/mask/s4-v0.5`. For several videos, provide `--video-list path/to/videos.txt`,
+The default list is `scripts/spatial_surprise/videos.txt`, containing
+`datasets/intphys/dev/O1/02/1` and `datasets/intphys/dev/O1/02/2`.
+The default mask directory is `data/mask/s4-v0.5`. Edit the list to change the
+inputs, or provide `--video-list path/to/videos.txt`,
 with one repository-relative `datasets/...` video directory per line. Blank lines
 and lines beginning with `#` are ignored. Supply `--mask-dir` to select another
 mask set; the manifest dimensions and masks determine the output geometry.
@@ -76,7 +78,8 @@ rates, mask metadata, fill and encoding parameters, and all output paths. The
 mask-set-level `videos.txt` lists absolute encoded video paths for subsequent
 evaluation. It is written only after the full generation succeeds. The script
 validates input masks and source frames before generating outputs and refuses
-a nonempty mask-set destination. After an interrupted run, use a fresh output
+an existing destination for any requested source video. The evaluation list
+contains only the inputs from the current invocation. After an interrupted run, use a fresh output
 root (for example `--output-root /tmp/masked-review`) to avoid mixing artifacts.
 
 Run the small end-to-end tests (requires the environment's NumPy and decord,
@@ -114,13 +117,21 @@ bash scripts/spatial_surprise/evaluate.sh --dry-run
 bash scripts/spatial_surprise/evaluate.sh
 ```
 
-One GPU job runs `third_party/WMReward/test_vith.sh` against all 49 paths, loading
-the model once. Defaults match that script: ViT-H, max frames 150, temporal
+One GPU job runs `third_party/WMReward/test_vith.sh` against all listed paths
+(98 for two videos with `s4-v0.5`), loading the model once.
+Defaults match that script: ViT-H, max frames 150, temporal
 window 16, context 8, temporal stride 8, mean reduction, seed 42. Each current
 video has 120 frames, so the frame cap does not truncate it. Spatial overlap
 and temporal stride are separate parameters. Environment variables `TAG`,
 `JOB_PROFILE`, `VIDEO`, `MAXFRAMES`, `WINDOW_SIZE`, `CONTEXT_FRAMES`, `STRIDE`,
 `MODE`, `VJEPA_HUB_DIR`, and `OUTPUT_PATH` can override defaults.
+
+For the existing `s2-v0.75` masks, generate with `--mask-dir data/mask/s2-v0.75`
+and launch scoring with `TAG=s2-v0.75`; the two sources yield 50 variants.
+When the batch node uses a different home directory, set
+`TORCH_HOME=/nfs/data/workspaces/rdechare/.cache/torch` before launching to reuse
+the shared checkpoint. Archive the old score CSV and summary before scoring
+regenerated videos, since score resumption matches file paths, not contents.
 
 Scores are CSV rows `video,surprise` using the actual masked-video paths:
 
@@ -142,3 +153,71 @@ python scripts/spatial_surprise/verify_scores.py \
 ```
 
 Stop after score review; heatmaps and overlay videos require the next approvals.
+
+## Step 4: coverage-normalized heatmaps
+
+After score review, run with the `physics-eval` Python environment (NumPy,
+Pillow, and Matplotlib):
+
+```bash
+python scripts/spatial_surprise/generate_heatmaps.py --tags s4-v0.5 s2-v0.75
+```
+
+The script reads each configuration's `videos.txt`, cached source manifests,
+mask PNGs, and score CSV. It requires exactly one finite score per variant and
+every mask for every source video. No model inference or source-frame loading
+is needed. Each pixel is computed as:
+
+```text
+S(x) = sum_k((M_k(x) != 0) * surprise_k) / sum_k(M_k(x) != 0)
+```
+
+The denominator counts only masks covering that pixel, avoiding edge attenuation.
+Uncovered pixels, missing/duplicate scores, and inconsistent masks/manifests are
+rejected before any maps are written. There is no spatial smoothing.
+
+For each source, results are saved under, for example,
+`output/spatial-surprise/s4-v0.5/datasets/intphys/dev/O1/02/1/`:
+
+- `map.npy`: raw 256×256 float64 surprise values, without display normalization.
+- `coverage.npy`: 256×256 integer counts of covering masks.
+- `map.png`: 256×256 RGB visualization using Viridis (purple low, yellow high).
+- `legend.png`: color bar with numeric endpoints.
+- `map.json`: formula, statistics, display limits, parameters, and input hashes.
+
+All videos across the tags in one invocation share the same display minimum
+and maximum. Run both tags together to compare the four maps on the same scale.
+If every value is identical, the display uses the colormap midpoint. Step 5
+should reuse these saved display limits or `map.png` for overlays.
+
+`--tags` defaults to `s4-v0.5`. `--mask-root`, `--variants-root`, and
+`--output-root` override the respective roots; `--score-relative` selects a
+different score CSV relative to each configuration's output directory.
+Existing step-4 artifacts are protected unless `--overwrite` is passed.
+Changing display tags/limits during regeneration requires regenerating the maps
+you intend to compare together.
+
+Stop here for manual review before step 5; no overlay videos are generated.
+
+## Step 5: overlay videos
+
+After map review:
+
+```bash
+python scripts/spatial_surprise/generate_overlays.py --tags s4-v0.5 s2-v0.75
+```
+
+The script discovers every `datasets/**/map.png` under the selected configuration
+outputs and blends it onto the original RGB frames with `--alpha 0.4` (40%
+heatmap, 60% original). Original frames are bilinearly resized to the map size;
+the saved map colors and shared display scale are reused without renormalization.
+Source frame order and frame rates come from the step-2 manifests. The current
+100-frame, 25 FPS sources produce 120-frame, 30 FPS overlays lasting four seconds.
+
+Each map directory receives `viz.mp4` and `viz.json`, which records opacity,
+timing, display settings, and the map hash. Encoding uses the corrected H.264
+High, CRF12, YUV420, BT.709 limited-range pipeline, with no intermediate PNGs.
+`--alpha` accepts values from 0 (original only) to 1 (map only).
+`--overwrite` permits regeneration; otherwise existing overlays are protected.
+`--source-root`, `--variants-root`, and `--output-root` override the input and
+output locations. No scores or heatmaps are recomputed by this stage.
