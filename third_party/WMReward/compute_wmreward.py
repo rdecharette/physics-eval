@@ -234,17 +234,14 @@ def compute_multi_vjepa_surprise(
         
         print(f"\nProcessing video {i + 1 - error}/{min(len(videos_paths), max_videos)}: {video_path}")
 
-        if not direct_paths:
-            assert_video_is_30_fps(video_path)
-        
         if not force_recompute and video_path in processed_videos:
             print(f"Skipping already processed video")
             continue
         
+        assert_video_is_30_fps(video_path)
+        
         surprise_scores[video_path] = None
         try:
-            if direct_paths:
-                assert_video_is_30_fps(video_path)
             print(f"Loading video...")
             video_tensor = load_video_as_tensor(video_path, max_frames=max_frames, img_size=img_size)
             video_tensor = video_tensor.to(device)

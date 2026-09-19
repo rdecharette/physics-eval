@@ -208,16 +208,23 @@ python scripts/spatial_surprise/generate_overlays.py --tags s4-v0.5 s2-v0.75
 ```
 
 The script discovers every `datasets/**/map.png` under the selected configuration
-outputs and blends it onto the original RGB frames with `--alpha 0.4` (40%
-heatmap, 60% original). Original frames are bilinearly resized to the map size;
-the saved map colors and shared display scale are reused without renormalization.
+outputs and first blends the original RGB frames 25% toward constant gray
+RGB `(128,128,128)` with `--gray-mix 0.25`. It then applies the heatmap with
+`--alpha 0.6` as the maximum red opacity: low surprise is transparent,
+high surprise is red, and opacity increases linearly between them. Original frames are bilinearly resized to the map size;
+the raw `map.npy` values use the saved shared display limits. Static `map.png`
+previews retain Viridis; the video uses transparent-to-red.
 Source frame order and frame rates come from the step-2 manifests. The current
 100-frame, 25 FPS sources produce 120-frame, 30 FPS overlays lasting four seconds.
 
 Each map directory receives `viz.mp4` and `viz.json`, which records opacity,
 timing, display settings, and the map hash. Encoding uses the corrected H.264
 High, CRF12, YUV420, BT.709 limited-range pipeline, with no intermediate PNGs.
-`--alpha` accepts values from 0 (original only) to 1 (map only).
+`--alpha` controls maximum red opacity from 0 to 1. Pixel opacity is
+`alpha * clip((surprise-vmin)/(vmax-vmin), 0, 1)`; a constant shared range uses
+the midpoint. The default maximum opacity is 0.6.
+`--gray-mix` accepts values from 0 (original background) to 1 (flat gray).
+Use `--gray-mix 0` to reproduce the previous overlay appearance.
 `--overwrite` permits regeneration; otherwise existing overlays are protected.
 `--source-root`, `--variants-root`, and `--output-root` override the input and
 output locations. No scores or heatmaps are recomputed by this stage.
