@@ -22,3 +22,13 @@ modifications may differ from these revisions. Original licenses are retained.
 | `third_party/WMReward` | git@github.com:rdecharette/WMReward.git | `a539e8dfb46f6067dac614ee6c8a551b4fd540ac` |
 | `third_party/WMReward/vjepa2` | https://github.com/facebookresearch/vjepa2.git | `c2963a47433ecca0ad4f06ec28bcfa8cb5b5cefb` |
 | `third_party/WMReward/MAGI-1` | https://github.com/YuanJianhao508/MAGI-1.git | `27e0a2ebc376039a548bb257dbef12e7c94bec02` |
+
+`GeoPhys` is an editable source-archive copy (not a clone or submodule), including
+its original MIT license, configs, data and documentation. Source revision:
+`de81c3320c4896ffc1658a5fd3231696863d8d14` from
+https://github.com/ChristianInterno/GeoPhys. Integration: `scripts/geophys/README.md`.
+
+`PhyProbe` is an editable source-archive copy (not a clone or submodule),
+including its MIT license and bundled scoring head. Source revision:
+`f2457b78e5169d695ec2d6c3acc9f4d7ef37cd3a` from
+https://github.com/vinesmsuic/PhyProbe. Integration: `scripts/phyprobe/README.md`.

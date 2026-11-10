@@ -1,0 +1,8 @@
+# Pin the upstream PE source; install from an archive, not a Git checkout.
+perception_models @ https://github.com/facebookresearch/perception_models/archive/3e352cca660658d4b5c90f42a7808b11469e4c66.zip
+# Compatible with PE's tokenizers==0.21.1; avoid an incompatible Transformers 5.
+transformers==4.51.3
+# Keep CUDA runtime compatible with this repository's existing CUDA 12.4 setup.
+torch==2.6.0
+torchvision==0.21.0
+torchcodec==0.2.1
